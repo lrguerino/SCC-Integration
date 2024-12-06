@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision_multi_result">
+    <sys_decision_multi_result action="INSERT_OR_UPDATE">
+        <decision_table display_value="Translate SCC Impact">522ce42e470dd210dbdcbf99516d430e</decision_table>
+        <label>TIP Impact Label: Issue is stopping my work, TIP Impact Value: 6</label>
+        <result_elements/>
+        <sys_class_name>sys_decision_multi_result</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-08 13:11:35</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>4488d5fafb89161048a7f92abeefdc9c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>TIP Impact Label: Issue is stopping my work, TIP Impact Value: 6</sys_name>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name>sys_decision_multi_result_4488d5fafb89161048a7f92abeefdc9c</sys_update_name>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-08 13:11:35</sys_updated_on>
+    </sys_decision_multi_result>
+    <sys_variable_value action="delete_multiple" query="document_key=4488d5fafb89161048a7f92abeefdc9c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_decision_multi_result</document>
+        <document_key>4488d5fafb89161048a7f92abeefdc9c</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-08 13:11:35</sys_created_on>
+        <sys_id>4888553efb89161048a7f92abeefdc5c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-08 13:11:35</sys_updated_on>
+        <value>Issue is stopping my work</value>
+        <variable display_value="TIP Impact Label">7f78153efb89161048a7f92abeefdcc3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_decision_multi_result</document>
+        <document_key>4488d5fafb89161048a7f92abeefdc9c</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-08 13:11:35</sys_created_on>
+        <sys_id>4888d5fafb89161048a7f92abeefdc9c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-08 13:11:35</sys_updated_on>
+        <value>6</value>
+        <variable display_value="TIP Impact Value">6378153efb89161048a7f92abeefdcb0</variable>
+    </sys_variable_value>
+</record_update>

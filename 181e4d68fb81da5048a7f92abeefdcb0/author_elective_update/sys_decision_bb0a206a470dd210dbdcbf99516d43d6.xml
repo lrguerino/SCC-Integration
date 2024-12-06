@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision">
+    <sys_decision action="DELETE">
+        <access>public</access>
+        <active>false</active>
+        <answer_table>sys_decision_multi_result</answer_table>
+        <answer_type>reference</answer_type>
+        <delta/>
+        <description/>
+        <enable_publishing>true</enable_publishing>
+        <label/>
+        <name>Get TIP Priority Matrix</name>
+        <reference_qualifier/>
+        <status>draft</status>
+        <sys_class_name>sys_decision</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-07 15:10:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bb0a206a470dd210dbdcbf99516d43d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Get TIP Priority Matrix</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name>sys_decision_bb0a206a470dd210dbdcbf99516d43d6</sys_update_name>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-07 15:10:11</sys_updated_on>
+    </sys_decision>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</application>
+        <file_path/>
+        <instance_id>23dcc1eddb2980982f68c59705961996</instance_id>
+        <instance_name>tipdev</instance_name>
+        <name>sys_decision_bb0a206a470dd210dbdcbf99516d43d6</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision"><sys_decision action="INSERT_OR_UPDATE"><access>public</access><active>false</active><answer_table>sys_decision_multi_result</answer_table><answer_type>reference</answer_type><delta/><description/><enable_publishing>true</enable_publishing><label/><name>Get TIP Priority Matrix</name><reference_qualifier/><status>draft</status><sys_class_name>sys_decision</sys_class_name><sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by><sys_created_on>2024-10-07 15:10:11</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>bb0a206a470dd210dbdcbf99516d43d6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Get TIP Priority Matrix</sys_name><sys_overrides/><sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package><sys_policy/><sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope><sys_update_name>sys_decision_bb0a206a470dd210dbdcbf99516d43d6</sys_update_name><sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by><sys_updated_on>2024-10-07 15:10:11</sys_updated_on></sys_decision></record_update>]]></payload>
+        <payload_hash>1079579036</payload_hash>
+        <record_name>Get TIP Priority Matrix</record_name>
+        <reverted_from/>
+        <source>901e8da8fb81da5048a7f92abeefdc84</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-07 15:10:11</sys_created_on>
+        <sys_id>7f0a68aa470dd210dbdcbf99516d4356</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1926787e3fd0000001</sys_recorded_at>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-07 15:10:11</sys_updated_on>
+        <type>Decision Table</type>
+        <update_guid>3b0a206a450dd210f1e66051568f03d9</update_guid>
+        <update_guid_history>3b0a206a450dd210f1e66051568f03d9:1079579036</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-07 15:19:02</sys_created_on>
+        <sys_db_object display_value="" name="sys_decision">sys_decision</sys_db_object>
+        <sys_id>a62c7b15bd0e4d0080ac15df7444d784</sys_id>
+        <sys_metadata>bb0a206a470dd210dbdcbf99516d43d6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Get TIP Priority Matrix</sys_name>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_scope_delete display_value="">63962075f8cc4b24874e8760587c3204</sys_scope_delete>
+        <sys_update_name>sys_decision_bb0a206a470dd210dbdcbf99516d43d6</sys_update_name>
+        <sys_update_version display_value="sys_decision_bb0a206a470dd210dbdcbf99516d43d6">7f0a68aa470dd210dbdcbf99516d4356</sys_update_version>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-07 15:19:02</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

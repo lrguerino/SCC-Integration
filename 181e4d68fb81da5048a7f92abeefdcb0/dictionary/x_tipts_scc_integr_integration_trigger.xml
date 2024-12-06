@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="update_synch=true" db_object_id="c1d7623cfb011690f24ffcdcbeefdcd5" extends="sys_metadata" label="Integration Trigger" max_length="40" name="x_tipts_scc_integr_integration_trigger" type="collection">
+        <element attributes="show_condition_count=true,extended_operators=VALCHANGES;CHANGESFROM;CHANGESTO" dependent="table" dependent_on_field="table" label="Condition" max_length="500" name="condition" type="conditions" use_dependent_field="true"/>
+        <element choice="1" label="Direction" mandatory="true" max_length="40" name="direction" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Outbound" sequence="0" value="Outbound"/>
+                <element inactive_on_update="false" label="Inbound" sequence="1" value="Inbound"/>
+            </choice>
+        </element>
+        <element label="Integration Control" mandatory="true" max_length="32" name="integration_control" reference="x_tipts_scc_integr_integration_control" type="reference"/>
+        <element display="true" label="Name" mandatory="true" max_length="80" name="name" type="string"/>
+        <element attributes="encode_utf8=false" label="Processing Subflow" max_length="32" name="processing_subflow" reference="sys_hub_flow" reference_qual="type=subflow^active=true^sys_scope=181e4d68fb81da5048a7f92abeefdcb0^EQ" reference_qual_condition="type=subflow^active=true^sys_scope=181e4d68fb81da5048a7f92abeefdcb0^EQ" type="reference"/>
+        <element attributes="allow_public=true" label="Table" mandatory="true" max_length="80" name="table" type="table_name"/>
+        <element choice="1" dependent="direction" dependent_on_field="direction" label="Transaction Type" mandatory="true" max_length="40" name="transaction_type" type="choice" use_dependent_field="true">
+            <choice>
+                <element dependent_value="Inbound" inactive_on_update="false" label="Create Ticket" sequence="10" value="create"/>
+                <element dependent_value="Outbound" inactive_on_update="false" label="Create Ticket" sequence="10" value="create"/>
+                <element dependent_value="Outbound" inactive_on_update="false" label="Update Priority" sequence="20" value="updatePriority"/>
+                <element dependent_value="Inbound" inactive_on_update="false" label="Update Ticket" sequence="20" value="update"/>
+                <element dependent_value="Outbound" inactive_on_update="false" label="Reassign Ticket" sequence="30" value="reassign"/>
+                <element dependent_value="Inbound" inactive_on_update="false" label="Reopen Ticket" sequence="30" value="reopen"/>
+                <element dependent_value="Outbound" inactive_on_update="false" label="Reopen Ticket" sequence="40" value="reopen"/>
+                <element dependent_value="Inbound" inactive_on_update="false" label="Resolve Ticket" sequence="40" value="resolve"/>
+                <element dependent_value="Outbound" inactive_on_update="false" label="Resolve Ticket" sequence="45" value="resolve"/>
+                <element dependent_value="Outbound" inactive_on_update="false" label="Add Comments" sequence="50" value="addComments"/>
+                <element dependent_value="Inbound" inactive_on_update="false" label="Reassign Ticket" sequence="50" value="reassign"/>
+                <element dependent_value="Outbound" inactive_on_update="false" label="Add Notes" sequence="60" value="addNotes"/>
+                <element dependent_value="Outbound" inactive_on_update="false" label="Add Attachment" sequence="80" value="addAttachment"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="direction"/>
+            <element name="transaction_type"/>
+        </index>
+        <index name="index2">
+            <element name="integration_control"/>
+        </index>
+        <index name="index3">
+            <element name="processing_subflow"/>
+        </index>
+        <index name="index4">
+            <element name="table"/>
+        </index>
+    </element>
+</database>

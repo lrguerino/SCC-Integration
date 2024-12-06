@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m">
+    <sys_properties_category_m2m action="DELETE">
+        <category display_value="SCC Integration">a4615abcfb8dd290f24ffcdcbeefdc50</category>
+        <order>400</order>
+        <property display_value="x_tipts_scc_integr.api.password" name="x_tipts_scc_integr.api.password">cfc22af0fb011690f24ffcdcbeefdc4e</property>
+        <sys_class_name>sys_properties_category_m2m</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 13:28:29</sys_created_on>
+        <sys_id>8dd26af0fb011690f24ffcdcbeefdc33</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_tipts_scc_integr.api.password.SCC Integration</sys_name>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name>sys_properties_category_m2m_8dd26af0fb011690f24ffcdcbeefdc33</sys_update_name>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 13:28:50</sys_updated_on>
+    </sys_properties_category_m2m>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</application>
+        <file_path/>
+        <instance_id>23dcc1eddb2980982f68c59705961996</instance_id>
+        <instance_name>tipdev</instance_name>
+        <name>sys_properties_category_m2m_8dd26af0fb011690f24ffcdcbeefdc33</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m"><sys_properties_category_m2m action="INSERT_OR_UPDATE"><category display_value="SCC Integration">a4615abcfb8dd290f24ffcdcbeefdc50</category><order>400</order><property display_value="x_tipts_scc_integr.api.password" name="x_tipts_scc_integr.api.password">cfc22af0fb011690f24ffcdcbeefdc4e</property><sys_class_name>sys_properties_category_m2m</sys_class_name><sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by><sys_created_on>2024-10-02 13:28:29</sys_created_on><sys_id>8dd26af0fb011690f24ffcdcbeefdc33</sys_id><sys_mod_count>1</sys_mod_count><sys_name>x_tipts_scc_integr.api.password.SCC Integration</sys_name><sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package><sys_policy/><sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope><sys_update_name>sys_properties_category_m2m_8dd26af0fb011690f24ffcdcbeefdc33</sys_update_name><sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by><sys_updated_on>2024-10-02 13:28:50</sys_updated_on></sys_properties_category_m2m></record_update>]]></payload>
+        <payload_hash>1239418074</payload_hash>
+        <record_name>x_tipts_scc_integr.api.password.SCC Integration</record_name>
+        <reverted_from/>
+        <source>901e8da8fb81da5048a7f92abeefdc84</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 13:28:50</sys_created_on>
+        <sys_id>1ae22ef0fb011690f24ffcdcbeefdc43</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1924d6b4d190000001</sys_recorded_at>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 13:28:50</sys_updated_on>
+        <type>Category Property</type>
+        <update_guid>9ee22ef04a01169079fbc704bdfd2b42</update_guid>
+        <update_guid_history>9ee22ef04a01169079fbc704bdfd2b42:1239418074,c9d26af0690116900430500b3cc06635:-730262569</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-03 08:11:59</sys_created_on>
+        <sys_db_object display_value="" name="sys_properties_category_m2m">sys_properties_category_m2m</sys_db_object>
+        <sys_id>39c8979bde454b209723f79bf1c8c1c4</sys_id>
+        <sys_metadata>8dd26af0fb011690f24ffcdcbeefdc33</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_tipts_scc_integr.api.password.SCC Integration</sys_name>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_scope_delete display_value="">63962075f8cc4b24874e8760587c3204</sys_scope_delete>
+        <sys_update_name>sys_properties_category_m2m_8dd26af0fb011690f24ffcdcbeefdc33</sys_update_name>
+        <sys_update_version display_value="sys_properties_category_m2m_8dd26af0fb011690f24ffcdcbeefdc33">1ae22ef0fb011690f24ffcdcbeefdc43</sys_update_version>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-03 08:11:59</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

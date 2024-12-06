@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision_multi_result">
+    <sys_decision_multi_result action="DELETE">
+        <decision_table display_value="Translate SCC Impact">522ce42e470dd210dbdcbf99516d430e</decision_table>
+        <label>TIP Impact Value: Issue is stopping my work</label>
+        <result_elements/>
+        <sys_class_name>sys_decision_multi_result</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-07 15:23:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>5b1d2c6e470dd210dbdcbf99516d432b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>TIP Impact Value: Issue is stopping my work</sys_name>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name>sys_decision_multi_result_5b1d2c6e470dd210dbdcbf99516d432b</sys_update_name>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-07 15:23:32</sys_updated_on>
+    </sys_decision_multi_result>
+    <sys_variable_value action="DELETE" query="document_key=5b1d2c6e470dd210dbdcbf99516d432b"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_decision_multi_result</document>
+        <document_key>5b1d2c6e470dd210dbdcbf99516d432b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-07 15:23:32</sys_created_on>
+        <sys_id>5f1d2c6e470dd210dbdcbf99516d432b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-07 15:23:32</sys_updated_on>
+        <value>6</value>
+        <variable display_value="TIP Impact Value">531d246e470dd210dbdcbf99516d432f</variable>
+    </sys_variable_value>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</application>
+        <file_path/>
+        <instance_id>23dcc1eddb2980982f68c59705961996</instance_id>
+        <instance_name>tipdev</instance_name>
+        <name>sys_decision_multi_result_5b1d2c6e470dd210dbdcbf99516d432b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision_multi_result"><sys_decision_multi_result action="INSERT_OR_UPDATE"><decision_table display_value="Translate SCC Impact">522ce42e470dd210dbdcbf99516d430e</decision_table><label>TIP Impact Value: Issue is stopping my work</label><result_elements/><sys_class_name>sys_decision_multi_result</sys_class_name><sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by><sys_created_on>2024-10-07 15:23:32</sys_created_on><sys_domain>global</sys_domain><sys_id>5b1d2c6e470dd210dbdcbf99516d432b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>TIP Impact Value: Issue is stopping my work</sys_name><sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package><sys_policy/><sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope><sys_update_name>sys_decision_multi_result_5b1d2c6e470dd210dbdcbf99516d432b</sys_update_name><sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by><sys_updated_on>2024-10-07 15:23:32</sys_updated_on></sys_decision_multi_result><sys_variable_value action="delete_multiple" query="document_key=5b1d2c6e470dd210dbdcbf99516d432b"/><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_decision_multi_result</document><document_key>5b1d2c6e470dd210dbdcbf99516d432b</document_key><order>100</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by><sys_created_on>2024-10-07 15:23:32</sys_created_on><sys_id>5f1d2c6e470dd210dbdcbf99516d432b</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by><sys_updated_on>2024-10-07 15:23:32</sys_updated_on><value>6</value><variable display_value="TIP Impact Value">531d246e470dd210dbdcbf99516d432f</variable></sys_variable_value></record_update>]]></payload>
+        <payload_hash>599428629</payload_hash>
+        <record_name>TIP Impact Value: Issue is stopping my work</record_name>
+        <reverted_from/>
+        <source>901e8da8fb81da5048a7f92abeefdc84</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-07 15:23:32</sys_created_on>
+        <sys_id>1f1d2c6e470dd210dbdcbf99516d432d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19267941bba0000001</sys_recorded_at>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-07 15:23:32</sys_updated_on>
+        <type>Decision Table Multiple Result</type>
+        <update_guid>131d2c6e030dd2102049688cc630402d</update_guid>
+        <update_guid_history>131d2c6e030dd2102049688cc630402d:599428629</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-08 13:11:34</sys_created_on>
+        <sys_db_object display_value="" name="sys_decision_multi_result">sys_decision_multi_result</sys_db_object>
+        <sys_id>1d6cfcc8a5b743c49ee27a7bf8856c04</sys_id>
+        <sys_metadata>5b1d2c6e470dd210dbdcbf99516d432b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>TIP Impact Value: Issue is stopping my work</sys_name>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_scope_delete display_value="">63962075f8cc4b24874e8760587c3204</sys_scope_delete>
+        <sys_update_name>sys_decision_multi_result_5b1d2c6e470dd210dbdcbf99516d432b</sys_update_name>
+        <sys_update_version display_value="sys_decision_multi_result_5b1d2c6e470dd210dbdcbf99516d432b">1f1d2c6e470dd210dbdcbf99516d432d</sys_update_version>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-08 13:11:34</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

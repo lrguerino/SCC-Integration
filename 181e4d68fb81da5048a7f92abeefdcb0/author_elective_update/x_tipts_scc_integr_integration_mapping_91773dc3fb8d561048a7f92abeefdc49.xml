@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="x_tipts_scc_integr_integration_mapping">
+    <x_tipts_scc_integr_integration_mapping action="DELETE">
+        <active>true</active>
+        <advanced_mapping><![CDATA[/*______________________________________________________________________________________________
+* Description:
+*    - Used to translate the HTTP headers and body into the message record for bonding
+* Parameters: 
+*    - current (GlideRecord): This mapping record
+*    - trigger (GlideRecord): Trigger record that triggered this mapping
+*    - target (GlideRecord): Target record based on the table of this mapping
+*    - task (GlideRecord): Underlying task record record based on the target record
+* Returns:
+*    - Any Type as it will be stringified
+ ________________________________________________________________________________________________*/
+(function process(current, trigger, target, task) {
+
+	// Add your code here
+	return;
+	
+}(current, trigger, target, task));]]></advanced_mapping>
+        <custom_value>TONY</custom_value>
+        <integration_trigger display_value="Outbound - Incident - Priority Update">4dce80d5fb0d5690f24ffcdcbeefdc80</integration_trigger>
+        <mapping_type>Custom Value</mapping_type>
+        <order>70</order>
+        <scc_field_name>anything_field</scc_field_name>
+        <sn_field_name/>
+        <sys_class_name>x_tipts_scc_integr_integration_mapping</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-09 10:05:57</sys_created_on>
+        <sys_id>91773dc3fb8d561048a7f92abeefdc49</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name>x_tipts_scc_integr_integration_mapping_91773dc3fb8d561048a7f92abeefdc49</sys_update_name>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-09 10:05:57</sys_updated_on>
+        <table>incident</table>
+    </x_tipts_scc_integr_integration_mapping>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</application>
+        <file_path/>
+        <instance_id>23dcc1eddb2980982f68c59705961996</instance_id>
+        <instance_name>tipdev</instance_name>
+        <name>x_tipts_scc_integr_integration_mapping_91773dc3fb8d561048a7f92abeefdc49</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="x_tipts_scc_integr_integration_mapping"&gt;&lt;x_tipts_scc_integr_integration_mapping action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;advanced_mapping&gt;&lt;![CDATA[/*______________________________________________________________________________________________
+* Description:
+*    - Used to translate the HTTP headers and body into the message record for bonding
+* Parameters: 
+*    - current (GlideRecord): This mapping record
+*    - trigger (GlideRecord): Trigger record that triggered this mapping
+*    - target (GlideRecord): Target record based on the table of this mapping
+*    - task (GlideRecord): Underlying task record record based on the target record
+* Returns:
+*    - Any Type as it will be stringified
+ ________________________________________________________________________________________________*/
+(function process(current, trigger, target, task) {
+
+	// Add your code here
+	return;
+	
+}(current, trigger, target, task));]]&gt;&lt;/advanced_mapping&gt;&lt;custom_value&gt;TONY&lt;/custom_value&gt;&lt;integration_trigger display_value="Outbound - Incident - Priority Update"&gt;4dce80d5fb0d5690f24ffcdcbeefdc80&lt;/integration_trigger&gt;&lt;mapping_type&gt;Custom Value&lt;/mapping_type&gt;&lt;order&gt;70&lt;/order&gt;&lt;scc_field_name&gt;anything_field&lt;/scc_field_name&gt;&lt;sn_field_name/&gt;&lt;sys_class_name&gt;x_tipts_scc_integr_integration_mapping&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-09 10:05:57&lt;/sys_created_on&gt;&lt;sys_id&gt;91773dc3fb8d561048a7f92abeefdc49&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="SCC Integration" source="x_tipts_scc_integr"&gt;181e4d68fb81da5048a7f92abeefdcb0&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SCC Integration"&gt;181e4d68fb81da5048a7f92abeefdcb0&lt;/sys_scope&gt;&lt;sys_update_name&gt;x_tipts_scc_integr_integration_mapping_91773dc3fb8d561048a7f92abeefdc49&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-09 10:05:57&lt;/sys_updated_on&gt;&lt;table&gt;incident&lt;/table&gt;&lt;/x_tipts_scc_integr_integration_mapping&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1884868843</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>901e8da8fb81da5048a7f92abeefdc84</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-09 10:05:57</sys_created_on>
+        <sys_id>ee97318ffb4d561048a7f92abeefdc72</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19270be11c90000001</sys_recorded_at>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-09 10:05:57</sys_updated_on>
+        <type>Integration Mapping</type>
+        <update_guid>e297318f1e4d5610be48bf8ecd08c772</update_guid>
+        <update_guid_history>e297318f1e4d5610be48bf8ecd08c772:1884868843</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">483af18ffb8d561048a7f92abeefdc3f</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-09 10:17:14</sys_created_on>
+        <sys_db_object display_value="" name="x_tipts_scc_integr_integration_mapping">x_tipts_scc_integr_integration_mapping</sys_db_object>
+        <sys_id>0243359ea221487c80966eb3cbc5a721</sys_id>
+        <sys_metadata>91773dc3fb8d561048a7f92abeefdc49</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_scope_delete display_value="">63962075f8cc4b24874e8760587c3204</sys_scope_delete>
+        <sys_update_name>x_tipts_scc_integr_integration_mapping_91773dc3fb8d561048a7f92abeefdc49</sys_update_name>
+        <sys_update_version display_value="x_tipts_scc_integr_integration_mapping_91773dc3fb8d561048a7f92abeefdc49">ee97318ffb4d561048a7f92abeefdc72</sys_update_version>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-09 10:17:14</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

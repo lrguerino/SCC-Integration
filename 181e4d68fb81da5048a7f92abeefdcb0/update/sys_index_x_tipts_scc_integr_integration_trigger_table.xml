@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_index">
+    <sys_index action="INSERT_OR_UPDATE">
+        <access_method>btree</access_method>
+        <col_name_string>table</col_name_string>
+        <index_col_name element="table" name="x_tipts_scc_integr_integration_trigger">59db19933b995a10445c342a85e45af8</index_col_name>
+        <logical_table_name>x_tipts_scc_integr_integration_trigger</logical_table_name>
+        <sys_class_name>sys_index</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2024-10-31 12:03:01</sys_created_on>
+        <sys_id>3b5527c24729de10dbdcbf99516d4302</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_tipts_scc_integr_integration_trigger</sys_name>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name>sys_index_x_tipts_scc_integr_integration_trigger_table</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-10-31 12:03:01</sys_updated_on>
+        <table display_value="Integration Trigger" name="x_tipts_scc_integr_integration_trigger">c1d7623cfb011690f24ffcdcbeefdcd5</table>
+        <unique_index>false</unique_index>
+    </sys_index>
+</record_update>

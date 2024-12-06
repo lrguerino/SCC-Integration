@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category">
+    <sys_properties_category action="INSERT_OR_UPDATE">
+        <name>SCC Integration</name>
+        <sys_class_name>sys_properties_category</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 12:13:43</sys_created_on>
+        <sys_id>a4615abcfb8dd290f24ffcdcbeefdc50</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>SCC Integration</sys_name>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name>sys_properties_category_a4615abcfb8dd290f24ffcdcbeefdc50</sys_update_name>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-07 11:50:54</sys_updated_on>
+        <title><![CDATA[<p><img title="Logo_SCC_Blue.jpg" src="Logo_SCC_Blue.jpg" alt="" width="86" height="42" /></p>
+<p><span style="font-size: 10pt;"><strong>Custom Properties for the SCC Integration with ServiceNow</strong></span></p>
+<p> </p>]]></title>
+    </sys_properties_category>
+    <sys_translated_text action="delete_multiple" query="documentkey=a4615abcfb8dd290f24ffcdcbeefdc50"/>
+</record_update>

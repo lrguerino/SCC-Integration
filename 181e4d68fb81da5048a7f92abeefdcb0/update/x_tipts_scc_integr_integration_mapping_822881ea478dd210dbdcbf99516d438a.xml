@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="x_tipts_scc_integr_integration_mapping">
+    <x_tipts_scc_integr_integration_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <advanced_mapping><![CDATA[/*______________________________________________________________________________________________
+* Description:
+*    - Used to translate the HTTP headers and body into the message record for bonding
+* Parameters: 
+*    - current (GlideRecord): This mapping record
+*    - trigger (GlideRecord): Trigger record that triggered this mapping
+*    - target (GlideRecord): Target record based on the table of this mapping
+*    - task (GlideRecord): Underlying task record record based on the target record
+* Returns:
+*    - Any Type as it will be stringified
+ ________________________________________________________________________________________________*/
+(function process(current, trigger, target, task) {
+
+	// Add your code here
+	return;
+	
+}(current, trigger, target, task));]]></advanced_mapping>
+        <custom_value>incident</custom_value>
+        <integration_trigger display_value="Outbound - Incident - New Comment">3099c4ddfbc95690f24ffcdcbeefdc8f</integration_trigger>
+        <mapping_type>Custom Value</mapping_type>
+        <order>10</order>
+        <scc_field_name>case_type</scc_field_name>
+        <sn_field_name/>
+        <sys_class_name>x_tipts_scc_integr_integration_mapping</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-07 17:21:55</sys_created_on>
+        <sys_id>822881ea478dd210dbdcbf99516d438a</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name>x_tipts_scc_integr_integration_mapping_822881ea478dd210dbdcbf99516d438a</sys_update_name>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-09 09:47:36</sys_updated_on>
+        <table>sys_journal_field</table>
+    </x_tipts_scc_integr_integration_mapping>
+</record_update>

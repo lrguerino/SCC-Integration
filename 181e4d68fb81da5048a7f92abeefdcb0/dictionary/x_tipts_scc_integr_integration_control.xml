@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="update_synch=true" db_object_id="bc03a6f0fb011690f24ffcdcbeefdc13" extends="sys_metadata" label="Integration Control" max_length="40" name="x_tipts_scc_integr_integration_control" type="collection">
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element display="true" label="Name" mandatory="true" max_length="60" name="name" type="string"/>
+        <element attributes="allow_public=true,base_table=task" label="Table" mandatory="true" max_length="80" name="table" type="table_name" unique="true"/>
+        <index name="index" unique="true">
+            <element name="table"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_style">
+    <sys_ui_style action="INSERT_OR_UPDATE">
+        <alt/>
+        <element>direction</element>
+        <name>x_tipts_scc_integr_integration_message</name>
+        <style>background-image: url('images/icons/outbox.gif');&#13;
+background-repeat: no-repeat;&#13;
+padding-right: 30px;</style>
+        <sys_class_name>sys_ui_style</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-30 14:31:59</sys_created_on>
+        <sys_id>13ad32f1fb211a10f24ffcdcbeefdc5b</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>x_tipts_scc_integr_integration_message</sys_name>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name>sys_ui_style_13ad32f1fb211a10f24ffcdcbeefdc5b</sys_update_name>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-30 14:42:04</sys_updated_on>
+        <themed_style/>
+        <value>javascript: current.getValue("direction") === SCCConstants.DIRECTION.OUTBOUND</value>
+    </sys_ui_style>
+    <sys_translated_text action="delete_multiple" query="documentkey=13ad32f1fb211a10f24ffcdcbeefdc5b"/>
+</record_update>

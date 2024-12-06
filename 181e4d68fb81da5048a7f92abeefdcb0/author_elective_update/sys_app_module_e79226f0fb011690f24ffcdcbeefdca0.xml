@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="SCC Integration">7e3196bcfb8dd290f24ffcdcbeefdc53</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Integration Controls</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_tipts_scc_integr_integration_control</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>x_tipts_scc_integr.admin</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 13:27:34</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e79226f0fb011690f24ffcdcbeefdca0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Integration Controls</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name>sys_app_module_e79226f0fb011690f24ffcdcbeefdca0</sys_update_name>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 13:27:34</sys_updated_on>
+        <timeline_page/>
+        <title>Integration Controls</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</application>
+        <file_path/>
+        <instance_id>23dcc1eddb2980982f68c59705961996</instance_id>
+        <instance_name>tipdev</instance_name>
+        <name>sys_app_module_e79226f0fb011690f24ffcdcbeefdca0</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="SCC Integration">7e3196bcfb8dd290f24ffcdcbeefdc53</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>Integration Controls</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_tipts_scc_integr_integration_control</name><order/><override_menu_roles>false</override_menu_roles><query/><report/><roles>x_tipts_scc_integr.admin</roles><sys_class_name>sys_app_module</sys_class_name><sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by><sys_created_on>2024-10-02 13:27:34</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>e79226f0fb011690f24ffcdcbeefdca0</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Integration Controls</sys_name><sys_overrides/><sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package><sys_policy/><sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope><sys_update_name>sys_app_module_e79226f0fb011690f24ffcdcbeefdca0</sys_update_name><sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by><sys_updated_on>2024-10-02 13:27:34</sys_updated_on><timeline_page/><title>Integration Controls</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>1653932215</payload_hash>
+        <record_name>Integration Controls</record_name>
+        <reverted_from/>
+        <source>901e8da8fb81da5048a7f92abeefdc84</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 13:27:34</sys_created_on>
+        <sys_id>a39226f0fb011690f24ffcdcbeefdca3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1924d6a22700000001</sys_recorded_at>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 13:27:34</sys_updated_on>
+        <type>Module</type>
+        <update_guid>a79226f063011690147e45707db420a2</update_guid>
+        <update_guid_history>a79226f063011690147e45707db420a2:1653932215</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">0aa2a6f0fb011690f24ffcdcbeefdce2</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 13:27:43</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>6e22a34341e94270bc7f168024a72690</sys_id>
+        <sys_metadata>e79226f0fb011690f24ffcdcbeefdca0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Integration Controls</sys_name>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_scope_delete display_value="">63962075f8cc4b24874e8760587c3204</sys_scope_delete>
+        <sys_update_name>sys_app_module_e79226f0fb011690f24ffcdcbeefdca0</sys_update_name>
+        <sys_update_version display_value="sys_app_module_e79226f0fb011690f24ffcdcbeefdca0">a39226f0fb011690f24ffcdcbeefdca3</sys_update_version>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 13:27:43</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

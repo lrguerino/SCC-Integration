@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_auto_flush">
+    <sys_auto_flush action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <age>1296000</age>
+        <cascade_delete>false</cascade_delete>
+        <clean_audit>true</clean_audit>
+        <clean_peripheral>false</clean_peripheral>
+        <cleanup_category/>
+        <conditions table="x_tipts_scc_integr_integration_message">status!=PROCESSING^EQ<item display_value="PROCESSING" endquery="false" field="status" goto="false" newquery="false" operator="!=" or="false" value="PROCESSING"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </conditions>
+        <force_optimize>false</force_optimize>
+        <matchfield>sys_created_on</matchfield>
+        <sys_class_name>sys_auto_flush</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-09 12:36:29</sys_created_on>
+        <sys_id>09d91283fb81961048a7f92abeefdc72</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>x_tipts_scc_integr_integration_message</sys_name>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name>sys_auto_flush_09d91283fb81961048a7f92abeefdc72</sys_update_name>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-21 13:20:11</sys_updated_on>
+        <tablename>x_tipts_scc_integr_integration_message</tablename>
+    </sys_auto_flush>
+</record_update>

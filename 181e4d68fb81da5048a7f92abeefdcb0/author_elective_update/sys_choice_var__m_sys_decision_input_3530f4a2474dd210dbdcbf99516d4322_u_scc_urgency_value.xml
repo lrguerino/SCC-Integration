@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_scc_urgency_value" table="var__m_sys_decision_input_3530f4a2474dd210dbdcbf99516d4322" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_scc_urgency_value</element>
+            <name>var__m_sys_decision_input_3530f4a2474dd210dbdcbf99516d4322</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+            <sys_created_on>2024-10-07 15:37:05</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_scc_urgency_value</sys_name>
+            <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+            <sys_update_name>sys_choice_var__m_sys_decision_input_3530f4a2474dd210dbdcbf99516d4322_u_scc_urgency_value</sys_update_name>
+            <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+            <sys_updated_on>2024-10-07 15:37:05</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_scc_urgency_value</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>High</label>
+            <language>en</language>
+            <name>var__m_sys_decision_input_3530f4a2474dd210dbdcbf99516d4322</name>
+            <sequence>10</sequence>
+            <synonyms/>
+            <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+            <sys_created_on>2024-10-07 15:37:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+            <sys_updated_on>2024-10-07 15:37:05</sys_updated_on>
+            <u_priority/>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_scc_urgency_value</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Medium</label>
+            <language>en</language>
+            <name>var__m_sys_decision_input_3530f4a2474dd210dbdcbf99516d4322</name>
+            <sequence>20</sequence>
+            <synonyms/>
+            <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+            <sys_created_on>2024-10-07 15:37:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+            <sys_updated_on>2024-10-07 15:37:05</sys_updated_on>
+            <u_priority/>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_scc_urgency_value</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Low</label>
+            <language>en</language>
+            <name>var__m_sys_decision_input_3530f4a2474dd210dbdcbf99516d4322</name>
+            <sequence>30</sequence>
+            <synonyms/>
+            <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+            <sys_created_on>2024-10-07 15:37:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+            <sys_updated_on>2024-10-07 15:37:06</sys_updated_on>
+            <u_priority/>
+            <value>3</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_flow_designer_co_template">
+    <sys_hub_flow_designer_co_template action="DELETE">
+        <active>true</active>
+        <complex_definition>FD602467c6144592109d00a9a84224f67a</complex_definition>
+        <sys_class_name>sys_hub_flow_designer_co_template</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-06 15:43:21</sys_created_on>
+        <sys_id>33082f8a47459210dbdcbf99516d43a5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SCC Ticket</sys_name>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name>sys_hub_flow_designer_co_template_33082f8a47459210dbdcbf99516d43a5</sys_update_name>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-06 15:43:21</sys_updated_on>
+        <template_label>SCC Ticket</template_label>
+        <template_name>scc_ticket</template_name>
+    </sys_hub_flow_designer_co_template>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</application>
+        <file_path/>
+        <instance_id>23dcc1eddb2980982f68c59705961996</instance_id>
+        <instance_name>tipdev</instance_name>
+        <name>sys_hub_flow_designer_co_template_33082f8a47459210dbdcbf99516d43a5</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_flow_designer_co_template"><sys_hub_flow_designer_co_template action="INSERT_OR_UPDATE"><active>true</active><complex_definition>FD602467c6144592109d00a9a84224f67a</complex_definition><sys_class_name>sys_hub_flow_designer_co_template</sys_class_name><sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by><sys_created_on>2024-10-06 15:43:21</sys_created_on><sys_id>33082f8a47459210dbdcbf99516d43a5</sys_id><sys_mod_count>0</sys_mod_count><sys_name>SCC Ticket</sys_name><sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package><sys_policy/><sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope><sys_update_name>sys_hub_flow_designer_co_template_33082f8a47459210dbdcbf99516d43a5</sys_update_name><sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by><sys_updated_on>2024-10-06 15:43:21</sys_updated_on><template_label>SCC Ticket</template_label><template_name>scc_ticket</template_name></sys_hub_flow_designer_co_template></record_update>]]></payload>
+        <payload_hash>-601064875</payload_hash>
+        <record_name>SCC Ticket</record_name>
+        <reverted_from/>
+        <source>901e8da8fb81da5048a7f92abeefdc84</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-06 15:43:21</sys_created_on>
+        <sys_id>77086fca47459210dbdcbf99516d431f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>192627fe25c0000001</sys_recorded_at>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-06 15:43:21</sys_updated_on>
+        <type>Flow Designer Complex Object Templates</type>
+        <update_guid>37082f8a654592108c9d20dc93f2d5a6</update_guid>
+        <update_guid_history>37082f8a654592108c9d20dc93f2d5a6:-601064875</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-07 09:40:03</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_flow_designer_co_template">sys_hub_flow_designer_co_template</sys_db_object>
+        <sys_id>1f79c936a3704a6080a897a9e3d36310</sys_id>
+        <sys_metadata>33082f8a47459210dbdcbf99516d43a5</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SCC Ticket</sys_name>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_scope_delete display_value="">63962075f8cc4b24874e8760587c3204</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_designer_co_template_33082f8a47459210dbdcbf99516d43a5</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_designer_co_template_33082f8a47459210dbdcbf99516d43a5">77086fca47459210dbdcbf99516d431f</sys_update_version>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-07 09:40:03</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

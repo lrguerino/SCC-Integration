@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_tipts_scc_integr_trigger_definition" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>active</element>
+            <list_id display_value="x_tipts_scc_integr_trigger_definition" element="NULL" name="x_tipts_scc_integr_trigger_definition" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">37b62ab8fb011690f24ffcdcbeefdc23</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+            <sys_created_on>2024-10-02 13:45:36</sys_created_on>
+            <sys_id>77b62ab8fb011690f24ffcdcbeefdc24</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+            <sys_updated_on>2024-10-02 13:45:36</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>direction</element>
+            <list_id display_value="x_tipts_scc_integr_trigger_definition" element="NULL" name="x_tipts_scc_integr_trigger_definition" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">37b62ab8fb011690f24ffcdcbeefdc23</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+            <sys_created_on>2024-10-02 13:45:36</sys_created_on>
+            <sys_id>7fb62ab8fb011690f24ffcdcbeefdc24</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+            <sys_updated_on>2024-10-02 13:45:36</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>integration_control</element>
+            <list_id display_value="x_tipts_scc_integr_trigger_definition" element="NULL" name="x_tipts_scc_integr_trigger_definition" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">37b62ab8fb011690f24ffcdcbeefdc23</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+            <sys_created_on>2024-10-02 13:45:36</sys_created_on>
+            <sys_id>73b62ab8fb011690f24ffcdcbeefdc25</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+            <sys_updated_on>2024-10-02 13:45:36</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>transaction_type</element>
+            <list_id display_value="x_tipts_scc_integr_trigger_definition" element="NULL" name="x_tipts_scc_integr_trigger_definition" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">37b62ab8fb011690f24ffcdcbeefdc23</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+            <sys_created_on>2024-10-02 13:45:36</sys_created_on>
+            <sys_id>77b62ab8fb011690f24ffcdcbeefdc25</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+            <sys_updated_on>2024-10-02 13:45:36</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_tipts_scc_integr_trigger_definition</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+            <sys_created_on>2024-10-02 13:45:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>37b62ab8fb011690f24ffcdcbeefdc23</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_tipts_scc_integr_trigger_definition</sys_name>
+            <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+            <sys_update_name>sys_ui_list_x_tipts_scc_integr_trigger_definition_null</sys_update_name>
+            <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+            <sys_updated_on>2024-10-02 13:45:36</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

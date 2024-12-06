@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision_delta">
+    <sys_decision_delta action="DELETE">
+        <access>public</access>
+        <active>false</active>
+        <answer_table>sys_decision_multi_result</answer_table>
+        <answer_type>reference</answer_type>
+        <delta/>
+        <description/>
+        <enable_publishing>false</enable_publishing>
+        <label/>
+        <name>Translate SCC Impact delta</name>
+        <parent display_value="Translate SCC Impact">522ce42e470dd210dbdcbf99516d430e</parent>
+        <reference_qualifier/>
+        <status>draft</status>
+        <sys_class_name>sys_decision_delta</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-08 12:30:26</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5d1f0932fb89161048a7f92abeefdcb0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Translate SCC Impact delta</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name>sys_decision_delta_5d1f0932fb89161048a7f92abeefdcb0</sys_update_name>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-08 12:30:26</sys_updated_on>
+    </sys_decision_delta>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</application>
+        <file_path/>
+        <instance_id>23dcc1eddb2980982f68c59705961996</instance_id>
+        <instance_name>tipdev</instance_name>
+        <name>sys_decision_delta_5d1f0932fb89161048a7f92abeefdcb0</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision_delta"><sys_decision_delta action="INSERT_OR_UPDATE"><access>public</access><active>false</active><answer_table>sys_decision_multi_result</answer_table><answer_type>reference</answer_type><delta/><description/><enable_publishing>false</enable_publishing><label/><name>Translate SCC Impact delta</name><parent display_value="Translate SCC Impact">522ce42e470dd210dbdcbf99516d430e</parent><reference_qualifier/><status>draft</status><sys_class_name>sys_decision_delta</sys_class_name><sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by><sys_created_on>2024-10-08 12:30:26</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>5d1f0932fb89161048a7f92abeefdcb0</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Translate SCC Impact delta</sys_name><sys_overrides/><sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package><sys_policy/><sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope><sys_update_name>sys_decision_delta_5d1f0932fb89161048a7f92abeefdcb0</sys_update_name><sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by><sys_updated_on>2024-10-08 12:30:26</sys_updated_on></sys_decision_delta></record_update>]]></payload>
+        <payload_hash>1007253097</payload_hash>
+        <record_name>Translate SCC Impact delta</record_name>
+        <reverted_from/>
+        <source>901e8da8fb81da5048a7f92abeefdc84</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-08 12:30:26</sys_created_on>
+        <sys_id>151f0932fb89161048a7f92abeefdcb4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1926c1bfc740000001</sys_recorded_at>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-08 12:30:26</sys_updated_on>
+        <type>Delta Decision Table</type>
+        <update_guid>d51f0932a7891610fb05813fa5f96cb3</update_guid>
+        <update_guid_history>d51f0932a7891610fb05813fa5f96cb3:1007253097</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-08 12:31:16</sys_created_on>
+        <sys_db_object display_value="" name="sys_decision_delta">sys_decision_delta</sys_db_object>
+        <sys_id>1c9dc58607b04ad2a8b324927c131aa9</sys_id>
+        <sys_metadata>5d1f0932fb89161048a7f92abeefdcb0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Translate SCC Impact delta</sys_name>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_scope_delete display_value="">63962075f8cc4b24874e8760587c3204</sys_scope_delete>
+        <sys_update_name>sys_decision_delta_5d1f0932fb89161048a7f92abeefdcb0</sys_update_name>
+        <sys_update_version display_value="sys_decision_delta_5d1f0932fb89161048a7f92abeefdcb0">151f0932fb89161048a7f92abeefdcb4</sys_update_version>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-08 12:31:16</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_tipts_scc_integr.SCCInbound</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>The SCCInbound library serves as a utility library for the SCC Integration application. It provides a collection of reusable functions that are commonly required across the Scripted REST inbound functionality.</description>
+        <mobile_callable>false</mobile_callable>
+        <name>SCCInbound</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var SCCInbound = Class.create();
+SCCInbound.prototype = {
+
+    initialize: function (payload /* Serialised Payload Object: RESTAPIRequestBody.data*/) {
+		if (gs.nil(payload)) {
+			throw new Error("payload is nil in initialize");
+		}
+        this.data = payload;
+		this.outputs = {};
+	},
+
+	getInputs: function () {
+		return {
+			original_request_payload: JSON.stringify(this.data),
+			scc_ticket: this.data
+		};
+	},
+
+	processRequest: function () {
+		this.outputs = sn_fd.FlowAPI.getRunner().subflow(
+            SCCConstants.DEFAULT_WS_SUBFLOW
+        ).inForeground().withInputs(this.getInputs()).run().getOutputs();
+		return this;
+	},
+
+	getMessage: function () {
+		return this.outputs.message;
+	},
+
+	getHTTPCode: function () {
+		return this.getMessage().getValue("http_status_code");
+	},
+
+	getErrorText: function () {
+		return this.getMessage().getValue("http_response_body");
+	},
+
+	hasError: function () {
+		return this.outputs.has_error;
+	},
+
+	getServiceError: function () {
+		const error = new sn_ws_err.ServiceError();
+        error.setStatus(this.getHTTPCode());
+        error.setMessage("Inbound Transaction Error");
+        error.setDetail(this.getErrorText());
+        return error;
+	},
+	
+	getSuccessfulResponse: function () {
+		return JSON.stringify({
+            tipNumber: this.outputs.tip_number,
+            tipSysId: this.outputs.tip_id,
+            message: this.outputs.success_message
+        }, null, 3);
+	},
+
+	validatePayload: function (payloadFields /*array*/) {
+        let errorsFound = [];
+        try {
+			if (gs.nil(this.data)) {
+                return this._buildErrorResult("The request body is not present or has no properties at all");
+            }
+            if (Object.keys(this.data).length === 0) {
+                return this._buildErrorResult("The request body is not present or has no properties at all");
+            }
+			if (gs.nil(payloadFields)) {
+				payloadFields = [];
+			}
+			if (!Array.isArray(payloadFields)) {
+				payloadFields = payloadFields.split(",");
+			}
+            payloadFields.forEach((name) => {
+                if (!this.data.hasOwnProperty(name) || !this.data[name] || gs.nil(this.data[name])) {
+                    errorsFound.push(name);
+                }
+            });
+            if (errorsFound.length === 1) {
+                return this._buildErrorResult(`The attribute ${errorsFound} is not present or blank in the request body`);
+            } else if (errorsFound.length > 1) {
+                return this._buildErrorResult(`The following attributes are not present or blank in the request body: ${errorsFound.join(", ")}`);
+            } else {
+				return { 
+					has_error: false, 
+					error_message: "" 
+				};  // Only return success if no errors are found
+			}
+        } catch (error) {
+            return this._buildErrorResult(error);
+        }
+    },
+
+	_buildErrorResult: function (message) {
+        return {
+            has_error: true,
+            error_message: message
+        };
+    },
+
+    type: "SCCInbound"
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-05 12:03:44</sys_created_on>
+        <sys_id>5f7b6d35474d1210dbdcbf99516d4351</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_name>SCCInbound</sys_name>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name>sys_script_include_5f7b6d35474d1210dbdcbf99516d4351</sys_update_name>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-11-13 09:04:53</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>5f7b6d35474d1210dbdcbf99516d4351</id>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-11-13 09:04:50</sys_created_on>
+        <sys_id>b4497d52fbb19210f24ffcdcbeefdcd0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-11-13 09:04:50</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

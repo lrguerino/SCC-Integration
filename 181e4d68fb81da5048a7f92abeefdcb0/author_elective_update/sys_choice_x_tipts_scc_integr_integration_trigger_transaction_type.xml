@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="transaction_type" table="x_tipts_scc_integr_integration_trigger" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>transaction_type</element>
+            <name>x_tipts_scc_integr_integration_trigger</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+            <sys_created_on>2024-10-02 13:53:04</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>transaction_type</sys_name>
+            <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+            <sys_update_name>sys_choice_x_tipts_scc_integr_integration_trigger_transaction_type</sys_update_name>
+            <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+            <sys_updated_on>2024-10-02 13:53:04</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>Inbound</dependent_value>
+            <element>transaction_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Create Ticket</label>
+            <language>en</language>
+            <name>x_tipts_scc_integr_integration_trigger</name>
+            <sequence>10</sequence>
+            <synonyms/>
+            <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+            <sys_created_on>2024-10-10 08:52:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+            <sys_updated_on>2024-10-10 08:52:58</sys_updated_on>
+            <u_priority/>
+            <value>create</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>Outbound</dependent_value>
+            <element>transaction_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Create Ticket</label>
+            <language>en</language>
+            <name>x_tipts_scc_integr_integration_trigger</name>
+            <sequence>10</sequence>
+            <synonyms/>
+            <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+            <sys_created_on>2024-10-02 13:53:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+            <sys_updated_on>2024-10-10 08:52:00</sys_updated_on>
+            <u_priority/>
+            <value>create</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>Inbound</dependent_value>
+            <element>transaction_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Update Ticket</label>
+            <language>en</language>
+            <name>x_tipts_scc_integr_integration_trigger</name>
+            <sequence>20</sequence>
+            <synonyms/>
+            <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+            <sys_created_on>2024-10-10 08:53:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+            <sys_updated_on>2024-10-10 08:53:09</sys_updated_on>
+            <u_priority/>
+            <value>update</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>Outbound</dependent_value>
+            <element>transaction_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Update Priority</label>
+            <language>en</language>
+            <name>x_tipts_scc_integr_integration_trigger</name>
+            <sequence>20</sequence>
+            <synonyms/>
+            <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+            <sys_created_on>2024-10-02 13:53:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>18</sys_mod_count>
+            <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+            <sys_updated_on>2024-10-10 08:52:00</sys_updated_on>
+            <u_priority/>
+            <value>updatePriority</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>Outbound</dependent_value>
+            <element>transaction_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Reassign Ticket</label>
+            <language>en</language>
+            <name>x_tipts_scc_integr_integration_trigger</name>
+            <sequence>30</sequence>
+            <synonyms/>
+            <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+            <sys_created_on>2024-10-02 13:54:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>20</sys_mod_count>
+            <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+            <sys_updated_on>2024-10-10 08:52:00</sys_updated_on>
+            <u_priority/>
+            <value>reassign</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>Inbound</dependent_value>
+            <element>transaction_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Reopen Ticket</label>
+            <language>en</language>
+            <name>x_tipts_scc_integr_integration_trigger</name>
+            <sequence>30</sequence>
+            <synonyms/>
+            <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+            <sys_created_on>2024-10-10 08:53:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+            <sys_updated_on>2024-10-10 08:53:22</sys_updated_on>
+            <u_priority/>
+            <value>reopen</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>Outbound</dependent_value>
+            <element>transaction_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Reopen Ticket</label>
+            <language>en</language>
+            <name>x_tipts_scc_integr_integration_trigger</name>
+            <sequence>40</sequence>
+            <synonyms/>
+            <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+            <sys_created_on>2024-10-02 16:08:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>9</sys_mod_count>
+            <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+            <sys_updated_on>2024-10-10 08:52:00</sys_updated_on>
+            <u_priority/>
+            <value>reopen</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>Inbound</dependent_value>
+            <element>transaction_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Resolve Ticket</label>
+            <language>en</language>
+            <name>x_tipts_scc_integr_integration_trigger</name>
+            <sequence>40</sequence>
+            <synonyms/>
+            <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+            <sys_created_on>2024-10-10 08:53:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+            <sys_updated_on>2024-10-10 08:55:03</sys_updated_on>
+            <u_priority/>
+            <value>resolve</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>Outbound</dependent_value>
+            <element>transaction_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Resolve Ticket</label>
+            <language>en</language>
+            <name>x_tipts_scc_integr_integration_trigger</name>
+            <sequence>45</sequence>
+            <synonyms/>
+            <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+            <sys_created_on>2024-10-05 10:57:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>6</sys_mod_count>
+            <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+            <sys_updated_on>2024-10-10 08:52:00</sys_updated_on>
+            <u_priority/>
+            <value>resolve</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>Outbound</dependent_value>
+            <element>transaction_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Add Comments</label>
+            <language>en</language>
+            <name>x_tipts_scc_integr_integration_trigger</name>
+            <sequence>50</sequence>
+            <synonyms/>
+            <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+            <sys_created_on>2024-10-02 16:00:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>10</sys_mod_count>
+            <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+            <sys_updated_on>2024-10-10 08:52:00</sys_updated_on>
+            <u_priority/>
+            <value>addComments</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>Inbound</dependent_value>
+            <element>transaction_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Reassign Ticket</label>
+            <language>en</language>
+            <name>x_tipts_scc_integr_integration_trigger</name>
+            <sequence>50</sequence>
+            <synonyms/>
+            <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+            <sys_created_on>2024-10-30 12:20:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+            <sys_updated_on>2024-10-30 12:20:39</sys_updated_on>
+            <u_priority/>
+            <value>reassign</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>Outbound</dependent_value>
+            <element>transaction_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Add Notes</label>
+            <language>en</language>
+            <name>x_tipts_scc_integr_integration_trigger</name>
+            <sequence>60</sequence>
+            <synonyms/>
+            <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+            <sys_created_on>2024-10-04 08:29:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+            <sys_updated_on>2024-10-10 08:52:00</sys_updated_on>
+            <u_priority/>
+            <value>addNotes</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>Outbound</dependent_value>
+            <element>transaction_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Add Attachment</label>
+            <language>en</language>
+            <name>x_tipts_scc_integr_integration_trigger</name>
+            <sequence>80</sequence>
+            <synonyms/>
+            <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+            <sys_created_on>2024-10-02 16:00:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>9</sys_mod_count>
+            <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+            <sys_updated_on>2024-10-10 08:52:00</sys_updated_on>
+            <u_priority/>
+            <value>addAttachment</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

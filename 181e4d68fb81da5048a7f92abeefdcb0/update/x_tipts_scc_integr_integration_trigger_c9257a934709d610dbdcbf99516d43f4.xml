@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="x_tipts_scc_integr_integration_trigger">
+    <x_tipts_scc_integr_integration_trigger action="INSERT_OR_UPDATE">
+        <condition/>
+        <direction>Inbound</direction>
+        <integration_control display_value="SCC - Incident Integration">2db4e6f4fb011690f24ffcdcbeefdcc0</integration_control>
+        <name>Inbound - Incident - Create</name>
+        <processing_subflow display_value="Create SCC Inbound Incident">2f9b8dfafb49161048a7f92abeefdc42</processing_subflow>
+        <sys_class_name>x_tipts_scc_integr_integration_trigger</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-10 09:13:17</sys_created_on>
+        <sys_id>c9257a934709d610dbdcbf99516d43f4</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Inbound - Incident - Create</sys_name>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name>x_tipts_scc_integr_integration_trigger_c9257a934709d610dbdcbf99516d43f4</sys_update_name>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-30 17:00:20</sys_updated_on>
+        <table>incident</table>
+        <transaction_type>create</transaction_type>
+    </x_tipts_scc_integr_integration_trigger>
+</record_update>

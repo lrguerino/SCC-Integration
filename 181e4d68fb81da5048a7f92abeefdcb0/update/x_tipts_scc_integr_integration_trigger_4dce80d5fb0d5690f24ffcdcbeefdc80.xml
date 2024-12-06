@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="x_tipts_scc_integr_integration_trigger">
+    <x_tipts_scc_integr_integration_trigger action="INSERT_OR_UPDATE">
+        <condition table="incident">active=true^correlation_idISNOTEMPTY^correlation_display=SCC-INTEGRATION^sys_updated_by!=scc_connector_service_account^impactVALCHANGES^ORurgencyVALCHANGES^ORpriorityVALCHANGES^EQ<item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item endquery="false" field="correlation_id" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="false" field="correlation_display" goto="false" newquery="false" operator="=" or="false" value="SCC-INTEGRATION"/>
+            <item endquery="false" field="sys_updated_by" goto="false" newquery="false" operator="!=" or="false" value="scc_connector_service_account"/>
+            <item endquery="false" field="impact" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+            <item endquery="false" field="urgency" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
+            <item display_value="-- None --" endquery="false" field="priority" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <direction>Outbound</direction>
+        <integration_control display_value="SCC - Incident Integration">2db4e6f4fb011690f24ffcdcbeefdcc0</integration_control>
+        <name>Outbound - Incident - Priority Update</name>
+        <processing_subflow/>
+        <sys_class_name>x_tipts_scc_integr_integration_trigger</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-03 15:58:33</sys_created_on>
+        <sys_id>4dce80d5fb0d5690f24ffcdcbeefdc80</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Outbound - Incident - Priority Update</sys_name>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name>x_tipts_scc_integr_integration_trigger_4dce80d5fb0d5690f24ffcdcbeefdc80</sys_update_name>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-07 17:31:56</sys_updated_on>
+        <table>incident</table>
+        <transaction_type>updatePriority</transaction_type>
+    </x_tipts_scc_integr_integration_trigger>
+</record_update>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_style">
+    <sys_ui_style action="INSERT_OR_UPDATE">
+        <alt/>
+        <element>active</element>
+        <name>x_tipts_scc_integr_integration_control</name>
+        <style>background-color:red;</style>
+        <sys_class_name>sys_ui_style</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-03 11:59:59</sys_created_on>
+        <sys_id>2628d3c1fb095690f24ffcdcbeefdc06</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_tipts_scc_integr_integration_control</sys_name>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name>sys_ui_style_2628d3c1fb095690f24ffcdcbeefdc06</sys_update_name>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-03 11:59:59</sys_updated_on>
+        <themed_style/>
+        <value>0</value>
+    </sys_ui_style>
+    <sys_translated_text action="delete_multiple" query="documentkey=2628d3c1fb095690f24ffcdcbeefdc06"/>
+</record_update>

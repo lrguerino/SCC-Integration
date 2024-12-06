@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_dictionary action="INSERT_OR_UPDATE" element="advanced_mapping" table="x_tipts_scc_integr_integration_mapping">
+        <active>true</active>
+        <array>false</array>
+        <attributes/>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label>Advanced Mapping</column_label>
+        <comments/>
+        <create_roles/>
+        <default_value>/*______________________________________________________________________________________________&#13;
+* Description:&#13;
+*    - Used to translate the HTTP headers and body into the message record for bonding&#13;
+* Parameters: &#13;
+*    - current (GlideRecord): This mapping record&#13;
+*    - trigger (GlideRecord): Trigger record that triggered this mapping&#13;
+*    - target (GlideRecord): Target record based on the table of this mapping&#13;
+*    - task (GlideRecord): Underlying task record record based on the target record&#13;
+* Returns:&#13;
+*    - Any Type as it will be stringified&#13;
+ ________________________________________________________________________________________________*/&#13;
+(function process(current, trigger, target, task) {&#13;
+&#13;
+	// Add your code here&#13;
+	return;&#13;
+	&#13;
+}(current, trigger, target, task));</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>advanced_mapping</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <internal_type display_value="Script">script</internal_type>
+        <mandatory>false</mandatory>
+        <max_length>5000</max_length>
+        <name>x_tipts_scc_integr_integration_mapping</name>
+        <next_element/>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_dictionary</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 14:27:57</sys_created_on>
+        <sys_name>Advanced Mapping</sys_name>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name>sys_dictionary_x_tipts_scc_integr_integration_mapping_advanced_mapping</sys_update_name>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-07 18:13:04</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_dictionary>
+</record_update>

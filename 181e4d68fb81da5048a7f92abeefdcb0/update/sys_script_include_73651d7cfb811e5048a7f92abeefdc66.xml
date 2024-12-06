@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_tipts_scc_integr.SCCHelper</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>The SCCHelper library serves as a utility library for the SCC Integration application. It provides a collection of reusable functions that are commonly required across the application, promoting code reuse and simplifying development. By centralizing these functions, the helper class reduces redundancy, making the application easier to maintain and extend. Functions in this Script Include are designed to assist with tasks such as data transformations, API interactions, and other operational logic.</description>
+        <mobile_callable>false</mobile_callable>
+        <name>SCCHelper</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[const SCCHelper = Class.create();
+SCCHelper.prototype = {
+
+    initialize: function () { },
+
+    /*_____________________________________________________________________________________________
+     * Description:
+     *    - Checks if a given table extends the task table
+     * Parameters: 
+     *    - tableName (string): The name of the table to check against
+     * Returns:
+     *    - boolean: True if the table extends the task table, false when not.
+     _______________________________________________________________________________________________*/
+    isTaskTable: function (tableName) {
+        if (gs.nil(tableName)) {
+            gs.error("tableName is nil in isTaskTable");
+            return false;
+        }
+        return new GlideTableHierarchy(tableName).getRoot() === SCCConstants.TABLES.TASK;
+    },
+
+    /*_____________________________________________________________________________________________
+     * Description:
+     *    - Checks if a given record has a trigger for the integration
+     * Parameters: 
+     *    - record (GlideRecord): Any GlideRecord
+     *    - table (string): The name of the table to check against
+     *    - taskTable (string): Name of the underlying task table
+     * Returns:
+     *    - object: {found: boolean, trigger: array of trigger Ids}
+     _______________________________________________________________________________________________*/
+    findTrigger: function (record, table, direction, taskTable) {
+        const triggerList = [];
+        const output = {
+            success: false,
+            trigger: triggerList
+        };
+        if (gs.nil(record)) {
+            gs.error("record nil in findTrigger");
+            return output;
+        }
+        if (gs.nil(table)) {
+            gs.error("tableName nil in findTrigger");
+            return output;
+        }
+        if (gs.nil(direction)) {
+            gs.error("direction nil in findTrigger");
+            return output;
+        }
+        if (gs.nil(taskTable)) {
+            taskTable = table;
+        }
+        const triggerRecord = new GlideRecord(SCCConstants.TABLES.TRIGGER);
+        triggerRecord.addQuery("integration_control.active", true);
+        triggerRecord.addQuery("integration_control.table", taskTable);
+        triggerRecord.addQuery("table", table);
+        triggerRecord.addQuery("direction", direction);
+        triggerRecord.query();
+        while (triggerRecord.next()) {
+            if (GlideFilter.checkRecord(record, triggerRecord.getValue("condition"))) {
+                triggerList.push(triggerRecord.getUniqueValue());
+            }
+        }
+        if (triggerList.length > 0) {
+            output.success = true;
+            output.trigger = triggerList;
+        }
+        return output;
+    },
+
+    /*_____________________________________________________________________________________________
+     * Description:
+     *    - Retrieves a task record based on its sys_id
+     * Parameters: 
+     *    - sysId (string): Sys id of a task record
+     * Returns:
+     *    - GlideRecord: The task record corresponding to the given sys_id, or undefined if not found.
+     _______________________________________________________________________________________________*/
+    getTargetRecordByID: function (sysId) {
+        if (gs.nil(sysId)) {
+            gs.error("sysId is nil in getTargetRecordByID");
+            return;
+        }
+        const target = new GlideRecord(SCCConstants.TABLES.TASK);
+        if (!target.get(sysId)) {
+            return;
+        }
+        return target;
+    },
+
+    /*_____________________________________________________________________________________________
+     * Description:
+     *    - Retrieves a trigger record based on direction, transaction type and table name.
+     * Parameters: 
+     *    - direction (string): SCCConstants.DIRECTION
+     *    - transactionType: SCCConstants.TRANSACTION_TYPE
+     *    - tableName (string): Name of the table to filter trigger by - Might differ from Control table
+     *    - taskTable (string): Name of the underlying task table
+     * Returns:
+     *    - GlideRecord: The first matching trigger record, or an empty string if no record is found.
+     _______________________________________________________________________________________________*/
+    getTrigger: function (direction, transactionType, tableName, taskTable) {
+        if (gs.nil(direction)) {
+            gs.error("direction nil in getTrigger");
+            return;
+        }
+        if (gs.nil(transactionType)) {
+            gs.error("transactionType nil in getTrigger");
+            return;
+        }
+        if (gs.nil(tableName)) {
+            gs.error("tableName nil in getTrigger");
+            return;
+        }
+        const triggerRecord = new GlideRecord(SCCConstants.TABLES.TRIGGER);
+        triggerRecord.addQuery("integration_control.active", true);
+        triggerRecord.addQuery("integration_control.table", taskTable);
+        triggerRecord.addQuery("table", tableName);
+        triggerRecord.addQuery("direction", direction);
+        triggerRecord.addQuery("transaction_type", transactionType);
+        triggerRecord.setLimit(1);
+        triggerRecord.query();
+        return (triggerRecord.next()) ? triggerRecord : "";
+    },
+
+    /*_____________________________________________________________________________________________
+     * Description:
+     *    - Retrieves a trigger record based on its sys_id
+     * Parameters: 
+     *    - triggerId (string): Sys id of a trigger record
+     * Returns:
+     *    - GlideRecord: The trigger record
+     _______________________________________________________________________________________________*/
+    getTriggerById: function (triggerId) {
+        if (gs.nil(triggerId)) {
+            gs.error("triggerId nil in getTriggerById");
+            return;
+        }
+        const triggerRecord = new GlideRecord(SCCConstants.TABLES.TRIGGER);
+        triggerRecord.get(triggerId);
+        return triggerRecord;
+    },
+
+	/*_____________________________________________________________________________________________
+	* Description:
+	*    - Retrieves a list of variables for a given requested item (RITM) record, including 
+	*      multi-row variable sets, and formats them for output.
+	* Parameters: 
+	*    - ritmRecord (GlideRecord): GlideRecord object representing the requested item record (RITM).
+	* Returns:
+	*    - string: A formatted string listing the variables and their values, with multi-row 
+	*      variables organized by rows.
+	* Notes:
+	*    - Ensures ritmRecord is a valid RITM record; if invalid, returns an empty string and logs an error.
+	*    - Removes any extraneous characters (e.g., question marks) from the output.
+	_______________________________________________________________________________________________*/
+    getVariables: function (ritmRecord) {
+		if (gs.nil(ritmRecord)) {
+			gs.error("Invalid RITM record in getVariables");
+			return "";
+		}
+		// Helper function for formatting single-row variables
+		const formatSingleRowVariable = (label, displayValue) => {
+			return `${label.trim()}: ${displayValue.trim()}`;
+		};
+		// Helper function for replacing unnecessary characters in the final output
+		const replaceExtraCharacters = (text) => {
+			return text.replaceAll("?", "").replaceAll("::", ":");
+		};
+		// Helper function for formatting multi-row variables
+		const formatMultiRow = (row) => {
+			const rowOutput = [];
+			row.getCells().forEach(cell => {
+				const label = cell.getLabel();
+				const displayValue = cell.getCellDisplayValue();
+				if (!gs.nil(label) && !gs.nil(displayValue)) {
+					rowOutput.push(formatSingleRowVariable(label, displayValue));
+				}
+			});
+			return rowOutput.join("\n");
+		};
+		// Get a list of GlideElementVariable for variables (including multi-row variable set)
+		const vars = ritmRecord.variables.getElements(true);
+		const output = [];
+		// Process each variable, checking if it is multi-row
+		vars.forEach(now_V => {
+			if (now_V.isMultiRow()) {
+				output.push("\n");
+				if (now_V.getRowCount() > 0) {
+					output.push(now_V.getLabel());
+				}
+				now_V.getRows().forEach(row => {
+					output.push("\n");
+					output.push(formatMultiRow(row));
+				});
+			} else {
+				const label = now_V.getQuestion().getLabel();
+				const displayValue = now_V.getQuestion().getDisplayValue();
+				if (!gs.nil(label) && !gs.nil(displayValue)) {
+					output.push(formatSingleRowVariable(label, displayValue));
+				}
+			}
+		});
+		return replaceExtraCharacters(output.join("\n"));
+	},
+
+    type: "SCCHelper"
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 07:55:25</sys_created_on>
+        <sys_id>73651d7cfb811e5048a7f92abeefdc66</sys_id>
+        <sys_mod_count>72</sys_mod_count>
+        <sys_name>SCCHelper</sys_name>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name>sys_script_include_73651d7cfb811e5048a7f92abeefdc66</sys_update_name>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-11-13 09:03:11</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>73651d7cfb811e5048a7f92abeefdc66</id>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-11-01 13:32:13</sys_created_on>
+        <sys_id>d8630126fba1da10f24ffcdcbeefdcf9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-11-01 13:32:13</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

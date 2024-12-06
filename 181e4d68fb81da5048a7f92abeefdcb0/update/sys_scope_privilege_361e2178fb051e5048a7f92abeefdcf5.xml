@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege">
+    <sys_scope_privilege action="INSERT_OR_UPDATE">
+        <operation>execute</operation>
+        <source_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</source_scope>
+        <status>allowed</status>
+        <sys_class_name>sys_scope_privilege</sys_class_name>
+        <sys_created_by>scc_connector_service_account</sys_created_by>
+        <sys_created_on>2024-10-02 09:38:08</sys_created_on>
+        <sys_id>361e2178fb051e5048a7f92abeefdcf5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>RESTAPIRequest</sys_name>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name>sys_scope_privilege_361e2178fb051e5048a7f92abeefdcf5</sys_update_name>
+        <sys_updated_by>scc_connector_service_account</sys_updated_by>
+        <sys_updated_on>2024-10-02 09:38:08</sys_updated_on>
+        <target_name>RESTAPIRequest</target_name>
+        <target_scope display_value="Global">global</target_scope>
+        <target_type>scriptable</target_type>
+    </sys_scope_privilege>
+</record_update>

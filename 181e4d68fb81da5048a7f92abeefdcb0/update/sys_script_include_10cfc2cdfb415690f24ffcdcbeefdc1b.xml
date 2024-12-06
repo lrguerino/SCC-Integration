@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_tipts_scc_integr.SCCTask</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>SCCTask</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[const SCCTask = Class.create();
+SCCTask.prototype = {
+
+    initialize: function (task /*GlideRecord of current task record*/) {
+		if (gs.nil(task)) {
+            return;
+        }
+        this.setTask(task);
+    },
+
+	/*_____________________________________________________________________________________________
+     * Description:
+     *    - Internal method to initialize the internal global attribute task
+     * Parameters: 
+     *    - task (GlideRecord): Current task record
+     * Returns:
+     *    - void
+     _______________________________________________________________________________________________*/
+    setTask: function (task) {
+		if (!(task instanceof GlideRecord)) {
+			gs.error("task is not a valid GlideRecord in setTask");
+			return;
+		}
+		if (!task.isValidRecord()) {
+			gs.error("task is not a valid task record in setTask");
+			return;
+		}
+		const tableName = task.getValue("sys_class_name");
+		if (!new SCCHelper().isTaskTable(tableName)) {
+			gs.error(`Table ${tableName} is not a valid task table in setTask`);
+			return;
+		}
+        this.task = task;
+		this.taskID = task.getUniqueValue();
+        this.taskDisplay = task.getDisplayValue();
+		this.table = tableName;
+    },
+
+	/*_____________________________________________________________________________________________
+     * Description:
+     *    - Retrieves the SCC ID id associated with a given task
+     * Returns:
+     *    - string
+     _______________________________________________________________________________________________*/
+	getSCCID: function () {
+		if (gs.nil(this.task)) {
+			gs.error("task is nil in getSCCID");
+			return "";
+		}
+		return this.task.getValue("correlation_id") || "";
+	},
+
+	/*_____________________________________________________________________________________________
+     * Description:
+     *    - Determines whether or not a given task has been bonded with SCC
+     * Returns:
+     *    - boolean: True if task is bonded, false when not
+     _______________________________________________________________________________________________*/
+	isBonded: function () {
+		if (gs.nil(this.task)) {
+			gs.error("task is nil in isBonded");
+			return false;
+		}
+		return this.getSCCID() && this.task.getValue("correlation_display") === SCCConstants.DEFAULT_CORRELATION_DISPLAY;
+	},
+
+	/*_____________________________________________________________________________________________
+     * Description:
+     *    - Determines whether or not a given task table is part of the integration control
+     * Returns:
+     *    - boolean: True if table is monitored, false when not.
+     _______________________________________________________________________________________________*/
+	isTaskInIntegration: function () {
+		if (gs.nil(this.task)) {
+            gs.error("task is nil in isTaskInIntegration");
+			return false;
+		}
+        const integrationControl = new GlideRecord(SCCConstants.TABLES.CONTROL);
+		integrationControl.addActiveQuery();
+        integrationControl.addQuery("table", this.table);
+		integrationControl.query();
+        return integrationControl.hasNext();
+    },
+
+    /*_____________________________________________________________________________________________
+     * Description:
+     *    - Checks if a given task record can be bonded with SCC
+     * Returns:
+     *    - boolean: True if the task record can, false when cannot.
+     _______________________________________________________________________________________________*/
+	canBondTask: function () {
+        if (gs.nil(this.task)) {
+            gs.error("task is nil in canBondTask");
+			return false;
+		}
+        if (!this.isTaskInIntegration()) {
+            return false;
+        }
+		const triggerFinder = new SCCHelper().findTrigger(this.task, this.table, SCCConstants.DIRECTION.OUTBOUND);
+		return triggerFinder.success;
+	},
+
+    /*_____________________________________________________________________________________________
+     * Description:
+     *    - Triggers the creation of a new task in the external system using an eBonding process.
+     * Returns:
+     *    - void
+     _______________________________________________________________________________________________*/
+    bondTask: function () {
+        if (!this.canBondTask()) {
+            return;
+        }
+		const triggerFinder = new SCCHelper().findTrigger(this.task, this.table, SCCConstants.DIRECTION.OUTBOUND);
+        if (!triggerFinder.success) {
+            return;
+        }
+		const triggerList = triggerFinder.trigger;
+		// We might have multiple conditions being met at the same time (reassignment/resolve etc.)
+		for (let i = 0; i < triggerList.length; i++) {
+			const triggerRecord = new SCCHelper().getTriggerById(triggerList[i]);
+			new SCCMessage().createNewMessage(triggerRecord, this.taskID);
+		}
+    },
+
+	/*_____________________________________________________________________________________________
+     * Description:
+     *    - Determines whether or not a new attachment can be ebonded with Jitterbit
+     * Parameters: 
+     *    - attachmentRecord (GlideRecord): Current attachment record record being created
+     * Returns:
+     *    - boolean
+     _______________________________________________________________________________________________*/
+    canBondAttachment: function (attachmentRecord) {
+		if (gs.nil(attachmentRecord)) {
+			gs.error("attachmentRecord is nil in canBondAttachment");
+			return false;
+		}
+		const triggerRecord = new SCCHelper().getTrigger(
+            SCCConstants.DIRECTION.OUTBOUND,
+            SCCConstants.TRANSACTION_TYPE.ADD_ATTACHMENT,
+            SCCConstants.TABLES.ATTACHMENT,
+			attachmentRecord.getValue("table_name")
+        );
+        if (!triggerRecord) {
+            return false;
+        }
+		if (!GlideFilter.checkRecord(attachmentRecord, triggerRecord.getValue("condition"))) {
+			return false;
+		}
+		if (gs.nil(this.task)) {
+			const taskRecord = new SCCHelper().getTargetRecordByID(
+                attachmentRecord.getValue("table_sys_id")
+            );
+            if (gs.nil(taskRecord)) {
+                return false;
+            }
+			this.setTask(taskRecord);
+		}
+        if (!this.isTaskInIntegration()) {
+            return false;
+        }
+		return this.isBonded();
+    },
+
+	/*_____________________________________________________________________________________________
+     * Description:
+     *    - Send a new attachment over to the Jitterbit system
+     * Parameters: 
+     *    - attachmentRecord (GlideRecord): Current attachment record being created
+     * Returns:
+     *    - void
+     _______________________________________________________________________________________________*/
+    bondNewAttachment: function (attachmentRecord) {
+		if (!this.canBondAttachment(attachmentRecord)) {
+			return;
+		}
+		const triggerRecord = new SCCHelper().getTrigger(
+            SCCConstants.DIRECTION.OUTBOUND,
+            SCCConstants.TRANSACTION_TYPE.ADD_ATTACHMENT,
+            SCCConstants.TABLES.ATTACHMENT,
+			attachmentRecord.getValue("table_name")
+        );
+        if (!triggerRecord) {
+            return false;
+        }
+		new SCCMessage().createNewMessage(triggerRecord, attachmentRecord.getUniqueValue());
+    },
+
+	/*_____________________________________________________________________________________________
+     * Description:
+     *    - Determines whether or not a new journal entry can be ebonded with Jitterbit
+     * Parameters: 
+     *    - journalRecord (GlideRecord): Current journal entry record being created
+     * Returns:
+     *    - boolean
+     _______________________________________________________________________________________________*/
+    canBondNewComment: function (journalRecord) {
+		if (gs.nil(journalRecord)) {
+			gs.error("journalRecord is nil in canBondNewComment");
+			return false;
+		}
+		const triggerRecord = new SCCHelper().getTrigger(
+            SCCConstants.DIRECTION.OUTBOUND,
+            SCCConstants.TRANSACTION_TYPE.ADD_COMMENTS,
+            SCCConstants.TABLES.JOURNAL,
+			journalRecord.getValue("name")
+        );
+        if (!triggerRecord) {
+            return false;
+        }
+		if (!GlideFilter.checkRecord(journalRecord, triggerRecord.getValue("condition"))) {
+			return false;
+		}
+		if (gs.nil(this.task)) {
+			const taskRecord = new SCCHelper().getTargetRecordByID(
+                journalRecord.getValue("element_id")
+            );
+            if (gs.nil(taskRecord)) {
+                return false;
+            }
+			this.setTask(taskRecord);
+		}
+        if (!this.isTaskInIntegration()) {
+            return false;
+        }
+		return this.isBonded();
+    },
+
+	/*_____________________________________________________________________________________________
+     * Description:
+     *    - Send a new journal entry over to the Jitterbit system
+     * Parameters: 
+     *    - journalRecord (GlideRecord): Current journal entry record being created
+     * Returns:
+     *    - void
+     _______________________________________________________________________________________________*/
+    bondNewComment: function (journalRecord) {
+		if (!this.canBondNewComment(journalRecord)) {
+			return;
+		}
+		const triggerRecord = new SCCHelper().getTrigger(
+            SCCConstants.DIRECTION.OUTBOUND,
+            SCCConstants.TRANSACTION_TYPE.ADD_COMMENTS,
+            SCCConstants.TABLES.JOURNAL,
+			journalRecord.getValue("name")
+        );
+        if (!triggerRecord) {
+            return;
+        }
+		new SCCMessage().createNewMessage(triggerRecord, journalRecord.getUniqueValue());
+    },
+
+	/*_____________________________________________________________________________________________
+     * Description:
+     *    - Determines whether or not a new journal entry can be ebonded with Jitterbit
+     * Parameters: 
+     *    - journalRecord (GlideRecord): Current journal entry record being created
+     * Returns:
+     *    - boolean
+     _______________________________________________________________________________________________*/
+     canBondNewNote: function (journalRecord) {
+		if (gs.nil(journalRecord)) {
+			gs.error("journalRecord is nil in canBondNewNote");
+			return false;
+		}
+		const triggerRecord = new SCCHelper().getTrigger(
+            SCCConstants.DIRECTION.OUTBOUND,
+            SCCConstants.TRANSACTION_TYPE.ADD_NOTES,
+            SCCConstants.TABLES.JOURNAL,
+			journalRecord.getValue("name")
+        );
+        if (!triggerRecord) {
+            return false;
+        }
+		if (!GlideFilter.checkRecord(journalRecord, triggerRecord.getValue("condition"))) {
+			return false;
+		}
+		if (gs.nil(this.task)) {
+			const taskRecord = new SCCHelper().getTargetRecordByID(
+                journalRecord.getValue("element_id")
+            );
+            if (gs.nil(taskRecord)) {
+                return false;
+            }
+			this.setTask(taskRecord);
+		}
+        if (!this.isTaskInIntegration()) {
+            return false;
+        }
+		if (journalRecord.getValue("value").indexOf(SCCConstants.API_ERROR_PREFIX) >= 0) {
+			return false;
+		}
+        return this.isBonded();
+    },
+
+	/*_____________________________________________________________________________________________
+     * Description:
+     *    - Send a new journal entry over to the Jitterbit system
+     * Parameters: 
+     *    - journalRecord (GlideRecord): Current journal entry record being created
+     * Returns:
+     *    - void
+     _______________________________________________________________________________________________*/
+    bondNewNote: function (journalRecord) {
+		if (!this.canBondNewNote(journalRecord)) {
+			return;
+		}
+		const triggerRecord = new SCCHelper().getTrigger(
+            SCCConstants.DIRECTION.OUTBOUND,
+            SCCConstants.TRANSACTION_TYPE.ADD_NOTES,
+            SCCConstants.TABLES.JOURNAL,
+			journalRecord.getValue("name")
+        );
+        if (!triggerRecord) {
+            return;
+        }
+		new SCCMessage().createNewMessage(triggerRecord, journalRecord.getUniqueValue());
+    },
+
+    type: "SCCTask"
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-03 06:49:20</sys_created_on>
+        <sys_id>10cfc2cdfb415690f24ffcdcbeefdc1b</sys_id>
+        <sys_mod_count>82</sys_mod_count>
+        <sys_name>SCCTask</sys_name>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name>sys_script_include_10cfc2cdfb415690f24ffcdcbeefdc1b</sys_update_name>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-11-13 09:08:21</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>10cfc2cdfb415690f24ffcdcbeefdc1b</id>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-30 10:46:41</sys_created_on>
+        <sys_id>005a8a75fbe9d610f24ffcdcbeefdccf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-30 10:46:41</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

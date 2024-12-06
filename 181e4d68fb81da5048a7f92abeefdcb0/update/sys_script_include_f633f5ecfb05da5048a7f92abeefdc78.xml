@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_tipts_scc_integr.SCCConstants</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>The SCCConstants library stores static constant values used throughout the SCC Integration application. It centralises critical configuration keys, display names, error messages, and other constants to ensure consistency across the system. By isolating these values, the Script Include makes it easy to adjust settings or modify key properties without searching through multiple files, improving maintainability and reducing the risk of errors.</description>
+        <mobile_callable>false</mobile_callable>
+        <name>SCCConstants</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var SCCConstants = {
+	TABLES: {
+		CONTROL: "x_tipts_scc_integr_integration_control",
+		MAPPING: "x_tipts_scc_integr_integration_mapping",
+		TRIGGER: "x_tipts_scc_integr_integration_trigger",
+		MESSAGE: "x_tipts_scc_integr_integration_message",
+		USER: "sys_user",
+		COMPANY: "core_company",
+		TASK: "task",
+		INCIDENT: "incident",
+		JOURNAL: "sys_journal_field",
+		ATTACHMENT: "sys_attachment"
+	},
+	MESSAGE_STATUS: {
+        PROCESSING: "PROCESSING",
+        ERROR: "ERROR",
+        PROCESSED: "PROCESSED",
+		REPROCESSED: "REPROCESSED"
+    },
+	MAPPING_TYPE: {
+		FIELD: "Field Mapping",
+		CUSTOM_VALUE: "Custom Value",
+		SCRIPT: "Script"
+	},
+	DIRECTION: {
+		OUTBOUND: "Outbound",
+		INBOUND: "Inbound"
+	},
+	TRANSACTION_TYPE: {
+		CREATE: "create",
+		UPDATE_PRIORITY: "updatePriority",
+		REOPEN: "reopen",
+		RESOLVE: "resolve",
+		REASSIGN: "reassign",
+		ADD_COMMENTS: "addComments",
+		ADD_NOTES: "addNotes",
+		ADD_ATTACHMENT: "addAttachment"
+	},
+	DEFAULT_CORRELATION_DISPLAY: "SCC-INTEGRATION",
+	ERROR_WORKNOTE: (gs.getProperty("x_tipts_scc_integr.api.error_to_worknotes") === "true"),
+	DEFAULT_WS_SUBFLOW: "x_tipts_scc_integr.scc_entry_point",
+    API_ERROR_PREFIX: gs.getMessage("The SCC Integration has returned the following error")
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-01 15:22:39</sys_created_on>
+        <sys_id>f633f5ecfb05da5048a7f92abeefdc78</sys_id>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_name>SCCConstants</sys_name>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name>sys_script_include_f633f5ecfb05da5048a7f92abeefdc78</sys_update_name>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-11-13 09:03:06</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>f633f5ecfb05da5048a7f92abeefdc78</id>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-11-13 09:03:05</sys_created_on>
+        <sys_id>5fd87192fbb19210f24ffcdcbeefdcd9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-11-13 09:03:05</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

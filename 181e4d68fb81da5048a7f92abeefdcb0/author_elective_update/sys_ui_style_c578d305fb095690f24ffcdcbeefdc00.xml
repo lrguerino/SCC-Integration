@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_style">
+    <sys_ui_style action="DELETE">
+        <alt/>
+        <element>active</element>
+        <name>x_tipts_scc_integr_integration_trigger</name>
+        <style>background-color:LimeGreen</style>
+        <sys_class_name>sys_ui_style</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-03 12:01:15</sys_created_on>
+        <sys_id>c578d305fb095690f24ffcdcbeefdc00</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_tipts_scc_integr_integration_trigger</sys_name>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name>sys_ui_style_c578d305fb095690f24ffcdcbeefdc00</sys_update_name>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-03 12:01:15</sys_updated_on>
+        <themed_style/>
+        <value>1</value>
+    </sys_ui_style>
+    <sys_translated_text action="DELETE" query="documentkey=c578d305fb095690f24ffcdcbeefdc00"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</application>
+        <file_path/>
+        <instance_id>23dcc1eddb2980982f68c59705961996</instance_id>
+        <instance_name>tipdev</instance_name>
+        <name>sys_ui_style_c578d305fb095690f24ffcdcbeefdc00</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_style"><sys_ui_style action="INSERT_OR_UPDATE"><alt/><element>active</element><name>x_tipts_scc_integr_integration_trigger</name><style>background-color:LimeGreen</style><sys_class_name>sys_ui_style</sys_class_name><sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by><sys_created_on>2024-10-03 12:01:15</sys_created_on><sys_id>c578d305fb095690f24ffcdcbeefdc00</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_tipts_scc_integr_integration_trigger</sys_name><sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package><sys_policy/><sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope><sys_update_name>sys_ui_style_c578d305fb095690f24ffcdcbeefdc00</sys_update_name><sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by><sys_updated_on>2024-10-03 12:01:15</sys_updated_on><themed_style/><value>1</value></sys_ui_style><sys_translated_text action="delete_multiple" query="documentkey=c578d305fb095690f24ffcdcbeefdc00"/></record_update>]]></payload>
+        <payload_hash>992833370</payload_hash>
+        <record_name>x_tipts_scc_integr_integration_trigger</record_name>
+        <reverted_from/>
+        <source>901e8da8fb81da5048a7f92abeefdc84</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-03 12:01:15</sys_created_on>
+        <sys_id>0978d305fb095690f24ffcdcbeefdc02</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19252417a590000001</sys_recorded_at>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-03 12:01:15</sys_updated_on>
+        <type>Style</type>
+        <update_guid>0d78d305f7095690d7fb2a9bf1291001</update_guid>
+        <update_guid_history>0d78d305f7095690d7fb2a9bf1291001:992833370</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-07 08:29:37</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_style">sys_ui_style</sys_db_object>
+        <sys_id>95dce83700784c59b48d9a14d2bce989</sys_id>
+        <sys_metadata>c578d305fb095690f24ffcdcbeefdc00</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_tipts_scc_integr_integration_trigger</sys_name>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_parent display_value="Integration Trigger">c1d7623cfb011690f24ffcdcbeefdcd5</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_scope_delete display_value="">63962075f8cc4b24874e8760587c3204</sys_scope_delete>
+        <sys_update_name>sys_ui_style_c578d305fb095690f24ffcdcbeefdc00</sys_update_name>
+        <sys_update_version display_value="sys_ui_style_c578d305fb095690f24ffcdcbeefdc00">0978d305fb095690f24ffcdcbeefdc02</sys_update_version>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-07 08:29:37</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

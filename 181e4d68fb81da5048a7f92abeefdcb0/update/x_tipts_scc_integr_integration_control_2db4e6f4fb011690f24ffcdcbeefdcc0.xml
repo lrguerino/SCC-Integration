@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="x_tipts_scc_integr_integration_control">
+    <x_tipts_scc_integr_integration_control action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <name>SCC - Incident Integration</name>
+        <sys_class_name>x_tipts_scc_integr_integration_control</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 13:37:24</sys_created_on>
+        <sys_id>2db4e6f4fb011690f24ffcdcbeefdcc0</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name>SCC - Incident Integration</sys_name>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name>x_tipts_scc_integr_integration_control_2db4e6f4fb011690f24ffcdcbeefdcc0</sys_update_name>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-11-11 11:30:02</sys_updated_on>
+        <table>incident</table>
+    </x_tipts_scc_integr_integration_control>
+</record_update>

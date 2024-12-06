@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="DELETE">
+        <active>true</active>
+        <copied_from/>
+        <description>Insert a record into 'incident' with the following values:
+Caller = Chris Wilkinson
+and Service = Matrix
+and Category = Accident Register
+and Short description = TIP Create Incident - AFT
+and Description = This is a TEST step to validate integration
+and Assignment group = Service Desk
+Confirm the record was successfully inserted</description>
+        <display_name>Record Insert</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>1</order>
+        <step_config display_value="Record Insert">14872288df60220062fe6c7a4df26319</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-11-14 11:49:00</sys_created_on>
+        <sys_id>2cf7ebeefbb51610f24ffcdcbeefdce0</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Record Insert</sys_name>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name>sys_atf_step_2cf7ebeefbb51610f24ffcdcbeefdce0</sys_update_name>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-11-14 12:12:17</sys_updated_on>
+        <table>incident</table>
+        <test display_value="SCC Integration: Create SCC Incident">022e1b6afb351610f24ffcdcbeefdcc1</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="DELETE" query="document_key=2cf7ebeefbb51610f24ffcdcbeefdce0"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>2cf7ebeefbb51610f24ffcdcbeefdce0</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-11-14 11:49:01</sys_created_on>
+        <sys_id>2b686722fbf51610f24ffcdcbeefdc29</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-11-14 11:49:01</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Enforce security">e6e3c7535320220002c6435723dc3496</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>2cf7ebeefbb51610f24ffcdcbeefdce0</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-11-14 11:49:01</sys_created_on>
+        <sys_id>af686722fbf51610f24ffcdcbeefdc28</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-11-14 11:49:01</sys_updated_on>
+        <value>record_successfully_inserted</value>
+        <variable display_value="Assert type">9024a37f671003007ba405225685efe5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>2cf7ebeefbb51610f24ffcdcbeefdce0</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-11-14 11:49:01</sys_created_on>
+        <sys_id>af686722fbf51610f24ffcdcbeefdc29</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-11-14 12:12:17</sys_updated_on>
+        <value>caller_id=1e5dadd91b827810b6258557d34bcb66^business_service=a61278041b3148101139a8217e4bcbcc^category=Accident Register^short_description=TIP Create Incident - AFT^description=This is a TEST step to validate integration^assignment_group=f4c73cb51be94010f341202e6e4bcb88^EQ</value>
+        <variable display_value="Field values">dd54cf535320220002c6435723dc34fd</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>2cf7ebeefbb51610f24ffcdcbeefdce0</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-11-14 11:49:01</sys_created_on>
+        <sys_id>eb686722fbf51610f24ffcdcbeefdc29</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-11-14 11:49:01</sys_updated_on>
+        <value>incident</value>
+        <variable display_value="Table">90144b535320220002c6435723dc3488</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="table=var__m_atf_input_variable_14872288df60220062fe6c7a4df26319^id=2cf7ebeefbb51610f24ffcdcbeefdce0"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</application>
+        <file_path/>
+        <instance_id>23dcc1eddb2980982f68c59705961996</instance_id>
+        <instance_name>tipdev</instance_name>
+        <name>sys_atf_step_2cf7ebeefbb51610f24ffcdcbeefdce0</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step"><sys_atf_step action="INSERT_OR_UPDATE"><active>true</active><copied_from/><description>Insert a record into 'incident' with the following values:
+Caller = Chris Wilkinson
+and Service = Matrix
+and Category = Accident Register
+and Short description = TIP Create Incident - AFT
+and Description = This is a TEST step to validate integration
+and Assignment group = Service Desk
+Confirm the record was successfully inserted</description><display_name>Record Insert</display_name><inputs/><mugshots_cache_json/><notes/><order>1</order><step_config display_value="Record Insert">14872288df60220062fe6c7a4df26319</step_config><sys_class_name>sys_atf_step</sys_class_name><sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by><sys_created_on>2024-11-14 11:49:00</sys_created_on><sys_id>2cf7ebeefbb51610f24ffcdcbeefdce0</sys_id><sys_mod_count>5</sys_mod_count><sys_name>Record Insert</sys_name><sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package><sys_policy/><sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope><sys_update_name>sys_atf_step_2cf7ebeefbb51610f24ffcdcbeefdce0</sys_update_name><sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by><sys_updated_on>2024-11-14 12:12:17</sys_updated_on><table>incident</table><test display_value="SCC Integration: Create SCC Incident">022e1b6afb351610f24ffcdcbeefdcc1</test><timeout/><warning_message/></sys_atf_step><sys_variable_value action="delete_multiple" query="document_key=2cf7ebeefbb51610f24ffcdcbeefdce0"/><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>2cf7ebeefbb51610f24ffcdcbeefdce0</document_key><order>100</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by><sys_created_on>2024-11-14 11:49:01</sys_created_on><sys_id>2b686722fbf51610f24ffcdcbeefdc29</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by><sys_updated_on>2024-11-14 11:49:01</sys_updated_on><value>1</value><variable display_value="Enforce security">e6e3c7535320220002c6435723dc3496</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>2cf7ebeefbb51610f24ffcdcbeefdce0</document_key><order>100</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by><sys_created_on>2024-11-14 11:49:01</sys_created_on><sys_id>af686722fbf51610f24ffcdcbeefdc28</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by><sys_updated_on>2024-11-14 11:49:01</sys_updated_on><value>record_successfully_inserted</value><variable display_value="Assert type">9024a37f671003007ba405225685efe5</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>2cf7ebeefbb51610f24ffcdcbeefdce0</document_key><order>400</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by><sys_created_on>2024-11-14 11:49:01</sys_created_on><sys_id>af686722fbf51610f24ffcdcbeefdc29</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by><sys_updated_on>2024-11-14 12:12:17</sys_updated_on><value>caller_id=1e5dadd91b827810b6258557d34bcb66^business_service=a61278041b3148101139a8217e4bcbcc^category=Accident Register^short_description=TIP Create Incident - AFT^description=This is a TEST step to validate integration^assignment_group=f4c73cb51be94010f341202e6e4bcb88^EQ</value><variable display_value="Field values">dd54cf535320220002c6435723dc34fd</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>2cf7ebeefbb51610f24ffcdcbeefdce0</document_key><order>200</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by><sys_created_on>2024-11-14 11:49:01</sys_created_on><sys_id>eb686722fbf51610f24ffcdcbeefdc29</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by><sys_updated_on>2024-11-14 11:49:01</sys_updated_on><value>incident</value><variable display_value="Table">90144b535320220002c6435723dc3488</variable></sys_variable_value><sys_element_mapping action="delete_multiple" query="table=var__m_atf_input_variable_14872288df60220062fe6c7a4df26319^id=2cf7ebeefbb51610f24ffcdcbeefdce0"/></record_update>]]></payload>
+        <payload_hash>-624144662</payload_hash>
+        <record_name>Record Insert</record_name>
+        <reverted_from/>
+        <source>a09d5d5f3b995a10445c342a85e45a31</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-11-14 12:12:17</sys_created_on>
+        <sys_id>d8cd2f2afbf51610f24ffcdcbeefdc8e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1932a96ac2b0000001</sys_recorded_at>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-11-14 12:12:17</sys_updated_on>
+        <type>Test Step</type>
+        <update_guid>10cd2f2a4ef51610282e88eea0bc408e</update_guid>
+        <update_guid_history>10cd2f2a4ef51610282e88eea0bc408e:-624144662,d46b272668f5161077daf131994472b3:110375722,32982b2262f516109c64c69db0eb2262:-192221751,e368672202f51610a0f517b44d3b2d2c:110375722</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-11-14 12:17:20</sys_created_on>
+        <sys_db_object display_value="" name="sys_atf_step">sys_atf_step</sys_db_object>
+        <sys_id>16a1794ac8ef4d2483334ce30ffa5a59</sys_id>
+        <sys_metadata>2cf7ebeefbb51610f24ffcdcbeefdce0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Record Insert</sys_name>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_scope_delete display_value="">63962075f8cc4b24874e8760587c3204</sys_scope_delete>
+        <sys_update_name>sys_atf_step_2cf7ebeefbb51610f24ffcdcbeefdce0</sys_update_name>
+        <sys_update_version display_value="sys_atf_step_2cf7ebeefbb51610f24ffcdcbeefdce0">d8cd2f2afbf51610f24ffcdcbeefdc8e</sys_update_version>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-11-14 12:17:20</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

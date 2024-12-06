@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="x_tipts_scc_integr_integration_trigger">
+    <x_tipts_scc_integr_integration_trigger action="INSERT_OR_UPDATE">
+        <condition table="sys_journal_field">element_id!=^element=comments^name=sc_task^sys_created_by!=scc_connector_service_account^sys_created_by!=system^valueNOT LIKEThe Attachment was unable to send to Angora^EQ<item endquery="false" field="element_id" goto="false" newquery="false" operator="!=" or="false" value=""/>
+            <item endquery="false" field="element" goto="false" newquery="false" operator="=" or="false" value="comments"/>
+            <item endquery="false" field="name" goto="false" newquery="false" operator="=" or="false" value="sc_task"/>
+            <item endquery="false" field="sys_created_by" goto="false" newquery="false" operator="!=" or="false" value="scc_connector_service_account"/>
+            <item endquery="false" field="sys_created_by" goto="false" newquery="false" operator="!=" or="false" value="system"/>
+            <item endquery="false" field="value" goto="false" newquery="false" operator="NOT LIKE" or="false" value="The Attachment was unable to send to Angora"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <direction>Outbound</direction>
+        <integration_control display_value="SCC - Request Integration">74063230fb811690f24ffcdcbeefdc30</integration_control>
+        <name>Outbound - SC Task - New Comment</name>
+        <processing_subflow/>
+        <sys_class_name>x_tipts_scc_integr_integration_trigger</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-17 07:22:16</sys_created_on>
+        <sys_id>87de9669471d5610dbdcbf99516d4332</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Outbound - SC Task - New Comment</sys_name>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name>x_tipts_scc_integr_integration_trigger_87de9669471d5610dbdcbf99516d4332</sys_update_name>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-11-26 08:34:03</sys_updated_on>
+        <table>sys_journal_field</table>
+        <transaction_type>addComments</transaction_type>
+    </x_tipts_scc_integr_integration_trigger>
+</record_update>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="DELETE">
+        <active>true</active>
+        <copied_from/>
+        <description>Validate record from table 'x_tipts_scc_integr_integration_message' matches the following condition:
+Status = PROCESSED
+With a failure timeout of 30 Seconds</description>
+        <display_name>Record Validation</display_name>
+        <inputs/>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>2</order>
+        <step_config display_value="Record Validation">1f39a288df60220062fe6c7a4df2639d</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-11-14 12:04:55</sys_created_on>
+        <sys_id>3aeb6766fbf51610f24ffcdcbeefdc29</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Record Validation</sys_name>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name>sys_atf_step_3aeb6766fbf51610f24ffcdcbeefdc29</sys_update_name>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-11-14 12:17:21</sys_updated_on>
+        <table>x_tipts_scc_integr_integration_message</table>
+        <test display_value="SCC Integration: Create SCC Incident">022e1b6afb351610f24ffcdcbeefdcc1</test>
+        <timeout>1970-01-01 00:00:30</timeout>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="DELETE" query="document_key=3aeb6766fbf51610f24ffcdcbeefdc29"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>3aeb6766fbf51610f24ffcdcbeefdc29</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-11-14 12:04:55</sys_created_on>
+        <sys_id>101c2b66fbf51610f24ffcdcbeefdce8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-11-14 12:04:55</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Enforce security">cbddfa135320220002c6435723dc3415</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>3aeb6766fbf51610f24ffcdcbeefdc29</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-11-14 12:04:55</sys_created_on>
+        <sys_id>1c1c6f26fbf51610f24ffcdcbeefdca1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-11-14 12:04:55</sys_updated_on>
+        <value>record_validated</value>
+        <variable display_value="Assert type">67400008676003007ba405225685efa4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>3aeb6766fbf51610f24ffcdcbeefdc29</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-11-14 12:04:55</sys_created_on>
+        <sys_id>541c6f26fbf51610f24ffcdcbeefdca2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-11-14 12:04:55</sys_updated_on>
+        <value/>
+        <variable display_value="Record">52ed1e5b5360220002c6435723dc3421</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>3aeb6766fbf51610f24ffcdcbeefdc29</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-11-14 12:04:55</sys_created_on>
+        <sys_id>941c2b66fbf51610f24ffcdcbeefdce8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-11-14 12:04:55</sys_updated_on>
+        <value>status=PROCESSED^EQ</value>
+        <variable display_value="Field values">ff6e125353a0220002c6435723dc3442</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>3aeb6766fbf51610f24ffcdcbeefdc29</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-11-14 12:04:55</sys_created_on>
+        <sys_id>d01c2b66fbf51610f24ffcdcbeefdce8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-11-14 12:04:55</sys_updated_on>
+        <value>x_tipts_scc_integr_integration_message</value>
+        <variable display_value="Table">6aad5a575360220002c6435723dc34b0</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=3aeb6766fbf51610f24ffcdcbeefdc29"/>
+    <sys_element_mapping action="DELETE">
+        <field>enforce_security</field>
+        <id>3aeb6766fbf51610f24ffcdcbeefdc29</id>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-11-14 12:04:55</sys_created_on>
+        <sys_id>d41c6f26fbf51610f24ffcdcbeefdca1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-11-14 12:04:55</sys_updated_on>
+        <table>var__m_atf_input_variable_1f39a288df60220062fe6c7a4df2639d</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>field_values</field>
+        <id>3aeb6766fbf51610f24ffcdcbeefdc29</id>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-11-14 12:04:55</sys_created_on>
+        <sys_id>981c6f26fbf51610f24ffcdcbeefdca1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-11-14 12:04:55</sys_updated_on>
+        <table>var__m_atf_input_variable_1f39a288df60220062fe6c7a4df2639d</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>record_id</field>
+        <id>3aeb6766fbf51610f24ffcdcbeefdc29</id>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-11-14 12:04:55</sys_created_on>
+        <sys_id>101c6f26fbf51610f24ffcdcbeefdca1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-11-14 12:04:55</sys_updated_on>
+        <table>var__m_atf_input_variable_1f39a288df60220062fe6c7a4df2639d</table>
+        <value>{{step['148be726fbf51610f24ffcdcbeefdcc7'].first_record}}</value>
+    </sys_element_mapping>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</application>
+        <file_path/>
+        <instance_id>23dcc1eddb2980982f68c59705961996</instance_id>
+        <instance_name>tipdev</instance_name>
+        <name>sys_atf_step_3aeb6766fbf51610f24ffcdcbeefdc29</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step"><sys_atf_step action="INSERT_OR_UPDATE"><active>true</active><copied_from/><description>Validate record from table 'x_tipts_scc_integr_integration_message' matches the following condition:
+Status = PROCESSED
+With a failure timeout of 30 Seconds</description><display_name>Record Validation</display_name><inputs/><inputs/><mugshots_cache_json/><notes/><order>2</order><step_config display_value="Record Validation">1f39a288df60220062fe6c7a4df2639d</step_config><sys_class_name>sys_atf_step</sys_class_name><sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by><sys_created_on>2024-11-14 12:04:55</sys_created_on><sys_id>3aeb6766fbf51610f24ffcdcbeefdc29</sys_id><sys_mod_count>5</sys_mod_count><sys_name>Record Validation</sys_name><sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package><sys_policy/><sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope><sys_update_name>sys_atf_step_3aeb6766fbf51610f24ffcdcbeefdc29</sys_update_name><sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by><sys_updated_on>2024-11-14 12:17:21</sys_updated_on><table>x_tipts_scc_integr_integration_message</table><test display_value="SCC Integration: Create SCC Incident">022e1b6afb351610f24ffcdcbeefdcc1</test><timeout>1970-01-01 00:00:30</timeout><warning_message/></sys_atf_step><sys_variable_value action="delete_multiple" query="document_key=3aeb6766fbf51610f24ffcdcbeefdc29"/><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>3aeb6766fbf51610f24ffcdcbeefdc29</document_key><order>10</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by><sys_created_on>2024-11-14 12:04:55</sys_created_on><sys_id>101c2b66fbf51610f24ffcdcbeefdce8</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by><sys_updated_on>2024-11-14 12:04:55</sys_updated_on><value>1</value><variable display_value="Enforce security">cbddfa135320220002c6435723dc3415</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>3aeb6766fbf51610f24ffcdcbeefdc29</document_key><order>100</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by><sys_created_on>2024-11-14 12:04:55</sys_created_on><sys_id>1c1c6f26fbf51610f24ffcdcbeefdca1</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by><sys_updated_on>2024-11-14 12:04:55</sys_updated_on><value>record_validated</value><variable display_value="Assert type">67400008676003007ba405225685efa4</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>3aeb6766fbf51610f24ffcdcbeefdc29</document_key><order>200</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by><sys_created_on>2024-11-14 12:04:55</sys_created_on><sys_id>541c6f26fbf51610f24ffcdcbeefdca2</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by><sys_updated_on>2024-11-14 12:04:55</sys_updated_on><value/><variable display_value="Record">52ed1e5b5360220002c6435723dc3421</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>3aeb6766fbf51610f24ffcdcbeefdc29</document_key><order>300</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by><sys_created_on>2024-11-14 12:04:55</sys_created_on><sys_id>941c2b66fbf51610f24ffcdcbeefdce8</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by><sys_updated_on>2024-11-14 12:04:55</sys_updated_on><value>status=PROCESSED^EQ</value><variable display_value="Field values">ff6e125353a0220002c6435723dc3442</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>3aeb6766fbf51610f24ffcdcbeefdc29</document_key><order>100</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by><sys_created_on>2024-11-14 12:04:55</sys_created_on><sys_id>d01c2b66fbf51610f24ffcdcbeefdce8</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by><sys_updated_on>2024-11-14 12:04:55</sys_updated_on><value>x_tipts_scc_integr_integration_message</value><variable display_value="Table">6aad5a575360220002c6435723dc34b0</variable></sys_variable_value><sys_element_mapping action="delete_multiple" query="id=3aeb6766fbf51610f24ffcdcbeefdc29"/><sys_element_mapping action="INSERT_OR_UPDATE"><field>enforce_security</field><id>3aeb6766fbf51610f24ffcdcbeefdc29</id><sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by><sys_created_on>2024-11-14 12:04:55</sys_created_on><sys_id>d41c6f26fbf51610f24ffcdcbeefdca1</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by><sys_updated_on>2024-11-14 12:04:55</sys_updated_on><table>var__m_atf_input_variable_1f39a288df60220062fe6c7a4df2639d</table><value/></sys_element_mapping><sys_element_mapping action="INSERT_OR_UPDATE"><field>field_values</field><id>3aeb6766fbf51610f24ffcdcbeefdc29</id><sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by><sys_created_on>2024-11-14 12:04:55</sys_created_on><sys_id>981c6f26fbf51610f24ffcdcbeefdca1</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by><sys_updated_on>2024-11-14 12:04:55</sys_updated_on><table>var__m_atf_input_variable_1f39a288df60220062fe6c7a4df2639d</table><value/></sys_element_mapping><sys_element_mapping action="INSERT_OR_UPDATE"><field>record_id</field><id>3aeb6766fbf51610f24ffcdcbeefdc29</id><sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by><sys_created_on>2024-11-14 12:04:55</sys_created_on><sys_id>101c6f26fbf51610f24ffcdcbeefdca1</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by><sys_updated_on>2024-11-14 12:04:55</sys_updated_on><table>var__m_atf_input_variable_1f39a288df60220062fe6c7a4df2639d</table><value>{{step['148be726fbf51610f24ffcdcbeefdcc7'].first_record}}</value></sys_element_mapping></record_update>]]></payload>
+        <payload_hash>777650611</payload_hash>
+        <record_name>Record Validation</record_name>
+        <reverted_from/>
+        <source>a09d5d5f3b995a10445c342a85e45a31</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-11-14 12:17:21</sys_created_on>
+        <sys_id>aeeee3aafbf51610f24ffcdcbeefdcc7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1932a9b4cf00000001</sys_recorded_at>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-11-14 12:17:21</sys_updated_on>
+        <type>Test Step</type>
+        <update_guid>e2eee3aa0ef51610b6c2702d131631c7</update_guid>
+        <update_guid_history>e2eee3aa0ef51610b6c2702d131631c7:777650611,16eee3aa68f51610d188c725a599e0a4:174115636,fffc67e694f51610352b1fde035900da:-429419339,101c2b6613f516103fcafa5fde81d6eb:1545521653</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-11-14 12:17:21</sys_created_on>
+        <sys_db_object display_value="" name="sys_atf_step">sys_atf_step</sys_db_object>
+        <sys_id>51db8655ac054240b0b614ac74694449</sys_id>
+        <sys_metadata>3aeb6766fbf51610f24ffcdcbeefdc29</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Record Validation</sys_name>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_scope_delete display_value="">63962075f8cc4b24874e8760587c3204</sys_scope_delete>
+        <sys_update_name>sys_atf_step_3aeb6766fbf51610f24ffcdcbeefdc29</sys_update_name>
+        <sys_update_version display_value="sys_atf_step_3aeb6766fbf51610f24ffcdcbeefdc29">aeeee3aafbf51610f24ffcdcbeefdcc7</sys_update_version>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-11-14 12:17:21</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

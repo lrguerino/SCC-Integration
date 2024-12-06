@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_action_role">
+    <sys_ui_action_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_ui_action_role</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-23 10:13:42</sys_created_on>
+        <sys_id>b6cef52ffbd1d250f24ffcdcbeefdc83</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Flow Context.flow_operator</sys_name>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_ui_action display_value="Flow Context">a7fb3123fbd1d250f24ffcdcbeefdc82</sys_ui_action>
+        <sys_update_name>sys_ui_action_role_b6cef52ffbd1d250f24ffcdcbeefdc83</sys_update_name>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-23 10:13:42</sys_updated_on>
+        <sys_user_role display_value="flow_operator" name="flow_operator">36e3325dcb623200a30bb895634c9c4f</sys_user_role>
+    </sys_ui_action_role>
+</record_update>

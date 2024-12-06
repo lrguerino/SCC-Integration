@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="update_synch=true" db_object_id="8229ae7cfb011690f24ffcdcbeefdcb5" extends="sys_metadata" label="Integration Mapping" max_length="40" name="x_tipts_scc_integr_integration_mapping" type="collection">
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element default="/*______________________________________________________________________________________________&#13;&#10;* Description:&#13;&#10;*    - Used to translate the HTTP headers and body into the message record for bonding&#13;&#10;* Parameters: &#13;&#10;*    - current (GlideRecord): This mapping record&#13;&#10;*    - trigger (GlideRecord): Trigger record that triggered this mapping&#13;&#10;*    - target (GlideRecord): Target record based on the table of this mapping&#13;&#10;*    - task (GlideRecord): Underlying task record record based on the target record&#13;&#10;* Returns:&#13;&#10;*    - Any Type as it will be stringified&#13;&#10; ________________________________________________________________________________________________*/&#13;&#10;(function process(current, trigger, target, task) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return;&#13;&#10;&#9;&#13;&#10;}(current, trigger, target, task));" label="Advanced Mapping" max_length="5000" name="advanced_mapping" type="script"/>
+        <element label="Custom Value" max_length="40" name="custom_value" type="string"/>
+        <element label="Integration Trigger" mandatory="true" max_length="32" name="integration_trigger" reference="x_tipts_scc_integr_integration_trigger" reference_qual="direction=Outbound^integration_control.active=true^EQ" reference_qual_condition="direction=Outbound^integration_control.active=true^EQ" type="reference"/>
+        <element choice="1" default="Field Mapping" label="Mapping Type" max_length="40" name="mapping_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Field Mapping" sequence="0" value="Field Mapping"/>
+                <element inactive_on_update="false" label="Custom Value" sequence="1" value="Custom Value"/>
+                <element inactive_on_update="false" label="Script" sequence="2" value="Script"/>
+            </choice>
+        </element>
+        <element label="Order" mandatory="true" max_length="40" name="order" type="integer"/>
+        <element hint="Field name in the SCC payload" label="SCC Field Name" max_length="40" name="scc_field_name" type="string"/>
+        <element attributes="allow_references=true" dependent="table" dependent_on_field="table" hint="Field name in ServiceNow" label="SN Field Name" max_length="80" name="sn_field_name" type="field_name" use_dependent_field="true"/>
+        <element attributes="allow_public=true" label="Table" max_length="80" name="table" type="table_name"/>
+        <index name="index">
+            <element name="integration_trigger"/>
+        </index>
+        <index name="index2">
+            <element name="table"/>
+        </index>
+    </element>
+</database>

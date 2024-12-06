@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_dictionary_override">
+    <sys_dictionary_override action="DELETE">
+        <attributes/>
+        <attributes_override>false</attributes_override>
+        <base_table>sys_metadata</base_table>
+        <calculation>"LUCAS"</calculation>
+        <calculation_override>true</calculation_override>
+        <default_value/>
+        <default_value_override>false</default_value_override>
+        <dependent/>
+        <dependent_override>false</dependent_override>
+        <display_override>true</display_override>
+        <element>sys_name</element>
+        <mandatory>false</mandatory>
+        <mandatory_override>false</mandatory_override>
+        <name>x_tipts_scc_integr_integration_trigger</name>
+        <read_only>false</read_only>
+        <read_only_override>false</read_only_override>
+        <reference_qual/>
+        <reference_qual_override>false</reference_qual_override>
+        <sys_class_name>sys_dictionary_override</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 14:12:01</sys_created_on>
+        <sys_id>367c62f0fb411690f24ffcdcbeefdcdb</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>sys_name</sys_name>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name>sys_dictionary_override_367c62f0fb411690f24ffcdcbeefdcdb</sys_update_name>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 14:15:37</sys_updated_on>
+    </sys_dictionary_override>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</application>
+        <file_path/>
+        <instance_id>23dcc1eddb2980982f68c59705961996</instance_id>
+        <instance_name>tipdev</instance_name>
+        <name>sys_dictionary_override_367c62f0fb411690f24ffcdcbeefdcdb</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_dictionary_override"><sys_dictionary_override action="INSERT_OR_UPDATE"><attributes/><attributes_override>false</attributes_override><base_table>sys_metadata</base_table><calculation>"LUCAS"</calculation><calculation_override>true</calculation_override><default_value/><default_value_override>false</default_value_override><dependent/><dependent_override>false</dependent_override><display_override>true</display_override><element>sys_name</element><mandatory>false</mandatory><mandatory_override>false</mandatory_override><name>x_tipts_scc_integr_integration_trigger</name><read_only>false</read_only><read_only_override>false</read_only_override><reference_qual/><reference_qual_override>false</reference_qual_override><sys_class_name>sys_dictionary_override</sys_class_name><sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by><sys_created_on>2024-10-02 14:12:01</sys_created_on><sys_id>367c62f0fb411690f24ffcdcbeefdcdb</sys_id><sys_mod_count>6</sys_mod_count><sys_name>sys_name</sys_name><sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package><sys_policy/><sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope><sys_update_name>sys_dictionary_override_367c62f0fb411690f24ffcdcbeefdcdb</sys_update_name><sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by><sys_updated_on>2024-10-02 14:15:37</sys_updated_on></sys_dictionary_override></record_update>]]></payload>
+        <payload_hash>1380562683</payload_hash>
+        <record_name>sys_name</record_name>
+        <reverted_from/>
+        <source>901e8da8fb81da5048a7f92abeefdc84</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 14:15:37</sys_created_on>
+        <sys_id>2b9d6af0fb411690f24ffcdcbeefdc87</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1924d96223a0000001</sys_recorded_at>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 14:15:37</sys_updated_on>
+        <type>Dictionary Entry Override</type>
+        <update_guid>af9d6af0754116900f53d080861b0f86</update_guid>
+        <update_guid_history>af9d6af0754116900f53d080861b0f86:1380562683,257da634594116907d4d5af98bcd7b70:1304090248,2c5daef030411690fa9a720adbdd1671:973626478,a61de6f09c41169055950cd79a34981c:-187219594,f10deaf0e541169061d6227f0a0e83e5:-1420605021,88fc6af0a04116908f890d5a3d21e409:-870656326,f6cce6f09e411690e63de6487213d112:-1399331283</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 14:18:24</sys_created_on>
+        <sys_db_object display_value="" name="sys_dictionary_override">sys_dictionary_override</sys_db_object>
+        <sys_id>096b52e3327f4a60834a4ced7c759240</sys_id>
+        <sys_metadata>367c62f0fb411690f24ffcdcbeefdcdb</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_name</sys_name>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_parent display_value="">15d76ef8fb011690f24ffcdcbeefdcb1</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_scope_delete display_value="">63962075f8cc4b24874e8760587c3204</sys_scope_delete>
+        <sys_update_name>sys_dictionary_override_367c62f0fb411690f24ffcdcbeefdcdb</sys_update_name>
+        <sys_update_version display_value="sys_dictionary_override_367c62f0fb411690f24ffcdcbeefdcdb">2b9d6af0fb411690f24ffcdcbeefdc87</sys_update_version>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 14:18:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

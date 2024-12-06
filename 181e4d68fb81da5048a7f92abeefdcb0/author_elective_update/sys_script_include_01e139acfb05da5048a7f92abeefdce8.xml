@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_tipts_scc_integr.Utils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>Utils</name>
+        <script><![CDATA[const Utils = {
+
+    isInboundAPIEnabled: () => {
+        return gs.getProperty(Constants.PROPS.INBOUND_API_ENABLED) === "true" ? true : false;
+    },
+
+    validateRequestPayload: (data, payloadFields = []) => {
+        let errorsFound = [];
+        let result = {
+            has_error: false,
+            error_message: ""
+        };
+        try {
+            if (!Utils.isInboundAPIEnabled()) {
+                result.has_error = true;
+                result.error_message = "The SCC Integration is turned off in ServiceNow";
+                return result;
+            }
+            if (gs.nil(data) || Object.keys(data).length === 0) {
+                result.has_error = true;
+                result.error_message = "The request body is not present or has no properties at all";
+                return result;
+            }
+            payloadFields.forEach((name) => {
+                if (!data.hasOwnProperty(name) || !data[name] || gs.nil(data[name])) {
+                    errorsFound.push(name);
+                }
+            });
+            if (errorsFound.length === 1) {
+                result.has_error = true;
+                result.error_message = `The attribute ${errorsFound} is not not present or blank in the request body`;
+            } else if (errorsFound.length > 1) {
+                result.has_error = true;
+                result.error_message = `The following attributes are not present or blank in the request body: ${errorsFound.join(
+                    ", "
+                )}`;
+            }
+        } catch (error) {
+            result.has_error = true;
+            result.error_message = error;
+        }
+        return result;
+    }
+
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-01 15:19:37</sys_created_on>
+        <sys_id>01e139acfb05da5048a7f92abeefdce8</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Utils</sys_name>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name>sys_script_include_01e139acfb05da5048a7f92abeefdce8</sys_update_name>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-01 15:33:55</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</application>
+        <file_path/>
+        <instance_id>23dcc1eddb2980982f68c59705961996</instance_id>
+        <instance_name>tipdev</instance_name>
+        <name>sys_script_include_01e139acfb05da5048a7f92abeefdce8</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_tipts_scc_integr.Utils&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;Utils&lt;/name&gt;&lt;script&gt;&lt;![CDATA[const Utils = {
+
+    isInboundAPIEnabled: () =&gt; {
+        return gs.getProperty(Constants.PROPS.INBOUND_API_ENABLED) === "true" ? true : false;
+    },
+
+    validateRequestPayload: (data, payloadFields = []) =&gt; {
+        let errorsFound = [];
+        let result = {
+            has_error: false,
+            error_message: ""
+        };
+        try {
+            if (!Utils.isInboundAPIEnabled()) {
+                result.has_error = true;
+                result.error_message = "The SCC Integration is turned off in ServiceNow";
+                return result;
+            }
+            if (gs.nil(data) || Object.keys(data).length === 0) {
+                result.has_error = true;
+                result.error_message = "The request body is not present or has no properties at all";
+                return result;
+            }
+            payloadFields.forEach((name) =&gt; {
+                if (!data.hasOwnProperty(name) || !data[name] || gs.nil(data[name])) {
+                    errorsFound.push(name);
+                }
+            });
+            if (errorsFound.length === 1) {
+                result.has_error = true;
+                result.error_message = `The attribute ${errorsFound} is not not present or blank in the request body`;
+            } else if (errorsFound.length &gt; 1) {
+                result.has_error = true;
+                result.error_message = `The following attributes are not present or blank in the request body: ${errorsFound.join(
+                    ", "
+                )}`;
+            }
+        } catch (error) {
+            result.has_error = true;
+            result.error_message = error;
+        }
+        return result;
+    }
+
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-01 15:19:37&lt;/sys_created_on&gt;&lt;sys_id&gt;01e139acfb05da5048a7f92abeefdce8&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;Utils&lt;/sys_name&gt;&lt;sys_package display_value="SCC Integration" source="x_tipts_scc_integr"&gt;181e4d68fb81da5048a7f92abeefdcb0&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="SCC Integration"&gt;181e4d68fb81da5048a7f92abeefdcb0&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_01e139acfb05da5048a7f92abeefdce8&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-01 15:33:55&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1225896699</payload_hash>
+        <record_name>Utils</record_name>
+        <reverted_from/>
+        <source>901e8da8fb81da5048a7f92abeefdc84</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-01 15:33:55</sys_created_on>
+        <sys_id>f4f5b1a0fb45da5048a7f92abeefdc71</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19248b773cc0000001</sys_recorded_at>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-01 15:33:55</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>b8f5b1a0dd45da505a5875e053d07670</update_guid>
+        <update_guid_history>b8f5b1a0dd45da505a5875e053d07670:-1225896699,b435f1a0cb45da50a017eea568b5460b:-131858555,c624fdec2105da503c18de168e2cfc42:421378564,51047dec6005da50caa41b7993c7e82c:-449939452,e3a231ec7f05da508c0312193684f0bb:1687875671</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 07:57:06</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>5a960c87394845d49988b661490cd4c1</sys_id>
+        <sys_metadata>01e139acfb05da5048a7f92abeefdce8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Utils</sys_name>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_scope_delete display_value="">63962075f8cc4b24874e8760587c3204</sys_scope_delete>
+        <sys_update_name>sys_script_include_01e139acfb05da5048a7f92abeefdce8</sys_update_name>
+        <sys_update_version display_value="sys_script_include_01e139acfb05da5048a7f92abeefdce8">f4f5b1a0fb45da5048a7f92abeefdc71</sys_update_version>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 07:57:06</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

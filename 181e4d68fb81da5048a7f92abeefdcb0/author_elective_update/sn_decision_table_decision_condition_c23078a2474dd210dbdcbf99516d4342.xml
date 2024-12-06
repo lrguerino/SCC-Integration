@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_decision_table_decision_condition">
+    <sn_decision_table_decision_condition action="DELETE">
+        <decision_input display_value="SCC Urgency Value">fd3038a2474dd210dbdcbf99516d4384</decision_input>
+        <decision_table display_value="Translate SCC Urgency delta">3530f4a2474dd210dbdcbf99516d4322</decision_table>
+        <default_operator>=</default_operator>
+        <description/>
+        <field/>
+        <field_label/>
+        <field_parent_table/>
+        <label>SCC Urgency Value</label>
+        <order>100</order>
+        <parent display_value="">855e6cae470dd210dbdcbf99516d4354</parent>
+        <reference/>
+        <sys_class_name>sn_decision_table_decision_condition</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-07 15:37:06</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>c23078a2474dd210dbdcbf99516d4342</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name>sn_decision_table_decision_condition_c23078a2474dd210dbdcbf99516d4342</sys_update_name>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-07 15:37:06</sys_updated_on>
+        <type display_value="Choice">5217a7c1bf3320001875647fcf0739b7</type>
+    </sn_decision_table_decision_condition>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</application>
+        <file_path/>
+        <instance_id>23dcc1eddb2980982f68c59705961996</instance_id>
+        <instance_name>tipdev</instance_name>
+        <name>sn_decision_table_decision_condition_c23078a2474dd210dbdcbf99516d4342</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_decision_table_decision_condition"><sn_decision_table_decision_condition action="INSERT_OR_UPDATE"><decision_input display_value="SCC Urgency Value">fd3038a2474dd210dbdcbf99516d4384</decision_input><decision_table display_value="Translate SCC Urgency delta">3530f4a2474dd210dbdcbf99516d4322</decision_table><default_operator>=</default_operator><description/><field/><field_label/><field_parent_table/><label>SCC Urgency Value</label><order>100</order><parent display_value="">855e6cae470dd210dbdcbf99516d4354</parent><reference/><sys_class_name>sn_decision_table_decision_condition</sys_class_name><sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by><sys_created_on>2024-10-07 15:37:06</sys_created_on><sys_domain>global</sys_domain><sys_id>c23078a2474dd210dbdcbf99516d4342</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package><sys_policy/><sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope><sys_update_name>sn_decision_table_decision_condition_c23078a2474dd210dbdcbf99516d4342</sys_update_name><sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by><sys_updated_on>2024-10-07 15:37:06</sys_updated_on><type display_value="Choice">5217a7c1bf3320001875647fcf0739b7</type></sn_decision_table_decision_condition></record_update>]]></payload>
+        <payload_hash>1808913573</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>901e8da8fb81da5048a7f92abeefdc84</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-07 15:37:06</sys_created_on>
+        <sys_id>863078a2474dd210dbdcbf99516d4344</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19267a086650000001</sys_recorded_at>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-07 15:37:06</sys_updated_on>
+        <type>Decision Condition</type>
+        <update_guid>8a3078a22c4dd210bed6384079814243</update_guid>
+        <update_guid_history>8a3078a22c4dd210bed6384079814243:1808913573</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">d750b8a2474dd210dbdcbf99516d4329</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-07 15:37:44</sys_created_on>
+        <sys_db_object display_value="" name="sn_decision_table_decision_condition">sn_decision_table_decision_condition</sys_db_object>
+        <sys_id>13be80e6855145e69c48e8e017e6daa4</sys_id>
+        <sys_metadata>c23078a2474dd210dbdcbf99516d4342</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_scope_delete display_value="">63962075f8cc4b24874e8760587c3204</sys_scope_delete>
+        <sys_update_name>sn_decision_table_decision_condition_c23078a2474dd210dbdcbf99516d4342</sys_update_name>
+        <sys_update_version display_value="sn_decision_table_decision_condition_c23078a2474dd210dbdcbf99516d4342">863078a2474dd210dbdcbf99516d4344</sys_update_version>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-07 15:37:44</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

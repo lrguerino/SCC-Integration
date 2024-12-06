@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_scc_state_value" label="SCC State" language="en" table="var__m_sys_decision_input_8a95a1fafbc9161048a7f92abeefdc31">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_scc_state_value</element>
+            <help/>
+            <hint/>
+            <label>SCC State</label>
+            <language>en</language>
+            <name>var__m_sys_decision_input_8a95a1fafbc9161048a7f92abeefdc31</name>
+            <plural>SCC State</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+            <sys_created_on>2024-10-08 14:09:56</sys_created_on>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>SCC State</sys_name>
+            <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+            <sys_update_name>sys_documentation_var__m_sys_decision_input_8a95a1fafbc9161048a7f92abeefdc31_u_scc_state_value_en</sys_update_name>
+            <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+            <sys_updated_on>2024-10-08 14:12:47</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

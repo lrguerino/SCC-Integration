@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="http_response_body" label="HTTP Response Body" language="en" table="x_tipts_scc_integr_integration_message">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>http_response_body</element>
+            <help/>
+            <hint/>
+            <label>HTTP Response Body</label>
+            <language>en</language>
+            <name>x_tipts_scc_integr_integration_message</name>
+            <plural>HTTP Response Bodies</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+            <sys_created_on>2024-10-03 08:37:48</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>HTTP Response Body</sys_name>
+            <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+            <sys_update_name>sys_documentation_x_tipts_scc_integr_integration_message_http_response_body_en</sys_update_name>
+            <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+            <sys_updated_on>2024-10-03 08:37:48</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="x_tipts_scc_integr_integration_trigger">
+    <x_tipts_scc_integr_integration_trigger action="DELETE">
+        <active>true</active>
+        <direction>Outbound</direction>
+        <full_name>SCC Incident Integration - Outbound - Create</full_name>
+        <integration_control display_value="SCC Incident Integration">2db4e6f4fb011690f24ffcdcbeefdcc0</integration_control>
+        <sys_class_name>x_tipts_scc_integr_integration_trigger</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 14:37:05</sys_created_on>
+        <sys_id>2f72323cfb411690f24ffcdcbeefdc1e</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>SCC Incident Integration - Outbound - Create</sys_name>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name>x_tipts_scc_integr_integration_trigger_2f72323cfb411690f24ffcdcbeefdc1e</sys_update_name>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 16:05:43</sys_updated_on>
+        <table>incident</table>
+        <transaction_type>create</transaction_type>
+    </x_tipts_scc_integr_integration_trigger>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</application>
+        <file_path/>
+        <instance_id>23dcc1eddb2980982f68c59705961996</instance_id>
+        <instance_name>tipdev</instance_name>
+        <name>x_tipts_scc_integr_integration_trigger_2f72323cfb411690f24ffcdcbeefdc1e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_tipts_scc_integr_integration_trigger"><x_tipts_scc_integr_integration_trigger action="INSERT_OR_UPDATE"><active>true</active><direction>Outbound</direction><full_name>SCC Incident Integration - Outbound - Create</full_name><integration_control display_value="SCC Incident Integration">2db4e6f4fb011690f24ffcdcbeefdcc0</integration_control><sys_class_name>x_tipts_scc_integr_integration_trigger</sys_class_name><sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by><sys_created_on>2024-10-02 14:37:05</sys_created_on><sys_id>2f72323cfb411690f24ffcdcbeefdc1e</sys_id><sys_mod_count>5</sys_mod_count><sys_name>SCC Incident Integration - Outbound - Create</sys_name><sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package><sys_policy/><sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope><sys_update_name>x_tipts_scc_integr_integration_trigger_2f72323cfb411690f24ffcdcbeefdc1e</sys_update_name><sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by><sys_updated_on>2024-10-02 16:05:43</sys_updated_on><table>incident</table><transaction_type>create</transaction_type></x_tipts_scc_integr_integration_trigger></record_update>]]></payload>
+        <payload_hash>-807561995</payload_hash>
+        <record_name>SCC Incident Integration - Outbound - Create</record_name>
+        <reverted_from/>
+        <source>901e8da8fb81da5048a7f92abeefdc84</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 16:05:43</sys_created_on>
+        <sys_id>58d64bf0fbc11690f24ffcdcbeefdc53</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1924dfaee5d0000001</sys_recorded_at>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 16:05:43</sys_updated_on>
+        <type>Integration Trigger</type>
+        <update_guid>dcd64bf0d5c11690ae704493ce3fd052</update_guid>
+        <update_guid_history>dcd64bf0d5c11690ae704493ce3fd052:-807561995,fbd447f0b6c11690b1a3308a02efdfc5:-1675369419,74d407f09dc11690bc896f085c6cb235:-1555843742,44d407f005c116908d0eca3410908f71:-105885419,78c403f07ec11690562e6780e78c3e32:-260981700,3182323cd5411690dc1ce7721dc5a5dd:1338928803</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">c890cf05fb855690f24ffcdcbeefdc47</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-03 10:16:52</sys_created_on>
+        <sys_db_object display_value="" name="x_tipts_scc_integr_integration_trigger">x_tipts_scc_integr_integration_trigger</sys_db_object>
+        <sys_id>2baf23959dd84eb287b495ec93bfadc4</sys_id>
+        <sys_metadata>2f72323cfb411690f24ffcdcbeefdc1e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SCC Incident Integration - Outbound - Create</sys_name>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_scope_delete display_value="">63962075f8cc4b24874e8760587c3204</sys_scope_delete>
+        <sys_update_name>x_tipts_scc_integr_integration_trigger_2f72323cfb411690f24ffcdcbeefdc1e</sys_update_name>
+        <sys_update_version display_value="x_tipts_scc_integr_integration_trigger_2f72323cfb411690f24ffcdcbeefdc1e">58d64bf0fbc11690f24ffcdcbeefdc53</sys_update_version>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-03 10:16:52</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

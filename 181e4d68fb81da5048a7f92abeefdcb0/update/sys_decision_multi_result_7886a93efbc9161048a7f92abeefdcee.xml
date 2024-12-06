@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision_multi_result">
+    <sys_decision_multi_result action="INSERT_OR_UPDATE">
+        <decision_table display_value="Translate SCC States">8a95a1fafbc9161048a7f92abeefdc31</decision_table>
+        <label>TIP State Value: 1, TIP State Label: New</label>
+        <result_elements/>
+        <sys_class_name>sys_decision_multi_result</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-08 14:12:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>7886a93efbc9161048a7f92abeefdcee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>TIP State Value: 1, TIP State Label: New</sys_name>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name>sys_decision_multi_result_7886a93efbc9161048a7f92abeefdcee</sys_update_name>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-08 14:12:48</sys_updated_on>
+    </sys_decision_multi_result>
+    <sys_variable_value action="delete_multiple" query="document_key=7886a93efbc9161048a7f92abeefdcee"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_decision_multi_result</document>
+        <document_key>7886a93efbc9161048a7f92abeefdcee</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-08 14:12:48</sys_created_on>
+        <sys_id>3086a93efbc9161048a7f92abeefdcef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-08 14:12:48</sys_updated_on>
+        <value>New</value>
+        <variable display_value="TIP State Label">3c86a93efbc9161048a7f92abeefdc93</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_decision_multi_result</document>
+        <document_key>7886a93efbc9161048a7f92abeefdcee</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-08 14:12:48</sys_created_on>
+        <sys_id>7c86a93efbc9161048a7f92abeefdcee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-08 14:12:48</sys_updated_on>
+        <value>1</value>
+        <variable display_value="TIP State Value">2486a93efbc9161048a7f92abeefdc80</variable>
+    </sys_variable_value>
+</record_update>

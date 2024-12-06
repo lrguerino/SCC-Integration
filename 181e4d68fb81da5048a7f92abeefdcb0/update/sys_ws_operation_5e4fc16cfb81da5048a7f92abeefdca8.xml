@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>360f092cfb81da5048a7f92abeefdc7c</enforce_acl>
+        <http_method>POST</http_method>
+        <name>Entry Point</name>
+        <operation_script><![CDATA[(function process( /*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+    const processor = new SCCInbound(request.body.data).processRequest();
+
+    if (processor.hasError()) {
+        response.setError(processor.getServiceError());
+        return;
+    }
+
+    response.setContentType("application/json");
+    response.setStatus(processor.getHTTPCode());
+	response.getStreamWriter().writeString(processor.getSuccessfulResponse());
+
+    const transactionMessage = processor.getMessage();
+    
+    transactionMessage.setValue("http_response_body", processor.getSuccessfulResponse());
+    transactionMessage.update();
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_tipts_scc_integr/service_connector/tip</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/tip</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-01 12:45:28</sys_created_on>
+        <sys_id>5e4fc16cfb81da5048a7f92abeefdca8</sys_id>
+        <sys_mod_count>58</sys_mod_count>
+        <sys_name>Entry Point</sys_name>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name>sys_ws_operation_5e4fc16cfb81da5048a7f92abeefdca8</sys_update_name>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-22 09:55:17</sys_updated_on>
+        <web_service_definition display_value="TIP Service Connector">7b3e85e8fb81da5048a7f92abeefdcbf</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>

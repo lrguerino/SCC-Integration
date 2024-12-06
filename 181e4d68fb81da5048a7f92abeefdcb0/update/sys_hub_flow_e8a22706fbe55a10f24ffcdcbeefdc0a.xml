@@ -1,0 +1,1014 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=1033583000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>93daa94ffb0d561048a7f92abeefdc6a</copied_from>
+        <copied_from_name>Look Up SCC Incident</copied_from_name>
+        <description>Look Up SCC SC Task</description>
+        <display_name_after_preview/>
+        <flow_priority/>
+        <generation_source/>
+        <internal_name>look_up_scc_sc_task</internal_name>
+        <label_cache>[{"name":"subflow.scc_number","label":"Input➛SCC Number","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"1151acb9-82db-4d2c-ab27-3fe6a8795c6e":["conditions"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"3a00b6cf-ab4c-4648-aafe-d49435f14b91","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"6be97178-d5bb-44e7-91fe-9031958b1889.value","label":"1 - Get Integration Display➛Value","reference_display":"Value","type":"string","base_type":"string","usedInstances":{"1151acb9-82db-4d2c-ab27-3fe6a8795c6e":["conditions"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"23bab30a-4259-472f-a299-2af57d4c46c0"}},{"name":"1151acb9-82db-4d2c-ab27-3fe6a8795c6e.status","label":"2 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"usedInstances":{"750ad194-e4e5-404d-af14-8c4a1b6dea3c":["condition"]},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"1151acb9-82db-4d2c-ab27-3fe6a8795c6e.Record","label":"2 - Look Up Record➛sc_task Record","reference":"sc_task","reference_display":"Catalog Task","type":"reference","base_type":"reference","usedInstances":{"0d7891cc-a145-46d2-a57f-5987aa7420e5":["task_found-2","task_found-1"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master_snapshot>7a03af06fbe55a10f24ffcdcbeefdc7e</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Look Up SCC SC Task</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles name="itil">282bf1fac6112285017366cb5f867469</run_with_roles>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-31 11:51:02</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e8a22706fbe55a10f24ffcdcbeefdc0a</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Look Up SCC SC Task</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name>sys_hub_flow_e8a22706fbe55a10f24ffcdcbeefdc0a</sys_update_name>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-11-12 09:57:26</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=e8a22706fbe55a10f24ffcdcbeefdc0a"/>
+    <sys_variable_value action="delete_multiple" query="document_key=e8a22706fbe55a10f24ffcdcbeefdc0a"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_e8a22706fbe55a10f24ffcdcbeefdc0a^id=e8a22706fbe55a10f24ffcdcbeefdc0a"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=e8a22706fbe55a10f24ffcdcbeefdc0a"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=e8a22706fbe55a10f24ffcdcbeefdc0a^sys_idNOT IN64a22706fbe55a10f24ffcdcbeefdc0b"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>e8a22706fbe55a10f24ffcdcbeefdc0a</id>
+        <name>Look Up SCC SC Task</name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-31 11:51:02</sys_created_on>
+        <sys_id>64a22706fbe55a10f24ffcdcbeefdc0b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-31 11:51:02</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=64a22706fbe55a10f24ffcdcbeefdc0b"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=e8a22706fbe55a10f24ffcdcbeefdc0a^sys_idNOT IN41a22706fbe55a10f24ffcdcbeefdca1"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=3a00b6cf-ab4c-4648-aafe-d49435f14b91</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>scc_number</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>SCC Number</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Look Up SCC SC Task">e8a22706fbe55a10f24ffcdcbeefdc0a</model>
+        <model_id>e8a22706fbe55a10f24ffcdcbeefdc0a</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_e8a22706fbe55a10f24ffcdcbeefdc0a</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-31 11:51:04</sys_created_on>
+        <sys_id>41a22706fbe55a10f24ffcdcbeefdca1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-31 11:51:05</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=41a22706fbe55a10f24ffcdcbeefdca1"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=e8a22706fbe55a10f24ffcdcbeefdc0a^sys_idNOT IN09a22706fbe55a10f24ffcdcbeefdcb6,12036f06fbe55a10f24ffcdcbeefdcf7"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=93986588-b223-4914-b031-dd50da6a6fad</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>has_found</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Has Found</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Look Up SCC SC Task">e8a22706fbe55a10f24ffcdcbeefdc0a</model>
+        <model_id>e8a22706fbe55a10f24ffcdcbeefdc0a</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_e8a22706fbe55a10f24ffcdcbeefdc0a</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-31 11:51:05</sys_created_on>
+        <sys_id>09a22706fbe55a10f24ffcdcbeefdcb6</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-31 11:53:02</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=09a22706fbe55a10f24ffcdcbeefdcb6"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=7fd06d19-e312-49e9-9eeb-c822cc6a65b9</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sc_task</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>task_found</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>SC Task Record</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Look Up SCC SC Task">e8a22706fbe55a10f24ffcdcbeefdc0a</model>
+        <model_id>e8a22706fbe55a10f24ffcdcbeefdc0a</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_e8a22706fbe55a10f24ffcdcbeefdc0a</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_task">sc_task</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-31 11:52:48</sys_created_on>
+        <sys_id>12036f06fbe55a10f24ffcdcbeefdcf7</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-31 11:52:49</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=12036f06fbe55a10f24ffcdcbeefdcf7"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e8a22706fbe55a10f24ffcdcbeefdc0a"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=e8a22706fbe55a10f24ffcdcbeefdc0a"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=e8a22706fbe55a10f24ffcdcbeefdc0a^sys_idNOT IN05a22706fbe55a10f24ffcdcbeefdcbd,2603af06fbe55a10f24ffcdcbeefdc03"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Get Integration Display">cc3367d24785d210dbdcbf99516d438e</action_type>
+        <action_type_parent display_value="Get Integration Display">d0f22b924785d210dbdcbf99516d4391</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>cc3367d24785d210dbdcbf99516d438e</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Look Up SCC SC Task">e8a22706fbe55a10f24ffcdcbeefdc0a</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-31 11:51:05</sys_created_on>
+        <sys_id>05a22706fbe55a10f24ffcdcbeefdcbd</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-31 11:51:05</sys_updated_on>
+        <ui_id>6be97178-d5bb-44e7-91fe-9031958b1889</ui_id>
+        <values>H4sIAAAAAAAA/4uOBQApu0wNAgAAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Look Up SCC SC Task">e8a22706fbe55a10f24ffcdcbeefdc0a</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-31 11:52:48</sys_created_on>
+        <sys_id>2603af06fbe55a10f24ffcdcbeefdc03</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_updated_by>scc_connector_service_account</sys_updated_by>
+        <sys_updated_on>2024-11-26 04:58:51</sys_updated_on>
+        <ui_id>1151acb9-82db-4d2c-ab27-3fe6a8795c6e</ui_id>
+        <values>H4sIAAAAAAAA/+VYTW/bOBD9K4LOtlfyl6zcFgkMFOg2QJPtpdslKJKKidKkSlJJHcP/fYeiZAu2E9utDSTYo4bD4ZuZ90aUvi5DTsOrkKZRmqfpaJJE0WAQRePxgOA4ywZjkkUZHoadUOI5A0+LM8Hg8RGL0j0bgiw238FCuSkEXnzZWSAzLqhmMrz6+q0TFlhDJMt0eLXcWjoWisAZE+B6X2PZgmYXxfoRVWve9rG9LfjkF5SmDkrUCdlPyyRlgCHHwrBOOMeSYqv0Ym3RDNNbKTaGGZcWIobO+afhz3DuJHJ+OYOsCPNr68fq5BtfJ7+U32CL76wuiS117U5mihNmfE0oy3Ep7HXb5h1uC8uV9Ft86n63EuVcfvIlCdcBmraApTQMUVa4ZB36OpX8bqaePjdIp1xWdakXhSJYrJ+wtZpnpXV4liETbA6B0BwXBZcPqNDqkVebAcu89yDgoZcL9QSHGv4ge5g44D2oLe5NwX5Tmb9gzV0Wf0EY2AyAuACWIN9Go0pdlfMREVGaakFjaXyscNUJzcJcC2zMJnMoO/pROty+DnXGyBfNbSGaF/ZPCPHI6uRWnUYRo1dpmG5oR5Sk3KEwLVkQpTUT2JlRLYx/SohEl8txxtIkTiZdOsqy7nDIkm4a56ybRoMYzsviySTtVXFWq3/bcThtQpgycwXtGUKQLOcZ0+CKqzy8CxCK7UrybYA6cRwc7kMzDq7bjdjXnHow7Ng+7gtQD4b4bINhGEXvbTS4jr25yXC61n0JDgg+pq8SjW44ZZS2yNeypfhduZ3M9SMgNFy/dewMssVLqGqq55wJuu8dOHULW+/A/v/3HfgmiQ6AKPId5FJwWV1q3Ay9kAJGr9Ivi7e4VlGsdRF0NmzIrg5wYFXwfLIajoDTqOEOzg7uPZ49EJu5X1Fme+Y3xloEg7OJYNA/nwiW61TXxdxT9+Yu6zra+D87f7ztDzRsbYhX+0R20pnxqWf2V7siHpyk4jbh/MrNC7w784X3BVV2LjkGZrC1Pg95DaMnTh+Y3ZzeeFFln7D4vm+9FiZqGlWld4HLc/zqN1zWujzzHM2hc7yAO75mcLGkBmHNUK5KSVF9u98QyXUy59rY2nl32HxmoB8ZKBBnYGcsqLyDtfeJL+TDeTSl/JAHTSL1aSaARIIqkWCdyGlpnzK4hme8qF5icE0xF1VH4OOtaLWUaa30C8PrQDNfYcWRk+1IUPFZQf3+6Nsng70j8ADWd/En4PzjiTCcDft4nAziOIriiCbRJEniyTjLxzgZ5hudImQkgYkKkXOgCoRHDTWaPse7M+iXPnSPANUw8EZJ90XdT2zgUEF7gwbVYdz1TMmUEgzLraFyD8j/mFZvhTVdR29ysLyLX2Mlv9+utjftrfelrg8l/1vyHyX74Gg2YVF/ElPSnSRx0h3mdNxNKR51cZqNkgFlZJif80bw7T+ctq9UYhYAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=e8a22706fbe55a10f24ffcdcbeefdc0a"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=e8a22706fbe55a10f24ffcdcbeefdc0a^sys_idNOT IN0da22706fbe55a10f24ffcdcbeefdcbb,0da22706fbe55a10f24ffcdcbeefdcbc"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">cda22706fbe55a10f24ffcdcbeefdcba</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Look Up SCC SC Task">e8a22706fbe55a10f24ffcdcbeefdc0a</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-31 11:51:05</sys_created_on>
+        <sys_id>0da22706fbe55a10f24ffcdcbeefdcbb</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-11-12 09:57:25</sys_updated_on>
+        <ui_id>750ad194-e4e5-404d-af14-8c4a1b6dea3c</ui_id>
+        <values>H4sIAAAAAAAA/+VUy27bMBD8lUJnWdDDcmzfghYBCrQN0AS5tIGwIlc2UYpUScqOa/jfu9TDNhIHLYLeehNnuTszy4H2gW5d0zp7r6+tFSsVLL89hoFQHqPvfaCgxmAZMK24cEKrogPCYAOy9QX65MI2EnYPJ4StheQGh2kNGOpxaILl/lnJ7RosJJQoqfHOGaFW1C44naoYqmTBEpalsyyN43Q+TcpZViYpzwAho3tj4/tR3LtPHRK+qtrzEW5HJm24l5XEYYBPDhVHoq5AWgyDGhQHp83uiBgEfqvkCVgL5XrHNTxZ8Ytmp3nuL1ZIHtlxHVowvG28kh5xUMqxqGVbqy+9YL9NrKCV7mybrcWCY+PVebqBu7pb6+3XkehGqM7JUJSagTyewJHfsnVo/QugxJoGFTU0DW2haIzeiK6ZtNTRStIhqqTeEqmPRATMC49oGRDdEP6hgx/ACO/iM42h5l5mCVawoosPjXOGLBy6dRQ/Wy+oNzhYKfpt0AXLjGjcNfFscFB9CF9m7yx2+32S5AmwcjGZp7ycTHnKJlCmV5OswhnMrxY5m2FkHbjWHg7f2zjOePwyrG+e8y8ivoC8ypM4vxzx6exSxC+E+/Vcp3/ItX+gv4x1HMf/aa6FLfp8Dt468jfH+tFnuGewfUA4MmFJyL3HPo5/Xl/Y0UsLdg5ttfnhLZyww2+xEQg5wwUAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">05a22706fbe55a10f24ffcdcbeefdcbc</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Look Up SCC SC Task">e8a22706fbe55a10f24ffcdcbeefdc0a</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned>has_found,task_found</outputs_assigned>
+        <parent_ui_id>750ad194-e4e5-404d-af14-8c4a1b6dea3c</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-31 11:51:05</sys_created_on>
+        <sys_id>0da22706fbe55a10f24ffcdcbeefdcbc</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-11-12 09:57:25</sys_updated_on>
+        <ui_id>0d7891cc-a145-46d2-a57f-5987aa7420e5</ui_id>
+        <values>H4sIAAAAAAAA/8VVXW/aMBT9K1WeCUscCKRv1Sa0Stsqtawv0xTd2NfFqrHT2KFliP++axJa+jVV1bS9AD6+9jn3+B6xiWzr69a7uT1xTl2Z6PjHJlIiOo6SAhibJLmscDyGNJFsJCUXvEKU9JlHg8jAEqlyAa6UtjWCoBXoNmAp/RbK1RrWlz3kG/oaRHyhtGgwMP0cRDU0dInHJjrePNny6xpLDRVqOjynwx9moF244q369oc/gzua9QJf0ByICKqs1QiGANuIIIgNIrzzaAQSnwzcg2gJRoC3zfoeaRDEmdEPwEIZT9dFofjOqV909ygJdRKpN47dHl9YxfGs9sqaDvFQ6f2m1e3SfOukBidRQqv93klCWoelwDqIC2w9tbxY2NvzPdFMmV0f/aa2HPT9CrxvVNV6dMH5Vs2fmtBBX17yHzUuibZcQl0rc1XWjV2pHRUpXw6vNC2GUttbkhiGagg8tDkk52A4I/zTDr6ERoWev9I1dDhQfjfqpsXT8L5FVkzz8XQaV4xl8ahIR3GVZGksxDgRkEMuQUTbna/lTRs665zqPSk7W6nA8UbV/oQkrLBvfzvohzxlSZbL14ZITh4GxoO7fjblm02ajlPgVRFPmajikWA8hopN4kxiDtNJMeY5Ds+R00htt88z8e483D/yPg5v6GR/9uLj0Zy6OepkvdJiH4rmgKePRfrXYpGxx7FwvAwa/piOg5r/FpJDUx7H5PBZ/klKJlIkuUiLGLOUUUqwiAvEKuZTxjinlIyr4t0poaFTJvw7dAO46pX0S4FcORI8D9jpQZ1Y00Apfgjd2uY6tPqAbX8DltaQEXsGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=e8a22706fbe55a10f24ffcdcbeefdc0a"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=e8a22706fbe55a10f24ffcdcbeefdc0a"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_e8a22706fbe55a10f24ffcdcbeefdc0a^sys_idNOT IN49a22706fbe55a10f24ffcdcbeefdca3"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>scc_number</element>
+        <help/>
+        <hint/>
+        <label>SCC Number</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e8a22706fbe55a10f24ffcdcbeefdc0a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-31 11:51:04</sys_created_on>
+        <sys_id>49a22706fbe55a10f24ffcdcbeefdca3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-31 11:51:04</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_e8a22706fbe55a10f24ffcdcbeefdc0a"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_e8a22706fbe55a10f24ffcdcbeefdc0a^sys_idNOT IN09a22706fbe55a10f24ffcdcbeefdcb8,ea036f06fbe55a10f24ffcdcbeefdcfa"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>has_found</element>
+        <help/>
+        <hint/>
+        <label>Has Found</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_e8a22706fbe55a10f24ffcdcbeefdc0a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-31 11:51:05</sys_created_on>
+        <sys_id>09a22706fbe55a10f24ffcdcbeefdcb8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-31 11:51:05</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>task_found</element>
+        <help/>
+        <hint/>
+        <label>SC Task Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_e8a22706fbe55a10f24ffcdcbeefdc0a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-31 11:52:48</sys_created_on>
+        <sys_id>ea036f06fbe55a10f24ffcdcbeefdcfa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-31 11:52:48</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_e8a22706fbe55a10f24ffcdcbeefdc0a"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=696399000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>93daa94ffb0d561048a7f92abeefdc6a</copied_from>
+        <copied_from_name/>
+        <description>Look Up SCC SC Task</description>
+        <flow_priority/>
+        <internal_name>look_up_scc_sc_task</internal_name>
+        <label_cache>[{"name":"subflow.scc_number","label":"Input➛SCC Number","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"1151acb9-82db-4d2c-ab27-3fe6a8795c6e":["conditions"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"3a00b6cf-ab4c-4648-aafe-d49435f14b91","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"6be97178-d5bb-44e7-91fe-9031958b1889.value","label":"1 - Get Integration Display➛Value","reference_display":"Value","type":"string","base_type":"string","usedInstances":{"1151acb9-82db-4d2c-ab27-3fe6a8795c6e":["conditions"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"23bab30a-4259-472f-a299-2af57d4c46c0"}},{"name":"1151acb9-82db-4d2c-ab27-3fe6a8795c6e.status","label":"2 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"usedInstances":{"750ad194-e4e5-404d-af14-8c4a1b6dea3c":["condition"]},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"1151acb9-82db-4d2c-ab27-3fe6a8795c6e.Record","label":"2 - Look Up Record➛sc_task Record","reference":"sc_task","reference_display":"Catalog Task","type":"reference","base_type":"reference","usedInstances":{"0d7891cc-a145-46d2-a57f-5987aa7420e5":["task_found-2","task_found-1"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master>true</master>
+        <name>Look Up SCC SC Task</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Look Up SCC SC Task">e8a22706fbe55a10f24ffcdcbeefdc0a</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles name="itil">282bf1fac6112285017366cb5f867469</run_with_roles>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-31 11:52:49</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7a03af06fbe55a10f24ffcdcbeefdc7e</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-11-12 09:57:26</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=7a03af06fbe55a10f24ffcdcbeefdc7e"/>
+    <sys_variable_value action="delete_multiple" query="document_key=7a03af06fbe55a10f24ffcdcbeefdc7e"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_7a03af06fbe55a10f24ffcdcbeefdc7e^id=7a03af06fbe55a10f24ffcdcbeefdc7e"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=7a03af06fbe55a10f24ffcdcbeefdc7e"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=7a03af06fbe55a10f24ffcdcbeefdc7e^sys_idNOT IN7a03af06fbe55a10f24ffcdcbeefdc7f"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>7a03af06fbe55a10f24ffcdcbeefdc7e</id>
+        <name>Look Up SCC SC Task</name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-31 11:52:49</sys_created_on>
+        <sys_id>7a03af06fbe55a10f24ffcdcbeefdc7f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-31 11:52:49</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=7a03af06fbe55a10f24ffcdcbeefdc7f"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=7a03af06fbe55a10f24ffcdcbeefdc7e^sys_idNOT IN7e03af06fbe55a10f24ffcdcbeefdc80"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=3a00b6cf-ab4c-4648-aafe-d49435f14b91</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>scc_number</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>SCC Number</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Look Up SCC SC Task">7a03af06fbe55a10f24ffcdcbeefdc7e</model>
+        <model_id>7a03af06fbe55a10f24ffcdcbeefdc7e</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_7a03af06fbe55a10f24ffcdcbeefdc7e</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-31 11:52:49</sys_created_on>
+        <sys_id>7e03af06fbe55a10f24ffcdcbeefdc80</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-31 11:52:49</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7e03af06fbe55a10f24ffcdcbeefdc80"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=7a03af06fbe55a10f24ffcdcbeefdc7e^sys_idNOT IN3603af06fbe55a10f24ffcdcbeefdc8d,f203af06fbe55a10f24ffcdcbeefdcad"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=7fd06d19-e312-49e9-9eeb-c822cc6a65b9</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sc_task</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>task_found</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>SC Task Record</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Look Up SCC SC Task">7a03af06fbe55a10f24ffcdcbeefdc7e</model>
+        <model_id>7a03af06fbe55a10f24ffcdcbeefdc7e</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_7a03af06fbe55a10f24ffcdcbeefdc7e</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_task">sc_task</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-31 11:52:49</sys_created_on>
+        <sys_id>3603af06fbe55a10f24ffcdcbeefdc8d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-31 11:52:49</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=3603af06fbe55a10f24ffcdcbeefdc8d"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=93986588-b223-4914-b031-dd50da6a6fad</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>has_found</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Has Found</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Look Up SCC SC Task">7a03af06fbe55a10f24ffcdcbeefdc7e</model>
+        <model_id>7a03af06fbe55a10f24ffcdcbeefdc7e</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_7a03af06fbe55a10f24ffcdcbeefdc7e</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-31 11:52:50</sys_created_on>
+        <sys_id>f203af06fbe55a10f24ffcdcbeefdcad</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-31 11:53:03</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f203af06fbe55a10f24ffcdcbeefdcad"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7a03af06fbe55a10f24ffcdcbeefdc7e"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=7a03af06fbe55a10f24ffcdcbeefdc7e"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=7a03af06fbe55a10f24ffcdcbeefdc7e^sys_idNOT IN7603af06fbe55a10f24ffcdcbeefdcb9,f203af06fbe55a10f24ffcdcbeefdcb8"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Look Up SCC SC Task">7a03af06fbe55a10f24ffcdcbeefdc7e</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-31 11:52:50</sys_created_on>
+        <sys_id>7603af06fbe55a10f24ffcdcbeefdcb9</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-31 12:12:41</sys_updated_on>
+        <ui_id>1151acb9-82db-4d2c-ab27-3fe6a8795c6e</ui_id>
+        <values>H4sIAAAAAAAA/+VYTW/bOBD9K4LOtlfyl6zcFgkMFOg2QJPtpdslKJKKidKkSlJJHcP/fYeiZAu2E9utDSTYo4bD4ZuZ90aUvi5DTsOrkKZRmqfpaJJE0WAQRePxgOA4ywZjkkUZHoadUOI5A0+LM8Hg8RGL0j0bgiw238FCuSkEXnzZWSAzLqhmMrz6+q0TFlhDJMt0eLXcWjoWisAZE+B6X2PZgmYXxfoRVWve9rG9LfjkF5SmDkrUCdlPyyRlgCHHwrBOOMeSYqv0Ym3RDNNbKTaGGZcWIobO+afhz3DuJHJ+OYOsCPNr68fq5BtfJ7+U32CL76wuiS117U5mihNmfE0oy3Ep7HXb5h1uC8uV9Ft86n63EuVcfvIlCdcBmraApTQMUVa4ZB36OpX8bqaePjdIp1xWdakXhSJYrJ+wtZpnpXV4liETbA6B0BwXBZcPqNDqkVebAcu89yDgoZcL9QSHGv4ge5g44D2oLe5NwX5Tmb9gzV0Wf0EY2AyAuACWIN9Go0pdlfMREVGaakFjaXyscNUJzcJcC2zMJnMoO/pROty+DnXGyBfNbSGaF/ZPCPHI6uRWnUYRo1dpmG5oR5Sk3KEwLVkQpTUT2JlRLYx/SohEl8txxtIkTiZdOsqy7nDIkm4a56ybRoMYzsviySTtVXFWq3/bcThtQpgycwXtGUKQLOcZ0+CKqzy8CxCK7UrybYA6cRwc7kMzDq7bjdjXnHow7Ng+7gtQD4b4bINhGEXvbTS4jr25yXC61n0JDgg+pq8SjW44ZZS2yNeypfhduZ3M9SMgNFy/dewMssVLqGqq55wJuu8dOHULW+/A/v/3HfgmiQ6AKPId5FJwWV1q3Ay9kAJGr9Ivi7e4VlGsdRF0NmzIrg5wYFXwfLIajoDTqOEOzg7uPZ49EJu5X1Fme+Y3xloEg7OJYNA/nwiW61TXxdxT9+Yu6zra+D87f7ztDzRsbYhX+0R20pnxqWf2V7siHpyk4jbh/MrNC7w784X3BVV2LjkGZrC1Pg95DaMnTh+Y3ZzeeFFln7D4vm+9FiZqGlWld4HLc/zqN1zWujzzHM2hc7yAO75mcLGkBmHNUK5KSVF9u98QyXUy59rY2nl32HxmoB8ZKBBnYGcsqLyDtfeJL+TDeTSl/JAHTSL1aSaARIIqkWCdyGlpnzK4hme8qF5icE0xF1VH4OOtaLWUaa30C8PrQDNfYcWRk+1IUPFZQf3+6Nsng70j8ADWd/En4PzjiTCcDft4nAziOIriiCbRJEniyTjLxzgZ5hudImQkgYkKkXOgCoRHDTWaPse7M+iXPnSPANUw8EZJ90XdT2zgUEF7gwbVYdz1TMmUEgzLraFyD8j/mFZvhTVdR29ysLyLX2Mlv9+utjftrfelrg8l/1vyHyX74Gg2YVF/ElPSnSRx0h3mdNxNKR51cZqNkgFlZJif80bw7T+ctq9UYhYAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Get Integration Display">cc3367d24785d210dbdcbf99516d438e</action_type>
+        <action_type_parent display_value="Get Integration Display">d0f22b924785d210dbdcbf99516d4391</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>cc3367d24785d210dbdcbf99516d438e</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Look Up SCC SC Task">7a03af06fbe55a10f24ffcdcbeefdc7e</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-31 11:52:50</sys_created_on>
+        <sys_id>f203af06fbe55a10f24ffcdcbeefdcb8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-31 11:52:50</sys_updated_on>
+        <ui_id>6be97178-d5bb-44e7-91fe-9031958b1889</ui_id>
+        <values>H4sIAAAAAAAA/4uOBQApu0wNAgAAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=7a03af06fbe55a10f24ffcdcbeefdc7e"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=7a03af06fbe55a10f24ffcdcbeefdc7e^sys_idNOT INb603af06fbe55a10f24ffcdcbeefdcb6,fa03af06fbe55a10f24ffcdcbeefdcb7"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">cda22706fbe55a10f24ffcdcbeefdcba</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Look Up SCC SC Task">7a03af06fbe55a10f24ffcdcbeefdc7e</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-31 11:52:50</sys_created_on>
+        <sys_id>b603af06fbe55a10f24ffcdcbeefdcb6</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-11-12 09:57:26</sys_updated_on>
+        <ui_id>750ad194-e4e5-404d-af14-8c4a1b6dea3c</ui_id>
+        <values>H4sIAAAAAAAA/+1VXWvbMBT9K0PPTvBHnCZ5KwmFQbfCWvqyFXMtyYmYLHmSnDQz+e+7sh0ntBlbRx/3Zh3pXp1zdA9uiK5dVTv7oK+tFWtFFl+fAiKUx/C7IQpKThaEasWEE1plLRCQLcjab+AnE7aSsH88IXQjJDO871aBwRrHDVk0L7YEw4IihCKa04gm8TSJwzCeTaJ8muRRzBLgkGBDCTmXeHR5pPHhtkWC3/Jz+8rj1hmh1v36tu9yfwS1YZ5VFAaEPzuuGEc+BUjLA1KCYuC02Q+I4cDulDwBG6FcJ7iEZyt+4oVxmvqDBUeJtHdjWD5ALvmqc6vbKlbgAOnU1NVmME8Lym1nEOMF1NItz7HuwF3l5XYlzjfuq7WsS/W5c4UMDc4ep7Y8Y7zyaj39Xktxv9G7L0emN0K1zvSbUlOQwwoc+pfXzvNpCJe8xEZZCVWFrmaV0VvRFiOXcryWuBgXUu/wUj9hY6Ce+BjNhfEN4qsWfgQjvIpP2AaLO5o5WEGzdhqxHdrEySEgdm+XEqw9iUSHsx+1p9hJ7sVlnT++hBpRuWu8ect7HYfg9XCfzXXTRFEaAc3no1nM8tGExXQEeXw1Sgo+hdnVPKVTPrYOXG0Ph291GCYsfJ2Gf+7ztgzNIS3SKEwvZ2gyvZShC+l5Y3DiPwTHv9hf5iYMw//BeZfgCJt1495ray9/x9w8+ZB0dw5eU2GRWvtMH4//Dr+xxwET9BzaafPdizphh19lfgSEhQYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">05a22706fbe55a10f24ffcdcbeefdcbc</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Look Up SCC SC Task">7a03af06fbe55a10f24ffcdcbeefdc7e</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned>has_found,task_found</outputs_assigned>
+        <parent_ui_id>750ad194-e4e5-404d-af14-8c4a1b6dea3c</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-31 11:52:50</sys_created_on>
+        <sys_id>fa03af06fbe55a10f24ffcdcbeefdcb7</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-11-12 09:57:26</sys_updated_on>
+        <ui_id>0d7891cc-a145-46d2-a57f-5987aa7420e5</ui_id>
+        <values>H4sIAAAAAAAA/71VTW/aQBD9K9GeMbUNGJxbRIQaKW2kQHOpKjTenYVV1mvHuyaliP/eWWw+0iRVDigXsN9+zHtv5skbVtSurJ2dFVfWqoVhlz83TAl2ycIU4ngYJjLDwQCiUMZ9KbngGaKk34R1mIEcaecS7FwWtREErUDXHovoWShbalg/tJCr6K/D+FJpUaGv9KvDSqjoEocVu6S6hh4M6FtlHunAq80f5aUhQ01bv4K9mLTE3uDq1qWHsqLQCKYFbtuzM2L7ZQLaes5FJTzDuMPwt0MjkIhIv9ZhORgBrqjWB6RCEHdGH4El6Wrk5PDbqj9UtB/6fRJJGsdm7fA6g0zjdeNdsySvwcGU/OOurnDvTKE42sYYgRJq7canWLPhrnSqMM0R5y9uTxe6zs33xhN2uGDfKkJqi3OBpRfr2bdS5HRZPN/vmU6U2fnSLuqCgz68gXOVymrn+WxYrWb/ut1Ab/qNGnMqO8+hLJVZzMuqWKldKWKedxeaXrpSF89E0U9tF7iX2aVOQHdC+PUOfoBKec3f6Bo67Ev+MOqpxhs/SGkvHSWD0SjI4rgX9NOoH2RhLwqEGIQCEkgkCLbtMLu2Yw3WHt2iVs2faq+18a51ad4Y7Y/wSpXuikitsDVk22lzFcVhL5Hvza8cHmfVgX18FazNJooGEfAsDUaxyIK+iHkAWTwMehITGA3TAU+we4+chna7fR3DM0TwAxL2EZyOL2Yk46Lh8462NojHQLyM4v0J3iYxOlsSe/HLJFo+99z+E8gxDZkuFjtd5w/nsf4nZFROESq+nCjUvq+mzrNdTt7J7mmDXqb3tEWfEt6hFGEiojTAXhRTeDENUsQs4KM45pzCO8jSM4bXT77x38mmfauW26HDXFmSsBuUm5N9Yk3jrvgp9FxUj178Edv+BYrf0YeFBwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=7a03af06fbe55a10f24ffcdcbeefdc7e"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=7a03af06fbe55a10f24ffcdcbeefdc7e"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_7a03af06fbe55a10f24ffcdcbeefdc7e^sys_idNOT INfa03af06fbe55a10f24ffcdcbeefdc89"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>scc_number</element>
+        <help/>
+        <hint/>
+        <label>SCC Number</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_7a03af06fbe55a10f24ffcdcbeefdc7e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-31 11:52:49</sys_created_on>
+        <sys_id>fa03af06fbe55a10f24ffcdcbeefdc89</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-31 11:52:49</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_7a03af06fbe55a10f24ffcdcbeefdc7e"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_7a03af06fbe55a10f24ffcdcbeefdc7e^sys_idNOT IN7203af06fbe55a10f24ffcdcbeefdcb1,7a03af06fbe55a10f24ffcdcbeefdc94"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>has_found</element>
+        <help/>
+        <hint/>
+        <label>Has Found</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_7a03af06fbe55a10f24ffcdcbeefdc7e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-31 11:52:50</sys_created_on>
+        <sys_id>7203af06fbe55a10f24ffcdcbeefdcb1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-31 11:52:50</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>task_found</element>
+        <help/>
+        <hint/>
+        <label>SC Task Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_7a03af06fbe55a10f24ffcdcbeefdc7e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-31 11:52:50</sys_created_on>
+        <sys_id>7a03af06fbe55a10f24ffcdcbeefdc94</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-31 11:52:50</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_7a03af06fbe55a10f24ffcdcbeefdc7e"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>e8a22706fbe55a10f24ffcdcbeefdc0a</sys_id>
+        <latest_snapshot>7a03af06fbe55a10f24ffcdcbeefdc7e</latest_snapshot>
+        <compiler_build>glide-xanadu-07-02-2024__patch3-10-23-2024_11-01-2024_2230.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=e8a22706fbe55a10f24ffcdcbeefdc0a"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=e8a22706fbe55a10f24ffcdcbeefdc0a^sys_idNOT IN4303af06fbe55a10f24ffcdcbeefdcd7"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"4303af06fbe55a10f24ffcdcbeefdcd7","name":"plan","plan_signature":null}}</plan>
+        <plan_id display_value="Look Up SCC SC Task">e8a22706fbe55a10f24ffcdcbeefdc0a</plan_id>
+        <snapshot>88ad7fde470a1250dbdcbf99516d4312</snapshot>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-31 11:52:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4303af06fbe55a10f24ffcdcbeefdcd7</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-11-12 09:57:26</sys_updated_on>
+    </sys_flow_subflow_plan>
+</record_update>

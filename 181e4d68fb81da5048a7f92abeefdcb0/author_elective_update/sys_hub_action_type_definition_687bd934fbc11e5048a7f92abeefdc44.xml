@@ -1,0 +1,1926 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="DELETE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <ih_action>false</ih_action>
+        <internal_name>get_integration_triggers</internal_name>
+        <label_cache>[{"name":"{{action.request_payload}}","label":"action➛Request Payload","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[ae779a9e-9f4c-442e-9539-3e05b9a5d7c6].trigger}}","label":"step➛Script step➛Trigger","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":[],"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
+        <master_snapshot>18fdd5f4fbc11e5048a7f92abeefdc6b</master_snapshot>
+        <name>Get Integration Triggers</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 08:16:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>687bd934fbc11e5048a7f92abeefdc44</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Get Integration Triggers</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_687bd934fbc11e5048a7f92abeefdc44</sys_update_name>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 08:27:30</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="DELETE" query="documentkey=687bd934fbc11e5048a7f92abeefdc44"/>
+    <sys_variable_value action="DELETE" query="document_key=687bd934fbc11e5048a7f92abeefdc44"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>687bd934fbc11e5048a7f92abeefdc44</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 08:26:50</sys_created_on>
+        <sys_id>aacd91f4fbc11e5048a7f92abeefdcc0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 08:26:50</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"integer\",\"default_value\":\"\",\"action_error_output\":\"true\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"string\",\"default_value\":null,\"action_error_output\":\"true\",\"label\":\"Message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Action Status\",\"read_only_complex_object\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8e3eb395-c990-4a7d-b8da-081a1acab7eb\"}"}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Action Status">56cd91f4fbc11e5048a7f92abeefdcb5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>687bd934fbc11e5048a7f92abeefdc44</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 08:26:50</sys_created_on>
+        <sys_id>e6cd91f4fbc11e5048a7f92abeefdcc0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 08:26:50</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">decd91f4fbc11e5048a7f92abeefdcb8</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=687bd934fbc11e5048a7f92abeefdc44"/>
+    <sys_element_mapping action="DELETE">
+        <field>trigger_type</field>
+        <id>687bd934fbc11e5048a7f92abeefdc44</id>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 08:24:46</sys_created_on>
+        <sys_id>8c5d99b4fbc11e5048a7f92abeefdc24</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 08:24:46</sys_updated_on>
+        <table>var__m_sys_hub_action_output_687bd934fbc11e5048a7f92abeefdc44</table>
+        <value>{{step[ae779a9e-9f4c-442e-9539-3e05b9a5d7c6].trigger}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>__action_status__</field>
+        <id>687bd934fbc11e5048a7f92abeefdc44</id>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 08:26:50</sys_created_on>
+        <sys_id>66cd91f4fbc11e5048a7f92abeefdcc0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 08:26:50</sys_updated_on>
+        <table>var__m_sys_hub_action_output_687bd934fbc11e5048a7f92abeefdc44</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>__dont_treat_as_error__</field>
+        <id>687bd934fbc11e5048a7f92abeefdc44</id>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 08:26:50</sys_created_on>
+        <sys_id>a2cd91f4fbc11e5048a7f92abeefdcc0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 08:26:50</sys_updated_on>
+        <table>var__m_sys_hub_action_output_687bd934fbc11e5048a7f92abeefdc44</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="DELETE" query="action=687bd934fbc11e5048a7f92abeefdc44^sys_idNOT IN0c5d59b4fbc11e5048a7f92abeefdcf8"/>
+    <sys_hub_step_instance action="DELETE">
+        <action display_value="Get Integration Triggers">687bd934fbc11e5048a7f92abeefdc44</action>
+        <cid>ae779a9e-9f4c-442e-9539-3e05b9a5d7c6</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 08:24:45</sys_created_on>
+        <sys_id>0c5d59b4fbc11e5048a7f92abeefdcf8</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 08:26:49</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="DELETE" query="document_key=0c5d59b4fbc11e5048a7f92abeefdcf8"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_step_instance</document>
+        <document_key>0c5d59b4fbc11e5048a7f92abeefdcf8</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 08:24:45</sys_created_on>
+        <sys_id>045d99b4fbc11e5048a7f92abeefdc19</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 08:24:45</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_step_instance</document>
+        <document_key>0c5d59b4fbc11e5048a7f92abeefdcf8</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 08:24:45</sys_created_on>
+        <sys_id>0c5d99b4fbc11e5048a7f92abeefdc19</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 08:26:49</sys_updated_on>
+        <value>(function execute(inputs, outputs) {&#13;
+&#13;
+    const payload = JSON.parse(inputs.payload);&#13;
+    outputs.trigger = {};&#13;
+    outputs.trigger.case_type = payload.case_type;&#13;
+    outputs.trigger.transaction_type = payload.transaction_type;&#13;
+&#13;
+})(inputs, outputs);&#13;
+</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=0c5d59b4fbc11e5048a7f92abeefdcf8"/>
+    <sys_element_mapping action="DELETE">
+        <field>application</field>
+        <id>0c5d59b4fbc11e5048a7f92abeefdcf8</id>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 08:24:45</sys_created_on>
+        <sys_id>c85d99b4fbc11e5048a7f92abeefdc18</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 08:24:45</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>payload</field>
+        <id>0c5d59b4fbc11e5048a7f92abeefdcf8</id>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 08:24:45</sys_created_on>
+        <sys_id>c45d99b4fbc11e5048a7f92abeefdc1a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 08:24:45</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_0c5d59b4fbc11e5048a7f92abeefdcf8</table>
+        <value>{{action.request_payload}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>script</field>
+        <id>0c5d59b4fbc11e5048a7f92abeefdcf8</id>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 08:24:45</sys_created_on>
+        <sys_id>805d99b4fbc11e5048a7f92abeefdc19</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 08:24:45</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_hub_step_ext_output_0c5d59b4fbc11e5048a7f92abeefdcf8^id=0c5d59b4fbc11e5048a7f92abeefdcf8"/>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=0c5d59b4fbc11e5048a7f92abeefdcf8"/>
+    <sys_hub_step_ext_input action="DELETE" query="model=0c5d59b4fbc11e5048a7f92abeefdcf8^sys_idNOT IN845d99b4fbc11e5048a7f92abeefdc00"/>
+    <sys_hub_step_ext_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>payload</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">0c5d59b4fbc11e5048a7f92abeefdcf8</model>
+        <model_id>0c5d59b4fbc11e5048a7f92abeefdcf8</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_0c5d59b4fbc11e5048a7f92abeefdcf8</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 08:24:45</sys_created_on>
+        <sys_id>845d99b4fbc11e5048a7f92abeefdc00</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 08:24:45</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="DELETE" query="model=0c5d59b4fbc11e5048a7f92abeefdcf8^sys_idNOT IN405d99b4fbc11e5048a7f92abeefdc11"/>
+    <sys_complex_object action="DELETE">
+        <label/>
+        <name>FD805d99b4f3c11e508fddd580d6362310</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>181e4d68fb81da5048a7f92abeefdcb0</scope_name>
+        <serialized_content>{"FlowDesigner:FD805d99b4f3c11e508fddd580d6362310":{"case_type":"String","case_type.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Choice\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"choice\",\"default_value\":\"\",\"label\":\"Case Type\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"32\"}","SimpleChoiceFacet":"{\"complex_choice_map_key$\":{},\"choice_map_key$\":{\"Request\":\"{\\\"label\\\":\\\"Request\\\",\\\"value\\\":\\\"request\\\",\\\"order\\\":2}\",\"Incident\":\"{\\\"label\\\":\\\"Incident\\\",\\\"value\\\":\\\"incident\\\",\\\"order\\\":1}\"}}"},"transaction_type":"String","transaction_type.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Choice\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"choice\",\"default_value\":\"\",\"label\":\"Transaction Type\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"32\"}","SimpleChoiceFacet":"{\"complex_choice_map_key$\":{},\"choice_map_key$\":{\"Reassign\":\"{\\\"label\\\":\\\"Reassign\\\",\\\"value\\\":\\\"reassign\\\",\\\"order\\\":3}\",\"Create\":\"{\\\"label\\\":\\\"Create\\\",\\\"value\\\":\\\"create\\\",\\\"order\\\":1}\",\"Update\":\"{\\\"label\\\":\\\"Update\\\",\\\"value\\\":\\\"update\\\",\\\"order\\\":2}\",\"Resolve\":\"{\\\"label\\\":\\\"Resolve\\\",\\\"value\\\":\\\"resolve\\\",\\\"order\\\":4}\",\"Reopen\":\"{\\\"label\\\":\\\"Reopen\\\",\\\"value\\\":\\\"reopen\\\",\\\"order\\\":5}\"}}"}},"FlowDesigner:FD805d99b4f3c11e508fddd580d6362310.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Trigger\",\"mandatory\":\"false\",\"uiUniqueId\":\"e44e0b4c-3f61-410f-8405-6b219da3322f\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD805d99b4f3c11e508fddd580d6362310\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 08:24:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>445d99b4fbc11e5048a7f92abeefdc10</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 08:27:29</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+    <sys_hub_step_ext_output action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD805d99b4f3c11e508fddd580d6362310,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=e44e0b4c-3f61-410f-8405-6b219da3322f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>trigger</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Trigger</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Script step">0c5d59b4fbc11e5048a7f92abeefdcf8</model>
+        <model_id>0c5d59b4fbc11e5048a7f92abeefdcf8</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_0c5d59b4fbc11e5048a7f92abeefdcf8</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 08:24:45</sys_created_on>
+        <sys_id>405d99b4fbc11e5048a7f92abeefdc11</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 08:24:45</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="DELETE" query="instance=0c5d59b4fbc11e5048a7f92abeefdcf8"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_step_ext_output_0c5d59b4fbc11e5048a7f92abeefdcf8^sys_idNOT IN845d99b4fbc11e5048a7f92abeefdc14"/>
+    <sys_documentation action="DELETE">
+        <element>trigger</element>
+        <help/>
+        <hint/>
+        <label>Trigger</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_0c5d59b4fbc11e5048a7f92abeefdcf8</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 08:24:45</sys_created_on>
+        <sys_id>845d99b4fbc11e5048a7f92abeefdc14</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 08:24:45</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="DELETE" query="model=687bd934fbc11e5048a7f92abeefdc44^sys_idNOT IN0c5d19f0fbc11e5048a7f92abeefdc70"/>
+    <sys_hub_action_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=7a7ee75f-124c-45b3-87dd-47663749a1d3</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>request_payload</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Request Payload</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Integration Triggers">687bd934fbc11e5048a7f92abeefdc44</model>
+        <model_id>687bd934fbc11e5048a7f92abeefdc44</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_687bd934fbc11e5048a7f92abeefdc44</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 08:24:45</sys_created_on>
+        <sys_id>0c5d19f0fbc11e5048a7f92abeefdc70</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 08:24:45</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=0c5d19f0fbc11e5048a7f92abeefdc70"/>
+    <sys_hub_action_output action="DELETE" query="model=687bd934fbc11e5048a7f92abeefdc44^sys_idNOT IN085d99b4fbc11e5048a7f92abeefdc1e,56cd91f4fbc11e5048a7f92abeefdcb5,decd91f4fbc11e5048a7f92abeefdcb8"/>
+    <sys_complex_object action="DELETE">
+        <label/>
+        <name>FD485d99b4b2c11e5094916379cdc1c51d</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>181e4d68fb81da5048a7f92abeefdcb0</scope_name>
+        <serialized_content>{"FlowDesigner:FD485d99b4b2c11e5094916379cdc1c51d":{"case_type":"String","case_type.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Choice\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"choice\",\"default_value\":\"\",\"label\":\"Case Type\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"32\",\"uiUniqueId\":\"d9e96865-343f-45f9-beb4-59a50ed7c92c\"}","SimpleChoiceFacet":"{\"complex_choice_map_key$\":{},\"choice_map_key$\":{\"Request\":\"{\\\"label\\\":\\\"Request\\\",\\\"value\\\":\\\"request\\\",\\\"order\\\":2}\",\"-- None --\":\"{\\\"label\\\":\\\"-- None --\\\",\\\"value\\\":\\\"-- None --\\\",\\\"order\\\":0}\",\"Incident\":\"{\\\"label\\\":\\\"Incident\\\",\\\"value\\\":\\\"incident\\\",\\\"order\\\":1}\"}}"},"transaction_type":"String","transaction_type.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Choice\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"choice\",\"default_value\":\"\",\"label\":\"Transaction Type\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"32\",\"uiUniqueId\":\"cae7948d-cc03-48e2-8ae8-2435fd93bf32\"}","SimpleChoiceFacet":"{\"complex_choice_map_key$\":{},\"choice_map_key$\":{\"Reassign\":\"{\\\"label\\\":\\\"Reassign\\\",\\\"value\\\":\\\"reassign\\\",\\\"order\\\":3}\",\"Create\":\"{\\\"label\\\":\\\"Create\\\",\\\"value\\\":\\\"create\\\",\\\"order\\\":1}\",\"-- None --\":\"{\\\"label\\\":\\\"-- None --\\\",\\\"value\\\":\\\"-- None --\\\",\\\"order\\\":0}\",\"Update\":\"{\\\"label\\\":\\\"Update\\\",\\\"value\\\":\\\"update\\\",\\\"order\\\":2}\",\"Resolve\":\"{\\\"label\\\":\\\"Resolve\\\",\\\"value\\\":\\\"resolve\\\",\\\"order\\\":4}\",\"Reopen\":\"{\\\"label\\\":\\\"Reopen\\\",\\\"value\\\":\\\"reopen\\\",\\\"order\\\":5}\"}}"}},"FlowDesigner:FD485d99b4b2c11e5094916379cdc1c51d.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"ae779a9e-9f4c-442e-9539-3e05b9a5d7c6\",\"default_value\":\"\",\"label\":\"Trigger Type\",\"mandatory\":\"false\",\"uiUniqueId\":\"4f30319f-0ac1-4435-8e5a-82c715f65f7c\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD485d99b4b2c11e5094916379cdc1c51d\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"e44e0b4c-3f61-410f-8405-6b219da3322f\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 08:24:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0c5d99b4fbc11e5048a7f92abeefdc1d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 08:27:29</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+    <sys_hub_action_output action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD485d99b4b2c11e5094916379cdc1c51d,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,sourceId=ae779a9e-9f4c-442e-9539-3e05b9a5d7c6,sourceType=step,sourceUiUniqueId=e44e0b4c-3f61-410f-8405-6b219da3322f,uiType=object,uiTypeLabel=Object,uiUniqueId=4f30319f-0ac1-4435-8e5a-82c715f65f7c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>trigger_type</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Trigger Type</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Get Integration Triggers">687bd934fbc11e5048a7f92abeefdc44</model>
+        <model_id>687bd934fbc11e5048a7f92abeefdc44</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_687bd934fbc11e5048a7f92abeefdc44</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 08:24:46</sys_created_on>
+        <sys_id>085d99b4fbc11e5048a7f92abeefdc1e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 08:24:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=085d99b4fbc11e5048a7f92abeefdc1e"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=085d99b4fbc11e5048a7f92abeefdc1e"/>
+    <sys_hub_action_output action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=ceef8a3f-630f-4bee-a824-d2fe20170910</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Get Integration Triggers">687bd934fbc11e5048a7f92abeefdc44</model>
+        <model_id>687bd934fbc11e5048a7f92abeefdc44</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_687bd934fbc11e5048a7f92abeefdc44</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 08:26:50</sys_created_on>
+        <sys_id>56cd91f4fbc11e5048a7f92abeefdcb5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 08:26:50</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=56cd91f4fbc11e5048a7f92abeefdcb5"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=56cd91f4fbc11e5048a7f92abeefdcb5"/>
+    <sys_hub_action_output action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=f0079a1c-5984-4884-bc16-3331892c8955,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Get Integration Triggers">687bd934fbc11e5048a7f92abeefdc44</model>
+        <model_id>687bd934fbc11e5048a7f92abeefdc44</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_687bd934fbc11e5048a7f92abeefdc44</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 08:26:50</sys_created_on>
+        <sys_id>decd91f4fbc11e5048a7f92abeefdcb8</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 08:27:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=decd91f4fbc11e5048a7f92abeefdcb8"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=decd91f4fbc11e5048a7f92abeefdcb8"/>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=687bd934fbc11e5048a7f92abeefdc44"/>
+    <sys_hub_action_status_metadata action="DELETE" query="action_type_id=687bd934fbc11e5048a7f92abeefdc44^sys_idNOT IN885d99b4fbc11e5048a7f92abeefdc26"/>
+    <sys_hub_action_status_metadata action="DELETE">
+        <action_type_id display_value="Get Integration Triggers">687bd934fbc11e5048a7f92abeefdc44</action_type_id>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 08:24:46</sys_created_on>
+        <sys_id>885d99b4fbc11e5048a7f92abeefdc26</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 08:24:46</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="DELETE" query="action_status_metadata_id=885d99b4fbc11e5048a7f92abeefdc26"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_action_input_687bd934fbc11e5048a7f92abeefdc44^sys_idNOT IN485d59b4fbc11e5048a7f92abeefdcf6"/>
+    <sys_documentation action="DELETE">
+        <element>request_payload</element>
+        <help/>
+        <hint/>
+        <label>Request Payload</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_687bd934fbc11e5048a7f92abeefdc44</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 08:24:45</sys_created_on>
+        <sys_id>485d59b4fbc11e5048a7f92abeefdcf6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 08:24:45</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_action_input_687bd934fbc11e5048a7f92abeefdc44"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_action_output_687bd934fbc11e5048a7f92abeefdc44^sys_idNOT IN12cd91f4fbc11e5048a7f92abeefdcb8,445d99b4fbc11e5048a7f92abeefdc22,66cd91f4fbc11e5048a7f92abeefdcbd"/>
+    <sys_documentation action="DELETE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_687bd934fbc11e5048a7f92abeefdc44</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 08:26:50</sys_created_on>
+        <sys_id>12cd91f4fbc11e5048a7f92abeefdcb8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 08:26:50</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>trigger_type</element>
+        <help/>
+        <hint/>
+        <label>Trigger Type</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_687bd934fbc11e5048a7f92abeefdc44</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 08:24:46</sys_created_on>
+        <sys_id>445d99b4fbc11e5048a7f92abeefdc22</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 08:24:46</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_687bd934fbc11e5048a7f92abeefdc44</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 08:26:50</sys_created_on>
+        <sys_id>66cd91f4fbc11e5048a7f92abeefdcbd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 08:26:50</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_action_output_687bd934fbc11e5048a7f92abeefdc44"/>
+    <sys_hub_action_plan action="DELETE" query="action_id=687bd934fbc11e5048a7f92abeefdc44"/>
+    <sys_hub_action_type_snapshot action="DELETE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>get_integration_triggers</internal_name>
+        <label_cache>[{"name":"{{action.request_payload}}","label":"action➛Request Payload","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[ae779a9e-9f4c-442e-9539-3e05b9a5d7c6].trigger}}","label":"step➛Script step➛Trigger","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":[],"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
+        <master>true</master>
+        <name>Get Integration Triggers</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <parent_action display_value="Get Integration Triggers">687bd934fbc11e5048a7f92abeefdc44</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 08:27:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>18fdd5f4fbc11e5048a7f92abeefdc6b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 08:27:30</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="DELETE" query="documentkey=18fdd5f4fbc11e5048a7f92abeefdc6b"/>
+    <sys_variable_value action="DELETE" query="document_key=18fdd5f4fbc11e5048a7f92abeefdc6b"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>18fdd5f4fbc11e5048a7f92abeefdc6b</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 08:27:30</sys_created_on>
+        <sys_id>94fdd5f4fbc11e5048a7f92abeefdcfd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 08:27:30</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"integer\",\"default_value\":\"\",\"action_error_output\":\"true\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"string\",\"default_value\":null,\"action_error_output\":\"true\",\"label\":\"Message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Action Status\",\"read_only_complex_object\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8e3eb395-c990-4a7d-b8da-081a1acab7eb\"}"}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Action Status">dcfdd5f4fbc11e5048a7f92abeefdcf1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>18fdd5f4fbc11e5048a7f92abeefdc6b</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 08:27:30</sys_created_on>
+        <sys_id>d0fdd5f4fbc11e5048a7f92abeefdcfd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 08:27:30</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">58fdd5f4fbc11e5048a7f92abeefdcf5</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=18fdd5f4fbc11e5048a7f92abeefdc6b"/>
+    <sys_element_mapping action="DELETE">
+        <field>trigger_type</field>
+        <id>18fdd5f4fbc11e5048a7f92abeefdc6b</id>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 08:27:30</sys_created_on>
+        <sys_id>50fdd5f4fbc11e5048a7f92abeefdcfd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 08:27:30</sys_updated_on>
+        <table>var__m_sys_hub_action_output_18fdd5f4fbc11e5048a7f92abeefdc6b</table>
+        <value>{{step[ae779a9e-9f4c-442e-9539-3e05b9a5d7c6].trigger}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>__action_status__</field>
+        <id>18fdd5f4fbc11e5048a7f92abeefdc6b</id>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 08:27:30</sys_created_on>
+        <sys_id>9cfdd5f4fbc11e5048a7f92abeefdcfc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 08:27:30</sys_updated_on>
+        <table>var__m_sys_hub_action_output_18fdd5f4fbc11e5048a7f92abeefdc6b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>__dont_treat_as_error__</field>
+        <id>18fdd5f4fbc11e5048a7f92abeefdc6b</id>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 08:27:30</sys_created_on>
+        <sys_id>d8fdd5f4fbc11e5048a7f92abeefdcfc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 08:27:30</sys_updated_on>
+        <table>var__m_sys_hub_action_output_18fdd5f4fbc11e5048a7f92abeefdc6b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="DELETE" query="action=18fdd5f4fbc11e5048a7f92abeefdc6b^sys_idNOT IN10fdd5f4fbc11e5048a7f92abeefdc75"/>
+    <sys_hub_step_instance action="DELETE">
+        <action display_value="Get Integration Triggers">18fdd5f4fbc11e5048a7f92abeefdc6b</action>
+        <cid>ae779a9e-9f4c-442e-9539-3e05b9a5d7c6</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 08:27:30</sys_created_on>
+        <sys_id>10fdd5f4fbc11e5048a7f92abeefdc75</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 08:27:30</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="DELETE" query="document_key=10fdd5f4fbc11e5048a7f92abeefdc75"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_step_instance</document>
+        <document_key>10fdd5f4fbc11e5048a7f92abeefdc75</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 08:27:30</sys_created_on>
+        <sys_id>50fdd5f4fbc11e5048a7f92abeefdce9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 08:27:30</sys_updated_on>
+        <value>(function execute(inputs, outputs) {&#13;
+&#13;
+    const payload = JSON.parse(inputs.payload);&#13;
+    outputs.trigger = {};&#13;
+    outputs.trigger.case_type = payload.case_type;&#13;
+    outputs.trigger.transaction_type = payload.transaction_type;&#13;
+&#13;
+})(inputs, outputs);&#13;
+</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_step_instance</document>
+        <document_key>10fdd5f4fbc11e5048a7f92abeefdc75</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 08:27:30</sys_created_on>
+        <sys_id>9cfdd5f4fbc11e5048a7f92abeefdce8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 08:27:30</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=10fdd5f4fbc11e5048a7f92abeefdc75"/>
+    <sys_element_mapping action="DELETE">
+        <field>application</field>
+        <id>10fdd5f4fbc11e5048a7f92abeefdc75</id>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 08:27:30</sys_created_on>
+        <sys_id>58fdd5f4fbc11e5048a7f92abeefdce8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 08:27:30</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>payload</field>
+        <id>10fdd5f4fbc11e5048a7f92abeefdc75</id>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 08:27:30</sys_created_on>
+        <sys_id>d8fdd5f4fbc11e5048a7f92abeefdce9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 08:27:30</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_10fdd5f4fbc11e5048a7f92abeefdc75</table>
+        <value>{{action.request_payload}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>script</field>
+        <id>10fdd5f4fbc11e5048a7f92abeefdc75</id>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 08:27:30</sys_created_on>
+        <sys_id>1cfdd5f4fbc11e5048a7f92abeefdce8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 08:27:30</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_hub_step_ext_output_10fdd5f4fbc11e5048a7f92abeefdc75^id=10fdd5f4fbc11e5048a7f92abeefdc75"/>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=10fdd5f4fbc11e5048a7f92abeefdc75"/>
+    <sys_hub_step_ext_input action="DELETE" query="model=10fdd5f4fbc11e5048a7f92abeefdc75^sys_idNOT INd4fdd5f4fbc11e5048a7f92abeefdcaa"/>
+    <sys_hub_step_ext_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>payload</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>payload</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">10fdd5f4fbc11e5048a7f92abeefdc75</model>
+        <model_id>10fdd5f4fbc11e5048a7f92abeefdc75</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_10fdd5f4fbc11e5048a7f92abeefdc75</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 08:27:30</sys_created_on>
+        <sys_id>d4fdd5f4fbc11e5048a7f92abeefdcaa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 08:27:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="DELETE" query="model=10fdd5f4fbc11e5048a7f92abeefdc75^sys_idNOT IN10fdd5f4fbc11e5048a7f92abeefdcb0"/>
+    <sys_complex_object action="DELETE">
+        <label/>
+        <name>FD1cfdd5f49ac11e502ff73ee64dd6ceae</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>181e4d68fb81da5048a7f92abeefdcb0</scope_name>
+        <serialized_content>{"FlowDesigner:FD1cfdd5f49ac11e502ff73ee64dd6ceae":{"case_type":"String","case_type.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Choice\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"choice\",\"default_value\":\"\",\"label\":\"Case Type\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"32\"}","SimpleChoiceFacet":"{\"complex_choice_map_key$\":{},\"choice_map_key$\":{\"Request\":\"{\\\"label\\\":\\\"Request\\\",\\\"value\\\":\\\"request\\\",\\\"order\\\":2}\",\"Incident\":\"{\\\"label\\\":\\\"Incident\\\",\\\"value\\\":\\\"incident\\\",\\\"order\\\":1}\"}}"},"transaction_type":"String","transaction_type.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Choice\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"choice\",\"default_value\":\"\",\"label\":\"Transaction Type\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"32\"}","SimpleChoiceFacet":"{\"complex_choice_map_key$\":{},\"choice_map_key$\":{\"Reassign\":\"{\\\"label\\\":\\\"Reassign\\\",\\\"value\\\":\\\"reassign\\\",\\\"order\\\":3}\",\"Create\":\"{\\\"label\\\":\\\"Create\\\",\\\"value\\\":\\\"create\\\",\\\"order\\\":1}\",\"Update\":\"{\\\"label\\\":\\\"Update\\\",\\\"value\\\":\\\"update\\\",\\\"order\\\":2}\",\"Resolve\":\"{\\\"label\\\":\\\"Resolve\\\",\\\"value\\\":\\\"resolve\\\",\\\"order\\\":4}\",\"Reopen\":\"{\\\"label\\\":\\\"Reopen\\\",\\\"value\\\":\\\"reopen\\\",\\\"order\\\":5}\"}}"}},"FlowDesigner:FD1cfdd5f49ac11e502ff73ee64dd6ceae.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD1cfdd5f49ac11e502ff73ee64dd6ceae\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Trigger\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"65000\",\"uiUniqueId\":\"e44e0b4c-3f61-410f-8405-6b219da3322f\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 08:27:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>dcfdd5f4fbc11e5048a7f92abeefdcae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 08:27:30</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+    <sys_hub_step_ext_output action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD1cfdd5f49ac11e502ff73ee64dd6ceae,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=e44e0b4c-3f61-410f-8405-6b219da3322f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>trigger</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Trigger</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Script step">10fdd5f4fbc11e5048a7f92abeefdc75</model>
+        <model_id>10fdd5f4fbc11e5048a7f92abeefdc75</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_10fdd5f4fbc11e5048a7f92abeefdc75</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 08:27:30</sys_created_on>
+        <sys_id>10fdd5f4fbc11e5048a7f92abeefdcb0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 08:27:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="DELETE" query="instance=10fdd5f4fbc11e5048a7f92abeefdc75"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_step_ext_output_10fdd5f4fbc11e5048a7f92abeefdc75^sys_idNOT IN14fdd5f4fbc11e5048a7f92abeefdcb3"/>
+    <sys_documentation action="DELETE">
+        <element>trigger</element>
+        <help/>
+        <hint/>
+        <label>Trigger</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_10fdd5f4fbc11e5048a7f92abeefdc75</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 08:27:30</sys_created_on>
+        <sys_id>14fdd5f4fbc11e5048a7f92abeefdcb3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 08:27:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="DELETE" query="model=18fdd5f4fbc11e5048a7f92abeefdc6b^sys_idNOT IN90fdd5f4fbc11e5048a7f92abeefdc6f"/>
+    <sys_hub_action_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=7a7ee75f-124c-45b3-87dd-47663749a1d3</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>request_payload</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Request Payload</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Integration Triggers">18fdd5f4fbc11e5048a7f92abeefdc6b</model>
+        <model_id>18fdd5f4fbc11e5048a7f92abeefdc6b</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_18fdd5f4fbc11e5048a7f92abeefdc6b</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 08:27:30</sys_created_on>
+        <sys_id>90fdd5f4fbc11e5048a7f92abeefdc6f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 08:27:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=90fdd5f4fbc11e5048a7f92abeefdc6f"/>
+    <sys_hub_action_output action="DELETE" query="model=18fdd5f4fbc11e5048a7f92abeefdc6b^sys_idNOT IN58fdd5f4fbc11e5048a7f92abeefdcf5,98fdd5f4fbc11e5048a7f92abeefdced,dcfdd5f4fbc11e5048a7f92abeefdcf1"/>
+    <sys_hub_action_output action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=f0079a1c-5984-4884-bc16-3331892c8955,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Get Integration Triggers">18fdd5f4fbc11e5048a7f92abeefdc6b</model>
+        <model_id>18fdd5f4fbc11e5048a7f92abeefdc6b</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_18fdd5f4fbc11e5048a7f92abeefdc6b</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 08:27:30</sys_created_on>
+        <sys_id>58fdd5f4fbc11e5048a7f92abeefdcf5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 08:27:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=58fdd5f4fbc11e5048a7f92abeefdcf5"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=58fdd5f4fbc11e5048a7f92abeefdcf5"/>
+    <sys_complex_object action="DELETE">
+        <label/>
+        <name>FDd8fdd5f4cfc11e50adf8f8fbdab0abec</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>181e4d68fb81da5048a7f92abeefdcb0</scope_name>
+        <serialized_content>{"FlowDesigner:FDd8fdd5f4cfc11e50adf8f8fbdab0abec":{"case_type":"String","case_type.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Choice\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"choice\",\"default_value\":\"\",\"label\":\"Case Type\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"32\",\"uiUniqueId\":\"d9e96865-343f-45f9-beb4-59a50ed7c92c\"}","SimpleChoiceFacet":"{\"complex_choice_map_key$\":{},\"choice_map_key$\":{\"Request\":\"{\\\"label\\\":\\\"Request\\\",\\\"value\\\":\\\"request\\\",\\\"order\\\":2}\",\"-- None --\":\"{\\\"label\\\":\\\"-- None --\\\",\\\"value\\\":\\\"-- None --\\\",\\\"order\\\":0}\",\"Incident\":\"{\\\"label\\\":\\\"Incident\\\",\\\"value\\\":\\\"incident\\\",\\\"order\\\":1}\"}}"},"transaction_type":"String","transaction_type.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Choice\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"choice\",\"default_value\":\"\",\"label\":\"Transaction Type\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"32\",\"uiUniqueId\":\"cae7948d-cc03-48e2-8ae8-2435fd93bf32\"}","SimpleChoiceFacet":"{\"complex_choice_map_key$\":{},\"choice_map_key$\":{\"Reassign\":\"{\\\"label\\\":\\\"Reassign\\\",\\\"value\\\":\\\"reassign\\\",\\\"order\\\":3}\",\"Create\":\"{\\\"label\\\":\\\"Create\\\",\\\"value\\\":\\\"create\\\",\\\"order\\\":1}\",\"-- None --\":\"{\\\"label\\\":\\\"-- None --\\\",\\\"value\\\":\\\"-- None --\\\",\\\"order\\\":0}\",\"Update\":\"{\\\"label\\\":\\\"Update\\\",\\\"value\\\":\\\"update\\\",\\\"order\\\":2}\",\"Resolve\":\"{\\\"label\\\":\\\"Resolve\\\",\\\"value\\\":\\\"resolve\\\",\\\"order\\\":4}\",\"Reopen\":\"{\\\"label\\\":\\\"Reopen\\\",\\\"value\\\":\\\"reopen\\\",\\\"order\\\":5}\"}}"}},"FlowDesigner:FDd8fdd5f4cfc11e50adf8f8fbdab0abec.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"ae779a9e-9f4c-442e-9539-3e05b9a5d7c6\",\"default_value\":\"\",\"label\":\"Trigger Type\",\"mandatory\":\"false\",\"uiUniqueId\":\"4f30319f-0ac1-4435-8e5a-82c715f65f7c\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDd8fdd5f4cfc11e50adf8f8fbdab0abec\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"e44e0b4c-3f61-410f-8405-6b219da3322f\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 08:27:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9cfdd5f4fbc11e5048a7f92abeefdcec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 08:27:30</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+    <sys_hub_action_output action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FDd8fdd5f4cfc11e50adf8f8fbdab0abec,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,sourceId=ae779a9e-9f4c-442e-9539-3e05b9a5d7c6,sourceType=step,sourceUiUniqueId=e44e0b4c-3f61-410f-8405-6b219da3322f,uiType=object,uiTypeLabel=Object,uiUniqueId=4f30319f-0ac1-4435-8e5a-82c715f65f7c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>trigger_type</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Trigger Type</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Get Integration Triggers">18fdd5f4fbc11e5048a7f92abeefdc6b</model>
+        <model_id>18fdd5f4fbc11e5048a7f92abeefdc6b</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_18fdd5f4fbc11e5048a7f92abeefdc6b</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 08:27:30</sys_created_on>
+        <sys_id>98fdd5f4fbc11e5048a7f92abeefdced</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 08:27:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=98fdd5f4fbc11e5048a7f92abeefdced"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=98fdd5f4fbc11e5048a7f92abeefdced"/>
+    <sys_hub_action_output action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=ceef8a3f-630f-4bee-a824-d2fe20170910</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Get Integration Triggers">18fdd5f4fbc11e5048a7f92abeefdc6b</model>
+        <model_id>18fdd5f4fbc11e5048a7f92abeefdc6b</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_18fdd5f4fbc11e5048a7f92abeefdc6b</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 08:27:30</sys_created_on>
+        <sys_id>dcfdd5f4fbc11e5048a7f92abeefdcf1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 08:27:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=dcfdd5f4fbc11e5048a7f92abeefdcf1"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=dcfdd5f4fbc11e5048a7f92abeefdcf1"/>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=18fdd5f4fbc11e5048a7f92abeefdc6b"/>
+    <sys_hub_action_status_metadata action="DELETE" query="action_type_id=18fdd5f4fbc11e5048a7f92abeefdc6b^sys_idNOT IN50fd19f4fbc11e5048a7f92abeefdc00"/>
+    <sys_hub_action_status_metadata action="DELETE">
+        <action_type_id display_value="Get Integration Triggers">18fdd5f4fbc11e5048a7f92abeefdc6b</action_type_id>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 08:27:30</sys_created_on>
+        <sys_id>50fd19f4fbc11e5048a7f92abeefdc00</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 08:27:30</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="DELETE" query="action_status_metadata_id=50fd19f4fbc11e5048a7f92abeefdc00"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_action_input_18fdd5f4fbc11e5048a7f92abeefdc6b^sys_idNOT IN5cfdd5f4fbc11e5048a7f92abeefdc72"/>
+    <sys_documentation action="DELETE">
+        <element>request_payload</element>
+        <help/>
+        <hint/>
+        <label>Request Payload</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_18fdd5f4fbc11e5048a7f92abeefdc6b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 08:27:30</sys_created_on>
+        <sys_id>5cfdd5f4fbc11e5048a7f92abeefdc72</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 08:27:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_action_input_18fdd5f4fbc11e5048a7f92abeefdc6b"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_action_output_18fdd5f4fbc11e5048a7f92abeefdc6b^sys_idNOT IN10fdd5f4fbc11e5048a7f92abeefdcf1,98fdd5f4fbc11e5048a7f92abeefdcf4,dcfdd5f4fbc11e5048a7f92abeefdcf9"/>
+    <sys_documentation action="DELETE">
+        <element>trigger_type</element>
+        <help/>
+        <hint/>
+        <label>Trigger Type</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_18fdd5f4fbc11e5048a7f92abeefdc6b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 08:27:30</sys_created_on>
+        <sys_id>10fdd5f4fbc11e5048a7f92abeefdcf1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 08:27:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_18fdd5f4fbc11e5048a7f92abeefdc6b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 08:27:30</sys_created_on>
+        <sys_id>98fdd5f4fbc11e5048a7f92abeefdcf4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 08:27:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_18fdd5f4fbc11e5048a7f92abeefdc6b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 08:27:30</sys_created_on>
+        <sys_id>dcfdd5f4fbc11e5048a7f92abeefdcf9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 08:27:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_action_output_18fdd5f4fbc11e5048a7f92abeefdc6b"/>
+    <sys_hub_action_type_definition action="DELETE">
+        <sys_id>687bd934fbc11e5048a7f92abeefdc44</sys_id>
+        <latest_snapshot>18fdd5f4fbc11e5048a7f92abeefdc6b</latest_snapshot>
+        <compiler_build>glide-vancouver-07-06-2023__patch9-hotfix2b-07-22-2024_08-06-2024_1737.zip</compiler_build>
+    </sys_hub_action_type_definition>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</application>
+        <file_path/>
+        <instance_id>23dcc1eddb2980982f68c59705961996</instance_id>
+        <instance_name>tipdev</instance_name>
+        <name>sys_hub_action_type_definition_687bd934fbc11e5048a7f92abeefdc44</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_hub_action_type_definition"&gt;&lt;sys_hub_action_type_definition action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;action_status/&gt;&lt;action_template/&gt;&lt;active&gt;true&lt;/active&gt;&lt;annotation/&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;copied_from/&gt;&lt;copied_from_name/&gt;&lt;description/&gt;&lt;ih_action&gt;false&lt;/ih_action&gt;&lt;internal_name&gt;get_integration_triggers&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"{{action.request_payload}}","label":"action➛Request Payload","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[ae779a9e-9f4c-442e-9539-3e05b9a5d7c6].trigger}}","label":"step➛Script step➛Trigger","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":[],"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]&lt;/label_cache&gt;&lt;master_snapshot&gt;18fdd5f4fbc11e5048a7f92abeefdc6b&lt;/master_snapshot&gt;&lt;name&gt;Get Integration Triggers&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;outputs/&gt;&lt;pre_compiled&gt;false&lt;/pre_compiled&gt;&lt;state&gt;published&lt;/state&gt;&lt;sys_class_name&gt;sys_hub_action_type_definition&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-02 08:16:36&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;687bd934fbc11e5048a7f92abeefdc44&lt;/sys_id&gt;&lt;sys_mod_count&gt;7&lt;/sys_mod_count&gt;&lt;sys_name&gt;Get Integration Triggers&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="SCC Integration" source="x_tipts_scc_integr"&gt;181e4d68fb81da5048a7f92abeefdcb0&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="SCC Integration"&gt;181e4d68fb81da5048a7f92abeefdcb0&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_hub_action_type_definition_687bd934fbc11e5048a7f92abeefdc44&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-02 08:27:30&lt;/sys_updated_on&gt;&lt;system_level&gt;false&lt;/system_level&gt;&lt;type/&gt;&lt;/sys_hub_action_type_definition&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=687bd934fbc11e5048a7f92abeefdc44"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=687bd934fbc11e5048a7f92abeefdc44"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_type_definition&lt;/document&gt;&lt;document_key&gt;687bd934fbc11e5048a7f92abeefdc44&lt;/document_key&gt;&lt;order&gt;2&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-02 08:26:50&lt;/sys_created_on&gt;&lt;sys_id&gt;aacd91f4fbc11e5048a7f92abeefdcc0&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-02 08:26:50&lt;/sys_updated_on&gt;&lt;value&gt;{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"integer\",\"default_value\":\"\",\"action_error_output\":\"true\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"string\",\"default_value\":null,\"action_error_output\":\"true\",\"label\":\"Message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Action Status\",\"read_only_complex_object\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8e3eb395-c990-4a7d-b8da-081a1acab7eb\"}"}},"serializationFormat":"JSON"}&lt;/value&gt;&lt;variable display_value="Action Status"&gt;56cd91f4fbc11e5048a7f92abeefdcb5&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_type_definition&lt;/document&gt;&lt;document_key&gt;687bd934fbc11e5048a7f92abeefdc44&lt;/document_key&gt;&lt;order&gt;3&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-02 08:26:50&lt;/sys_created_on&gt;&lt;sys_id&gt;e6cd91f4fbc11e5048a7f92abeefdcc0&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-02 08:26:50&lt;/sys_updated_on&gt;&lt;value&gt;0&lt;/value&gt;&lt;variable display_value="Don't Treat as Error"&gt;decd91f4fbc11e5048a7f92abeefdcb8&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="id=687bd934fbc11e5048a7f92abeefdc44"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;trigger_type&lt;/field&gt;&lt;id&gt;687bd934fbc11e5048a7f92abeefdc44&lt;/id&gt;&lt;sys_created_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-02 08:24:46&lt;/sys_created_on&gt;&lt;sys_id&gt;8c5d99b4fbc11e5048a7f92abeefdc24&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-02 08:24:46&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_output_687bd934fbc11e5048a7f92abeefdc44&lt;/table&gt;&lt;value&gt;{{step[ae779a9e-9f4c-442e-9539-3e05b9a5d7c6].trigger}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;__action_status__&lt;/field&gt;&lt;id&gt;687bd934fbc11e5048a7f92abeefdc44&lt;/id&gt;&lt;sys_created_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-02 08:26:50&lt;/sys_created_on&gt;&lt;sys_id&gt;66cd91f4fbc11e5048a7f92abeefdcc0&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-02 08:26:50&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_output_687bd934fbc11e5048a7f92abeefdc44&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;__dont_treat_as_error__&lt;/field&gt;&lt;id&gt;687bd934fbc11e5048a7f92abeefdc44&lt;/id&gt;&lt;sys_created_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-02 08:26:50&lt;/sys_created_on&gt;&lt;sys_id&gt;a2cd91f4fbc11e5048a7f92abeefdcc0&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-02 08:26:50&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_output_687bd934fbc11e5048a7f92abeefdc44&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_step_instance action="delete_multiple" query="action=687bd934fbc11e5048a7f92abeefdc44^sys_idNOT IN0c5d59b4fbc11e5048a7f92abeefdcf8"/&gt;&lt;sys_hub_step_instance action="INSERT_OR_UPDATE"&gt;&lt;action display_value="Get Integration Triggers"&gt;687bd934fbc11e5048a7f92abeefdc44&lt;/action&gt;&lt;cid&gt;ae779a9e-9f4c-442e-9539-3e05b9a5d7c6&lt;/cid&gt;&lt;error_handling_type&gt;1&lt;/error_handling_type&gt;&lt;extended_inputs/&gt;&lt;extended_inputs/&gt;&lt;extended_outputs/&gt;&lt;icon/&gt;&lt;inputs/&gt;&lt;label&gt;Script step&lt;/label&gt;&lt;order&gt;1&lt;/order&gt;&lt;outputs/&gt;&lt;section/&gt;&lt;step_type display_value="Script"&gt;106afb6647032200b4fad7527c9a71e7&lt;/step_type&gt;&lt;sys_created_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-02 08:24:45&lt;/sys_created_on&gt;&lt;sys_id&gt;0c5d59b4fbc11e5048a7f92abeefdcf8&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_scope display_value="SCC Integration"&gt;181e4d68fb81da5048a7f92abeefdcb0&lt;/sys_scope&gt;&lt;sys_updated_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-02 08:26:49&lt;/sys_updated_on&gt;&lt;/sys_hub_step_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=0c5d59b4fbc11e5048a7f92abeefdcf8"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_step_instance&lt;/document&gt;&lt;document_key&gt;0c5d59b4fbc11e5048a7f92abeefdcf8&lt;/document_key&gt;&lt;order&gt;400&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-02 08:24:45&lt;/sys_created_on&gt;&lt;sys_id&gt;045d99b4fbc11e5048a7f92abeefdc19&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-02 08:24:45&lt;/sys_updated_on&gt;&lt;value&gt;35aa573fd7802200bdbaee5b5e610375&lt;/value&gt;&lt;variable display_value="MID Application"&gt;f5e56d79b3101300176b051a16a8dce4&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_step_instance&lt;/document&gt;&lt;document_key&gt;0c5d59b4fbc11e5048a7f92abeefdcf8&lt;/document_key&gt;&lt;order&gt;600&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-02 08:24:45&lt;/sys_created_on&gt;&lt;sys_id&gt;0c5d99b4fbc11e5048a7f92abeefdc19&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-02 08:26:49&lt;/sys_updated_on&gt;&lt;value&gt;(function execute(inputs, outputs) {&amp;#13;
+&amp;#13;
+    const payload = JSON.parse(inputs.payload);&amp;#13;
+    outputs.trigger = {};&amp;#13;
+    outputs.trigger.case_type = payload.case_type;&amp;#13;
+    outputs.trigger.transaction_type = payload.transaction_type;&amp;#13;
+&amp;#13;
+})(inputs, outputs);&amp;#13;
+&lt;/value&gt;&lt;variable display_value="Script"&gt;71aa7f6647032200b4fad7527c9a719b&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="id=0c5d59b4fbc11e5048a7f92abeefdcf8"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;application&lt;/field&gt;&lt;id&gt;0c5d59b4fbc11e5048a7f92abeefdcf8&lt;/id&gt;&lt;sys_created_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-02 08:24:45&lt;/sys_created_on&gt;&lt;sys_id&gt;c85d99b4fbc11e5048a7f92abeefdc18&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-02 08:24:45&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;payload&lt;/field&gt;&lt;id&gt;0c5d59b4fbc11e5048a7f92abeefdcf8&lt;/id&gt;&lt;sys_created_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-02 08:24:45&lt;/sys_created_on&gt;&lt;sys_id&gt;c45d99b4fbc11e5048a7f92abeefdc1a&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-02 08:24:45&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_step_ext_input_0c5d59b4fbc11e5048a7f92abeefdcf8&lt;/table&gt;&lt;value&gt;{{action.request_payload}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;script&lt;/field&gt;&lt;id&gt;0c5d59b4fbc11e5048a7f92abeefdcf8&lt;/id&gt;&lt;sys_created_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-02 08:24:45&lt;/sys_created_on&gt;&lt;sys_id&gt;805d99b4fbc11e5048a7f92abeefdc19&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-02 08:24:45&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_0c5d59b4fbc11e5048a7f92abeefdcf8^id=0c5d59b4fbc11e5048a7f92abeefdcf8"/&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=0c5d59b4fbc11e5048a7f92abeefdcf8"/&gt;&lt;sys_hub_step_ext_input action="delete_multiple" query="model=0c5d59b4fbc11e5048a7f92abeefdcf8^sys_idNOT IN845d99b4fbc11e5048a7f92abeefdc00"/&gt;&lt;sys_hub_step_ext_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;payload&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label/&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;8000&lt;/max_length&gt;&lt;model display_value="Script step"&gt;0c5d59b4fbc11e5048a7f92abeefdcf8&lt;/model&gt;&lt;model_id&gt;0c5d59b4fbc11e5048a7f92abeefdcf8&lt;/model_id&gt;&lt;model_table&gt;sys_hub_step_instance&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_step_ext_input_0c5d59b4fbc11e5048a7f92abeefdcf8&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;0&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_step_ext_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-02 08:24:45&lt;/sys_created_on&gt;&lt;sys_id&gt;845d99b4fbc11e5048a7f92abeefdc00&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SCC Integration"&gt;181e4d68fb81da5048a7f92abeefdcb0&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-02 08:24:45&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_step_ext_input&gt;&lt;sys_hub_step_ext_output action="delete_multiple" query="model=0c5d59b4fbc11e5048a7f92abeefdcf8^sys_idNOT IN405d99b4fbc11e5048a7f92abeefdc11"/&gt;&lt;sys_complex_object action="INSERT_OR_UPDATE"&gt;&lt;label/&gt;&lt;name&gt;FD805d99b4f3c11e508fddd580d6362310&lt;/name&gt;&lt;namespace&gt;FlowDesigner&lt;/namespace&gt;&lt;scope_name&gt;181e4d68fb81da5048a7f92abeefdcb0&lt;/scope_name&gt;&lt;serialized_content&gt;{"FlowDesigner:FD805d99b4f3c11e508fddd580d6362310":{"case_type":"String","case_type.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Choice\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"choice\",\"default_value\":\"\",\"label\":\"Case Type\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"32\"}","SimpleChoiceFacet":"{\"complex_choice_map_key$\":{},\"choice_map_key$\":{\"Request\":\"{\\\"label\\\":\\\"Request\\\",\\\"value\\\":\\\"request\\\",\\\"order\\\":2}\",\"Incident\":\"{\\\"label\\\":\\\"Incident\\\",\\\"value\\\":\\\"incident\\\",\\\"order\\\":1}\"}}"},"transaction_type":"String","transaction_type.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Choice\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"choice\",\"default_value\":\"\",\"label\":\"Transaction Type\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"32\"}","SimpleChoiceFacet":"{\"complex_choice_map_key$\":{},\"choice_map_key$\":{\"Reassign\":\"{\\\"label\\\":\\\"Reassign\\\",\\\"value\\\":\\\"reassign\\\",\\\"order\\\":3}\",\"Create\":\"{\\\"label\\\":\\\"Create\\\",\\\"value\\\":\\\"create\\\",\\\"order\\\":1}\",\"Update\":\"{\\\"label\\\":\\\"Update\\\",\\\"value\\\":\\\"update\\\",\\\"order\\\":2}\",\"Resolve\":\"{\\\"label\\\":\\\"Resolve\\\",\\\"value\\\":\\\"resolve\\\",\\\"order\\\":4}\",\"Reopen\":\"{\\\"label\\\":\\\"Reopen\\\",\\\"value\\\":\\\"reopen\\\",\\\"order\\\":5}\"}}"}},"FlowDesigner:FD805d99b4f3c11e508fddd580d6362310.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Trigger\",\"mandatory\":\"false\",\"uiUniqueId\":\"e44e0b4c-3f61-410f-8405-6b219da3322f\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD805d99b4f3c11e508fddd580d6362310\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}&lt;/serialized_content&gt;&lt;sys_class_name&gt;sys_complex_object&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-02 08:24:45&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;445d99b4fbc11e5048a7f92abeefdc10&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_overrides/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SCC Integration"&gt;181e4d68fb81da5048a7f92abeefdcb0&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-02 08:27:29&lt;/sys_updated_on&gt;&lt;type&gt;complex_object_schema&lt;/type&gt;&lt;/sys_complex_object&gt;&lt;sys_hub_step_ext_output action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;co_type_name=FD805d99b4f3c11e508fddd580d6362310,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=e44e0b4c-3f61-410f-8405-6b219da3322f&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;trigger&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;Trigger&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;65000&lt;/max_length&gt;&lt;model display_value="Script step"&gt;0c5d59b4fbc11e5048a7f92abeefdcf8&lt;/model&gt;&lt;model_id&gt;0c5d59b4fbc11e5048a7f92abeefdcf8&lt;/model_id&gt;&lt;model_table&gt;sys_hub_step_instance&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_step_ext_output_0c5d59b4fbc11e5048a7f92abeefdcf8&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;1&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_step_ext_output&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-02 08:24:45&lt;/sys_created_on&gt;&lt;sys_id&gt;405d99b4fbc11e5048a7f92abeefdc11&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SCC Integration"&gt;181e4d68fb81da5048a7f92abeefdcb0&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-02 08:24:45&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_step_ext_output&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=0c5d59b4fbc11e5048a7f92abeefdcf8"/&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_0c5d59b4fbc11e5048a7f92abeefdcf8^sys_idNOT IN845d99b4fbc11e5048a7f92abeefdc14"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;trigger&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Trigger&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_step_ext_output_0c5d59b4fbc11e5048a7f92abeefdcf8&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-02 08:24:45&lt;/sys_created_on&gt;&lt;sys_id&gt;845d99b4fbc11e5048a7f92abeefdc14&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="SCC Integration" source="x_tipts_scc_integr"&gt;181e4d68fb81da5048a7f92abeefdcb0&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SCC Integration"&gt;181e4d68fb81da5048a7f92abeefdcb0&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-02 08:24:45&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_hub_action_input action="delete_multiple" query="model=687bd934fbc11e5048a7f92abeefdc44^sys_idNOT IN0c5d19f0fbc11e5048a7f92abeefdc70"/&gt;&lt;sys_hub_action_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=7a7ee75f-124c-45b3-87dd-47663749a1d3&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;request_payload&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;Request Payload&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;8000&lt;/max_length&gt;&lt;model display_value="Get Integration Triggers"&gt;687bd934fbc11e5048a7f92abeefdc44&lt;/model&gt;&lt;model_id&gt;687bd934fbc11e5048a7f92abeefdc44&lt;/model_id&gt;&lt;model_table&gt;sys_hub_action_type_definition&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_action_input_687bd934fbc11e5048a7f92abeefdc44&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;1&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_action_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-02 08:24:45&lt;/sys_created_on&gt;&lt;sys_id&gt;0c5d19f0fbc11e5048a7f92abeefdc70&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="SCC Integration"&gt;181e4d68fb81da5048a7f92abeefdcb0&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-02 08:24:45&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_action_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=0c5d19f0fbc11e5048a7f92abeefdc70"/&gt;&lt;sys_hub_action_output action="delete_multiple" query="model=687bd934fbc11e5048a7f92abeefdc44^sys_idNOT IN085d99b4fbc11e5048a7f92abeefdc1e,56cd91f4fbc11e5048a7f92abeefdcb5,decd91f4fbc11e5048a7f92abeefdcb8"/&gt;&lt;sys_complex_object action="INSERT_OR_UPDATE"&gt;&lt;label/&gt;&lt;name&gt;FD485d99b4b2c11e5094916379cdc1c51d&lt;/name&gt;&lt;namespace&gt;FlowDesigner&lt;/namespace&gt;&lt;scope_name&gt;181e4d68fb81da5048a7f92abeefdcb0&lt;/scope_name&gt;&lt;serialized_content&gt;{"FlowDesigner:FD485d99b4b2c11e5094916379cdc1c51d":{"case_type":"String","case_type.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Choice\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"choice\",\"default_value\":\"\",\"label\":\"Case Type\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"32\",\"uiUniqueId\":\"d9e96865-343f-45f9-beb4-59a50ed7c92c\"}","SimpleChoiceFacet":"{\"complex_choice_map_key$\":{},\"choice_map_key$\":{\"Request\":\"{\\\"label\\\":\\\"Request\\\",\\\"value\\\":\\\"request\\\",\\\"order\\\":2}\",\"-- None --\":\"{\\\"label\\\":\\\"-- None --\\\",\\\"value\\\":\\\"-- None --\\\",\\\"order\\\":0}\",\"Incident\":\"{\\\"label\\\":\\\"Incident\\\",\\\"value\\\":\\\"incident\\\",\\\"order\\\":1}\"}}"},"transaction_type":"String","transaction_type.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Choice\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"choice\",\"default_value\":\"\",\"label\":\"Transaction Type\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"32\",\"uiUniqueId\":\"cae7948d-cc03-48e2-8ae8-2435fd93bf32\"}","SimpleChoiceFacet":"{\"complex_choice_map_key$\":{},\"choice_map_key$\":{\"Reassign\":\"{\\\"label\\\":\\\"Reassign\\\",\\\"value\\\":\\\"reassign\\\",\\\"order\\\":3}\",\"Create\":\"{\\\"label\\\":\\\"Create\\\",\\\"value\\\":\\\"create\\\",\\\"order\\\":1}\",\"-- None --\":\"{\\\"label\\\":\\\"-- None --\\\",\\\"value\\\":\\\"-- None --\\\",\\\"order\\\":0}\",\"Update\":\"{\\\"label\\\":\\\"Update\\\",\\\"value\\\":\\\"update\\\",\\\"order\\\":2}\",\"Resolve\":\"{\\\"label\\\":\\\"Resolve\\\",\\\"value\\\":\\\"resolve\\\",\\\"order\\\":4}\",\"Reopen\":\"{\\\"label\\\":\\\"Reopen\\\",\\\"value\\\":\\\"reopen\\\",\\\"order\\\":5}\"}}"}},"FlowDesigner:FD485d99b4b2c11e5094916379cdc1c51d.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"ae779a9e-9f4c-442e-9539-3e05b9a5d7c6\",\"default_value\":\"\",\"label\":\"Trigger Type\",\"mandatory\":\"false\",\"uiUniqueId\":\"4f30319f-0ac1-4435-8e5a-82c715f65f7c\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD485d99b4b2c11e5094916379cdc1c51d\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"e44e0b4c-3f61-410f-8405-6b219da3322f\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}&lt;/serialized_content&gt;&lt;sys_class_name&gt;sys_complex_object&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-02 08:24:46&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;0c5d99b4fbc11e5048a7f92abeefdc1d&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_overrides/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SCC Integration"&gt;181e4d68fb81da5048a7f92abeefdcb0&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-02 08:27:29&lt;/sys_updated_on&gt;&lt;type&gt;complex_object_schema&lt;/type&gt;&lt;/sys_complex_object&gt;&lt;sys_hub_action_output action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;co_type_name=FD485d99b4b2c11e5094916379cdc1c51d,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,sourceId=ae779a9e-9f4c-442e-9539-3e05b9a5d7c6,sourceType=step,sourceUiUniqueId=e44e0b4c-3f61-410f-8405-6b219da3322f,uiType=object,uiTypeLabel=Object,uiUniqueId=4f30319f-0ac1-4435-8e5a-82c715f65f7c&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;trigger_type&lt;/element&gt;&lt;element_prototype/&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_link/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;Trigger Type&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;65000&lt;/max_length&gt;&lt;model display_value="Get Integration Triggers"&gt;687bd934fbc11e5048a7f92abeefdc44&lt;/model&gt;&lt;model_id&gt;687bd934fbc11e5048a7f92abeefdc44&lt;/model_id&gt;&lt;model_table&gt;sys_hub_action_type_definition&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_action_output_687bd934fbc11e5048a7f92abeefdc44&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;1&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_action_output&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-02 08:24:46&lt;/sys_created_on&gt;&lt;sys_id&gt;085d99b4fbc11e5048a7f92abeefdc1e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="SCC Integration"&gt;181e4d68fb81da5048a7f92abeefdcb0&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-02 08:24:46&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_action_output&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=085d99b4fbc11e5048a7f92abeefdc1e"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=085d99b4fbc11e5048a7f92abeefdc1e"/&gt;&lt;sys_hub_action_output action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=ceef8a3f-630f-4bee-a824-d2fe20170910&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;__action_status__&lt;/element&gt;&lt;element_prototype/&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_link/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;Action Status&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;65000&lt;/max_length&gt;&lt;model display_value="Get Integration Triggers"&gt;687bd934fbc11e5048a7f92abeefdc44&lt;/model&gt;&lt;model_id&gt;687bd934fbc11e5048a7f92abeefdc44&lt;/model_id&gt;&lt;model_table&gt;sys_hub_action_type_definition&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_action_output_687bd934fbc11e5048a7f92abeefdc44&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;2&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_action_output&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-02 08:26:50&lt;/sys_created_on&gt;&lt;sys_id&gt;56cd91f4fbc11e5048a7f92abeefdcb5&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="SCC Integration"&gt;181e4d68fb81da5048a7f92abeefdcb0&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-02 08:26:50&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_action_output&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=56cd91f4fbc11e5048a7f92abeefdcb5"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=56cd91f4fbc11e5048a7f92abeefdcb5"/&gt;&lt;sys_hub_action_output action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=f0079a1c-5984-4884-bc16-3331892c8955,visible_in_ui=false&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value&gt;true&lt;/default_value&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;__dont_treat_as_error__&lt;/element&gt;&lt;element_prototype/&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_link/&gt;&lt;internal_type display_value=""&gt;boolean&lt;/internal_type&gt;&lt;label&gt;Don't Treat as Error&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;model display_value="Get Integration Triggers"&gt;687bd934fbc11e5048a7f92abeefdc44&lt;/model&gt;&lt;model_id&gt;687bd934fbc11e5048a7f92abeefdc44&lt;/model_id&gt;&lt;model_table&gt;sys_hub_action_type_definition&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_action_output_687bd934fbc11e5048a7f92abeefdc44&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;3&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_action_output&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-02 08:26:50&lt;/sys_created_on&gt;&lt;sys_id&gt;decd91f4fbc11e5048a7f92abeefdcb8&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="SCC Integration"&gt;181e4d68fb81da5048a7f92abeefdcb0&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-02 08:27:29&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_action_output&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=decd91f4fbc11e5048a7f92abeefdcb8"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=decd91f4fbc11e5048a7f92abeefdcb8"/&gt;&lt;sys_hub_pill_compound action="delete_multiple" query="attached_to=687bd934fbc11e5048a7f92abeefdc44"/&gt;&lt;sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=687bd934fbc11e5048a7f92abeefdc44^sys_idNOT IN885d99b4fbc11e5048a7f92abeefdc26"/&gt;&lt;sys_hub_action_status_metadata action="INSERT_OR_UPDATE"&gt;&lt;action_type_id display_value="Get Integration Triggers"&gt;687bd934fbc11e5048a7f92abeefdc44&lt;/action_type_id&gt;&lt;sys_created_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-02 08:24:46&lt;/sys_created_on&gt;&lt;sys_id&gt;885d99b4fbc11e5048a7f92abeefdc26&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-02 08:24:46&lt;/sys_updated_on&gt;&lt;/sys_hub_action_status_metadata&gt;&lt;sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=885d99b4fbc11e5048a7f92abeefdc26"/&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_687bd934fbc11e5048a7f92abeefdc44^sys_idNOT IN485d59b4fbc11e5048a7f92abeefdcf6"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;request_payload&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Request Payload&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_action_input_687bd934fbc11e5048a7f92abeefdc44&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-02 08:24:45&lt;/sys_created_on&gt;&lt;sys_id&gt;485d59b4fbc11e5048a7f92abeefdcf6&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="SCC Integration" source="x_tipts_scc_integr"&gt;181e4d68fb81da5048a7f92abeefdcb0&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SCC Integration"&gt;181e4d68fb81da5048a7f92abeefdcb0&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-02 08:24:45&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_687bd934fbc11e5048a7f92abeefdc44"/&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_687bd934fbc11e5048a7f92abeefdc44^sys_idNOT IN12cd91f4fbc11e5048a7f92abeefdcb8,445d99b4fbc11e5048a7f92abeefdc22,66cd91f4fbc11e5048a7f92abeefdcbd"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;__action_status__&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Action Status&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_action_output_687bd934fbc11e5048a7f92abeefdc44&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-02 08:26:50&lt;/sys_created_on&gt;&lt;sys_id&gt;12cd91f4fbc11e5048a7f92abeefdcb8&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="SCC Integration" source="x_tipts_scc_integr"&gt;181e4d68fb81da5048a7f92abeefdcb0&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SCC Integration"&gt;181e4d68fb81da5048a7f92abeefdcb0&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-02 08:26:50&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;trigger_type&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Trigger Type&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_action_output_687bd934fbc11e5048a7f92abeefdc44&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-02 08:24:46&lt;/sys_created_on&gt;&lt;sys_id&gt;445d99b4fbc11e5048a7f92abeefdc22&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="SCC Integration" source="x_tipts_scc_integr"&gt;181e4d68fb81da5048a7f92abeefdcb0&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SCC Integration"&gt;181e4d68fb81da5048a7f92abeefdcb0&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-02 08:24:46&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;__dont_treat_as_error__&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Don't Treat as Error&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_action_output_687bd934fbc11e5048a7f92abeefdc44&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-02 08:26:50&lt;/sys_created_on&gt;&lt;sys_id&gt;66cd91f4fbc11e5048a7f92abeefdcbd&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="SCC Integration" source="x_tipts_scc_integr"&gt;181e4d68fb81da5048a7f92abeefdcb0&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SCC Integration"&gt;181e4d68fb81da5048a7f92abeefdcb0&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-02 08:26:50&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_687bd934fbc11e5048a7f92abeefdc44"/&gt;&lt;sys_hub_action_plan action="delete_multiple" query="action_id=687bd934fbc11e5048a7f92abeefdc44"/&gt;&lt;sys_hub_action_type_snapshot action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;action_status/&gt;&lt;action_template/&gt;&lt;annotation/&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;copied_from/&gt;&lt;copied_from_name/&gt;&lt;description/&gt;&lt;internal_name&gt;get_integration_triggers&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"{{action.request_payload}}","label":"action➛Request Payload","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[ae779a9e-9f4c-442e-9539-3e05b9a5d7c6].trigger}}","label":"step➛Script step➛Trigger","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":[],"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]&lt;/label_cache&gt;&lt;master&gt;true&lt;/master&gt;&lt;name&gt;Get Integration Triggers&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;outputs/&gt;&lt;parent_action display_value="Get Integration Triggers"&gt;687bd934fbc11e5048a7f92abeefdc44&lt;/parent_action&gt;&lt;sys_class_name&gt;sys_hub_action_type_snapshot&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-02 08:27:30&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;18fdd5f4fbc11e5048a7f92abeefdc6b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_overrides/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SCC Integration"&gt;181e4d68fb81da5048a7f92abeefdcb0&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-02 08:27:30&lt;/sys_updated_on&gt;&lt;system_level&gt;false&lt;/system_level&gt;&lt;type/&gt;&lt;/sys_hub_action_type_snapshot&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=18fdd5f4fbc11e5048a7f92abeefdc6b"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=18fdd5f4fbc11e5048a7f92abeefdc6b"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_type_snapshot&lt;/document&gt;&lt;document_key&gt;18fdd5f4fbc11e5048a7f92abeefdc6b&lt;/document_key&gt;&lt;order&gt;2&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-02 08:27:30&lt;/sys_created_on&gt;&lt;sys_id&gt;94fdd5f4fbc11e5048a7f92abeefdcfd&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-02 08:27:30&lt;/sys_updated_on&gt;&lt;value&gt;{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"integer\",\"default_value\":\"\",\"action_error_output\":\"true\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"string\",\"default_value\":null,\"action_error_output\":\"true\",\"label\":\"Message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"read_only\":\"true\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Action Status\",\"read_only_complex_object\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8e3eb395-c990-4a7d-b8da-081a1acab7eb\"}"}},"serializationFormat":"JSON"}&lt;/value&gt;&lt;variable display_value="Action Status"&gt;dcfdd5f4fbc11e5048a7f92abeefdcf1&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_type_snapshot&lt;/document&gt;&lt;document_key&gt;18fdd5f4fbc11e5048a7f92abeefdc6b&lt;/document_key&gt;&lt;order&gt;3&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-02 08:27:30&lt;/sys_created_on&gt;&lt;sys_id&gt;d0fdd5f4fbc11e5048a7f92abeefdcfd&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-02 08:27:30&lt;/sys_updated_on&gt;&lt;value&gt;0&lt;/value&gt;&lt;variable display_value="Don't Treat as Error"&gt;58fdd5f4fbc11e5048a7f92abeefdcf5&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="id=18fdd5f4fbc11e5048a7f92abeefdc6b"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;trigger_type&lt;/field&gt;&lt;id&gt;18fdd5f4fbc11e5048a7f92abeefdc6b&lt;/id&gt;&lt;sys_created_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-02 08:27:30&lt;/sys_created_on&gt;&lt;sys_id&gt;50fdd5f4fbc11e5048a7f92abeefdcfd&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-02 08:27:30&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_output_18fdd5f4fbc11e5048a7f92abeefdc6b&lt;/table&gt;&lt;value&gt;{{step[ae779a9e-9f4c-442e-9539-3e05b9a5d7c6].trigger}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;__action_status__&lt;/field&gt;&lt;id&gt;18fdd5f4fbc11e5048a7f92abeefdc6b&lt;/id&gt;&lt;sys_created_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-02 08:27:30&lt;/sys_created_on&gt;&lt;sys_id&gt;9cfdd5f4fbc11e5048a7f92abeefdcfc&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-02 08:27:30&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_output_18fdd5f4fbc11e5048a7f92abeefdc6b&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;__dont_treat_as_error__&lt;/field&gt;&lt;id&gt;18fdd5f4fbc11e5048a7f92abeefdc6b&lt;/id&gt;&lt;sys_created_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-02 08:27:30&lt;/sys_created_on&gt;&lt;sys_id&gt;d8fdd5f4fbc11e5048a7f92abeefdcfc&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-02 08:27:30&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_output_18fdd5f4fbc11e5048a7f92abeefdc6b&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_step_instance action="delete_multiple" query="action=18fdd5f4fbc11e5048a7f92abeefdc6b^sys_idNOT IN10fdd5f4fbc11e5048a7f92abeefdc75"/&gt;&lt;sys_hub_step_instance action="INSERT_OR_UPDATE"&gt;&lt;action display_value="Get Integration Triggers"&gt;18fdd5f4fbc11e5048a7f92abeefdc6b&lt;/action&gt;&lt;cid&gt;ae779a9e-9f4c-442e-9539-3e05b9a5d7c6&lt;/cid&gt;&lt;error_handling_type&gt;1&lt;/error_handling_type&gt;&lt;extended_inputs/&gt;&lt;extended_inputs/&gt;&lt;extended_outputs/&gt;&lt;icon/&gt;&lt;inputs/&gt;&lt;label&gt;Script step&lt;/label&gt;&lt;order&gt;1&lt;/order&gt;&lt;outputs/&gt;&lt;section/&gt;&lt;step_type display_value="Script"&gt;106afb6647032200b4fad7527c9a71e7&lt;/step_type&gt;&lt;sys_created_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-02 08:27:30&lt;/sys_created_on&gt;&lt;sys_id&gt;10fdd5f4fbc11e5048a7f92abeefdc75&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope display_value="SCC Integration"&gt;181e4d68fb81da5048a7f92abeefdcb0&lt;/sys_scope&gt;&lt;sys_updated_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-02 08:27:30&lt;/sys_updated_on&gt;&lt;/sys_hub_step_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=10fdd5f4fbc11e5048a7f92abeefdc75"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_step_instance&lt;/document&gt;&lt;document_key&gt;10fdd5f4fbc11e5048a7f92abeefdc75&lt;/document_key&gt;&lt;order&gt;600&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-02 08:27:30&lt;/sys_created_on&gt;&lt;sys_id&gt;50fdd5f4fbc11e5048a7f92abeefdce9&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-02 08:27:30&lt;/sys_updated_on&gt;&lt;value&gt;(function execute(inputs, outputs) {&amp;#13;
+&amp;#13;
+    const payload = JSON.parse(inputs.payload);&amp;#13;
+    outputs.trigger = {};&amp;#13;
+    outputs.trigger.case_type = payload.case_type;&amp;#13;
+    outputs.trigger.transaction_type = payload.transaction_type;&amp;#13;
+&amp;#13;
+})(inputs, outputs);&amp;#13;
+&lt;/value&gt;&lt;variable display_value="Script"&gt;71aa7f6647032200b4fad7527c9a719b&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_step_instance&lt;/document&gt;&lt;document_key&gt;10fdd5f4fbc11e5048a7f92abeefdc75&lt;/document_key&gt;&lt;order&gt;400&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-02 08:27:30&lt;/sys_created_on&gt;&lt;sys_id&gt;9cfdd5f4fbc11e5048a7f92abeefdce8&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-02 08:27:30&lt;/sys_updated_on&gt;&lt;value&gt;35aa573fd7802200bdbaee5b5e610375&lt;/value&gt;&lt;variable display_value="MID Application"&gt;f5e56d79b3101300176b051a16a8dce4&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="id=10fdd5f4fbc11e5048a7f92abeefdc75"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;application&lt;/field&gt;&lt;id&gt;10fdd5f4fbc11e5048a7f92abeefdc75&lt;/id&gt;&lt;sys_created_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-02 08:27:30&lt;/sys_created_on&gt;&lt;sys_id&gt;58fdd5f4fbc11e5048a7f92abeefdce8&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-02 08:27:30&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;payload&lt;/field&gt;&lt;id&gt;10fdd5f4fbc11e5048a7f92abeefdc75&lt;/id&gt;&lt;sys_created_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-02 08:27:30&lt;/sys_created_on&gt;&lt;sys_id&gt;d8fdd5f4fbc11e5048a7f92abeefdce9&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-02 08:27:30&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_step_ext_input_10fdd5f4fbc11e5048a7f92abeefdc75&lt;/table&gt;&lt;value&gt;{{action.request_payload}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;script&lt;/field&gt;&lt;id&gt;10fdd5f4fbc11e5048a7f92abeefdc75&lt;/id&gt;&lt;sys_created_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-02 08:27:30&lt;/sys_created_on&gt;&lt;sys_id&gt;1cfdd5f4fbc11e5048a7f92abeefdce8&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-02 08:27:30&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_10fdd5f4fbc11e5048a7f92abeefdc75^id=10fdd5f4fbc11e5048a7f92abeefdc75"/&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=10fdd5f4fbc11e5048a7f92abeefdc75"/&gt;&lt;sys_hub_step_ext_input action="delete_multiple" query="model=10fdd5f4fbc11e5048a7f92abeefdc75^sys_idNOT INd4fdd5f4fbc11e5048a7f92abeefdcaa"/&gt;&lt;sys_hub_step_ext_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;payload&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;payload&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;8000&lt;/max_length&gt;&lt;model display_value="Script step"&gt;10fdd5f4fbc11e5048a7f92abeefdc75&lt;/model&gt;&lt;model_id&gt;10fdd5f4fbc11e5048a7f92abeefdc75&lt;/model_id&gt;&lt;model_table&gt;sys_hub_step_instance&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_step_ext_input_10fdd5f4fbc11e5048a7f92abeefdc75&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;0&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_step_ext_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-02 08:27:30&lt;/sys_created_on&gt;&lt;sys_id&gt;d4fdd5f4fbc11e5048a7f92abeefdcaa&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SCC Integration"&gt;181e4d68fb81da5048a7f92abeefdcb0&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-02 08:27:30&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_step_ext_input&gt;&lt;sys_hub_step_ext_output action="delete_multiple" query="model=10fdd5f4fbc11e5048a7f92abeefdc75^sys_idNOT IN10fdd5f4fbc11e5048a7f92abeefdcb0"/&gt;&lt;sys_complex_object action="INSERT_OR_UPDATE"&gt;&lt;label/&gt;&lt;name&gt;FD1cfdd5f49ac11e502ff73ee64dd6ceae&lt;/name&gt;&lt;namespace&gt;FlowDesigner&lt;/namespace&gt;&lt;scope_name&gt;181e4d68fb81da5048a7f92abeefdcb0&lt;/scope_name&gt;&lt;serialized_content&gt;{"FlowDesigner:FD1cfdd5f49ac11e502ff73ee64dd6ceae":{"case_type":"String","case_type.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Choice\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"choice\",\"default_value\":\"\",\"label\":\"Case Type\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"32\"}","SimpleChoiceFacet":"{\"complex_choice_map_key$\":{},\"choice_map_key$\":{\"Request\":\"{\\\"label\\\":\\\"Request\\\",\\\"value\\\":\\\"request\\\",\\\"order\\\":2}\",\"Incident\":\"{\\\"label\\\":\\\"Incident\\\",\\\"value\\\":\\\"incident\\\",\\\"order\\\":1}\"}}"},"transaction_type":"String","transaction_type.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Choice\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"choice\",\"default_value\":\"\",\"label\":\"Transaction Type\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"32\"}","SimpleChoiceFacet":"{\"complex_choice_map_key$\":{},\"choice_map_key$\":{\"Reassign\":\"{\\\"label\\\":\\\"Reassign\\\",\\\"value\\\":\\\"reassign\\\",\\\"order\\\":3}\",\"Create\":\"{\\\"label\\\":\\\"Create\\\",\\\"value\\\":\\\"create\\\",\\\"order\\\":1}\",\"Update\":\"{\\\"label\\\":\\\"Update\\\",\\\"value\\\":\\\"update\\\",\\\"order\\\":2}\",\"Resolve\":\"{\\\"label\\\":\\\"Resolve\\\",\\\"value\\\":\\\"resolve\\\",\\\"order\\\":4}\",\"Reopen\":\"{\\\"label\\\":\\\"Reopen\\\",\\\"value\\\":\\\"reopen\\\",\\\"order\\\":5}\"}}"}},"FlowDesigner:FD1cfdd5f49ac11e502ff73ee64dd6ceae.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD1cfdd5f49ac11e502ff73ee64dd6ceae\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Trigger\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"65000\",\"uiUniqueId\":\"e44e0b4c-3f61-410f-8405-6b219da3322f\"}"}}&lt;/serialized_content&gt;&lt;sys_class_name&gt;sys_complex_object&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-02 08:27:30&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;dcfdd5f4fbc11e5048a7f92abeefdcae&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_overrides/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SCC Integration"&gt;181e4d68fb81da5048a7f92abeefdcb0&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-02 08:27:30&lt;/sys_updated_on&gt;&lt;type&gt;complex_object_schema&lt;/type&gt;&lt;/sys_complex_object&gt;&lt;sys_hub_step_ext_output action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;co_type_name=FD1cfdd5f49ac11e502ff73ee64dd6ceae,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=e44e0b4c-3f61-410f-8405-6b219da3322f&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;trigger&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;Trigger&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;65000&lt;/max_length&gt;&lt;model display_value="Script step"&gt;10fdd5f4fbc11e5048a7f92abeefdc75&lt;/model&gt;&lt;model_id&gt;10fdd5f4fbc11e5048a7f92abeefdc75&lt;/model_id&gt;&lt;model_table&gt;sys_hub_step_instance&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_step_ext_output_10fdd5f4fbc11e5048a7f92abeefdc75&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;1&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_step_ext_output&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-02 08:27:30&lt;/sys_created_on&gt;&lt;sys_id&gt;10fdd5f4fbc11e5048a7f92abeefdcb0&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SCC Integration"&gt;181e4d68fb81da5048a7f92abeefdcb0&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-02 08:27:30&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_step_ext_output&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=10fdd5f4fbc11e5048a7f92abeefdc75"/&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_10fdd5f4fbc11e5048a7f92abeefdc75^sys_idNOT IN14fdd5f4fbc11e5048a7f92abeefdcb3"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;trigger&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Trigger&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_step_ext_output_10fdd5f4fbc11e5048a7f92abeefdc75&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-02 08:27:30&lt;/sys_created_on&gt;&lt;sys_id&gt;14fdd5f4fbc11e5048a7f92abeefdcb3&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="SCC Integration" source="x_tipts_scc_integr"&gt;181e4d68fb81da5048a7f92abeefdcb0&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SCC Integration"&gt;181e4d68fb81da5048a7f92abeefdcb0&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-02 08:27:30&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_hub_action_input action="delete_multiple" query="model=18fdd5f4fbc11e5048a7f92abeefdc6b^sys_idNOT IN90fdd5f4fbc11e5048a7f92abeefdc6f"/&gt;&lt;sys_hub_action_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=7a7ee75f-124c-45b3-87dd-47663749a1d3&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;request_payload&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;Request Payload&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;8000&lt;/max_length&gt;&lt;model display_value="Get Integration Triggers"&gt;18fdd5f4fbc11e5048a7f92abeefdc6b&lt;/model&gt;&lt;model_id&gt;18fdd5f4fbc11e5048a7f92abeefdc6b&lt;/model_id&gt;&lt;model_table&gt;sys_hub_action_type_snapshot&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_action_input_18fdd5f4fbc11e5048a7f92abeefdc6b&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;1&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_action_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-02 08:27:30&lt;/sys_created_on&gt;&lt;sys_id&gt;90fdd5f4fbc11e5048a7f92abeefdc6f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SCC Integration"&gt;181e4d68fb81da5048a7f92abeefdcb0&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-02 08:27:30&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_action_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=90fdd5f4fbc11e5048a7f92abeefdc6f"/&gt;&lt;sys_hub_action_output action="delete_multiple" query="model=18fdd5f4fbc11e5048a7f92abeefdc6b^sys_idNOT IN58fdd5f4fbc11e5048a7f92abeefdcf5,98fdd5f4fbc11e5048a7f92abeefdced,dcfdd5f4fbc11e5048a7f92abeefdcf1"/&gt;&lt;sys_hub_action_output action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=f0079a1c-5984-4884-bc16-3331892c8955,visible_in_ui=false&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value&gt;true&lt;/default_value&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;__dont_treat_as_error__&lt;/element&gt;&lt;element_prototype/&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_link/&gt;&lt;internal_type display_value=""&gt;boolean&lt;/internal_type&gt;&lt;label&gt;Don't Treat as Error&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;model display_value="Get Integration Triggers"&gt;18fdd5f4fbc11e5048a7f92abeefdc6b&lt;/model&gt;&lt;model_id&gt;18fdd5f4fbc11e5048a7f92abeefdc6b&lt;/model_id&gt;&lt;model_table&gt;sys_hub_action_type_snapshot&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_action_output_18fdd5f4fbc11e5048a7f92abeefdc6b&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;3&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_action_output&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-02 08:27:30&lt;/sys_created_on&gt;&lt;sys_id&gt;58fdd5f4fbc11e5048a7f92abeefdcf5&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SCC Integration"&gt;181e4d68fb81da5048a7f92abeefdcb0&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-02 08:27:30&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_action_output&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=58fdd5f4fbc11e5048a7f92abeefdcf5"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=58fdd5f4fbc11e5048a7f92abeefdcf5"/&gt;&lt;sys_complex_object action="INSERT_OR_UPDATE"&gt;&lt;label/&gt;&lt;name&gt;FDd8fdd5f4cfc11e50adf8f8fbdab0abec&lt;/name&gt;&lt;namespace&gt;FlowDesigner&lt;/namespace&gt;&lt;scope_name&gt;181e4d68fb81da5048a7f92abeefdcb0&lt;/scope_name&gt;&lt;serialized_content&gt;{"FlowDesigner:FDd8fdd5f4cfc11e50adf8f8fbdab0abec":{"case_type":"String","case_type.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Choice\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"choice\",\"default_value\":\"\",\"label\":\"Case Type\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"32\",\"uiUniqueId\":\"d9e96865-343f-45f9-beb4-59a50ed7c92c\"}","SimpleChoiceFacet":"{\"complex_choice_map_key$\":{},\"choice_map_key$\":{\"Request\":\"{\\\"label\\\":\\\"Request\\\",\\\"value\\\":\\\"request\\\",\\\"order\\\":2}\",\"-- None --\":\"{\\\"label\\\":\\\"-- None --\\\",\\\"value\\\":\\\"-- None --\\\",\\\"order\\\":0}\",\"Incident\":\"{\\\"label\\\":\\\"Incident\\\",\\\"value\\\":\\\"incident\\\",\\\"order\\\":1}\"}}"},"transaction_type":"String","transaction_type.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Choice\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"choice\",\"default_value\":\"\",\"label\":\"Transaction Type\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"32\",\"uiUniqueId\":\"cae7948d-cc03-48e2-8ae8-2435fd93bf32\"}","SimpleChoiceFacet":"{\"complex_choice_map_key$\":{},\"choice_map_key$\":{\"Reassign\":\"{\\\"label\\\":\\\"Reassign\\\",\\\"value\\\":\\\"reassign\\\",\\\"order\\\":3}\",\"Create\":\"{\\\"label\\\":\\\"Create\\\",\\\"value\\\":\\\"create\\\",\\\"order\\\":1}\",\"-- None --\":\"{\\\"label\\\":\\\"-- None --\\\",\\\"value\\\":\\\"-- None --\\\",\\\"order\\\":0}\",\"Update\":\"{\\\"label\\\":\\\"Update\\\",\\\"value\\\":\\\"update\\\",\\\"order\\\":2}\",\"Resolve\":\"{\\\"label\\\":\\\"Resolve\\\",\\\"value\\\":\\\"resolve\\\",\\\"order\\\":4}\",\"Reopen\":\"{\\\"label\\\":\\\"Reopen\\\",\\\"value\\\":\\\"reopen\\\",\\\"order\\\":5}\"}}"}},"FlowDesigner:FDd8fdd5f4cfc11e50adf8f8fbdab0abec.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"ae779a9e-9f4c-442e-9539-3e05b9a5d7c6\",\"default_value\":\"\",\"label\":\"Trigger Type\",\"mandatory\":\"false\",\"uiUniqueId\":\"4f30319f-0ac1-4435-8e5a-82c715f65f7c\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDd8fdd5f4cfc11e50adf8f8fbdab0abec\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"e44e0b4c-3f61-410f-8405-6b219da3322f\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}&lt;/serialized_content&gt;&lt;sys_class_name&gt;sys_complex_object&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-02 08:27:30&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;9cfdd5f4fbc11e5048a7f92abeefdcec&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_overrides/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SCC Integration"&gt;181e4d68fb81da5048a7f92abeefdcb0&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-02 08:27:30&lt;/sys_updated_on&gt;&lt;type&gt;complex_object_schema&lt;/type&gt;&lt;/sys_complex_object&gt;&lt;sys_hub_action_output action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;co_type_name=FDd8fdd5f4cfc11e50adf8f8fbdab0abec,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,sourceId=ae779a9e-9f4c-442e-9539-3e05b9a5d7c6,sourceType=step,sourceUiUniqueId=e44e0b4c-3f61-410f-8405-6b219da3322f,uiType=object,uiTypeLabel=Object,uiUniqueId=4f30319f-0ac1-4435-8e5a-82c715f65f7c&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;trigger_type&lt;/element&gt;&lt;element_prototype/&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_link/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;Trigger Type&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;65000&lt;/max_length&gt;&lt;model display_value="Get Integration Triggers"&gt;18fdd5f4fbc11e5048a7f92abeefdc6b&lt;/model&gt;&lt;model_id&gt;18fdd5f4fbc11e5048a7f92abeefdc6b&lt;/model_id&gt;&lt;model_table&gt;sys_hub_action_type_snapshot&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_action_output_18fdd5f4fbc11e5048a7f92abeefdc6b&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;1&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_action_output&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-02 08:27:30&lt;/sys_created_on&gt;&lt;sys_id&gt;98fdd5f4fbc11e5048a7f92abeefdced&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SCC Integration"&gt;181e4d68fb81da5048a7f92abeefdcb0&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-02 08:27:30&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_action_output&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=98fdd5f4fbc11e5048a7f92abeefdced"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=98fdd5f4fbc11e5048a7f92abeefdced"/&gt;&lt;sys_hub_action_output action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=ceef8a3f-630f-4bee-a824-d2fe20170910&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;__action_status__&lt;/element&gt;&lt;element_prototype/&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_link/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;Action Status&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;65000&lt;/max_length&gt;&lt;model display_value="Get Integration Triggers"&gt;18fdd5f4fbc11e5048a7f92abeefdc6b&lt;/model&gt;&lt;model_id&gt;18fdd5f4fbc11e5048a7f92abeefdc6b&lt;/model_id&gt;&lt;model_table&gt;sys_hub_action_type_snapshot&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_action_output_18fdd5f4fbc11e5048a7f92abeefdc6b&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;2&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_action_output&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-02 08:27:30&lt;/sys_created_on&gt;&lt;sys_id&gt;dcfdd5f4fbc11e5048a7f92abeefdcf1&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SCC Integration"&gt;181e4d68fb81da5048a7f92abeefdcb0&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-02 08:27:30&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_action_output&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=dcfdd5f4fbc11e5048a7f92abeefdcf1"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=dcfdd5f4fbc11e5048a7f92abeefdcf1"/&gt;&lt;sys_hub_pill_compound action="delete_multiple" query="attached_to=18fdd5f4fbc11e5048a7f92abeefdc6b"/&gt;&lt;sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=18fdd5f4fbc11e5048a7f92abeefdc6b^sys_idNOT IN50fd19f4fbc11e5048a7f92abeefdc00"/&gt;&lt;sys_hub_action_status_metadata action="INSERT_OR_UPDATE"&gt;&lt;action_type_id display_value="Get Integration Triggers"&gt;18fdd5f4fbc11e5048a7f92abeefdc6b&lt;/action_type_id&gt;&lt;sys_created_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-02 08:27:30&lt;/sys_created_on&gt;&lt;sys_id&gt;50fd19f4fbc11e5048a7f92abeefdc00&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-02 08:27:30&lt;/sys_updated_on&gt;&lt;/sys_hub_action_status_metadata&gt;&lt;sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=50fd19f4fbc11e5048a7f92abeefdc00"/&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_18fdd5f4fbc11e5048a7f92abeefdc6b^sys_idNOT IN5cfdd5f4fbc11e5048a7f92abeefdc72"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;request_payload&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Request Payload&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_action_input_18fdd5f4fbc11e5048a7f92abeefdc6b&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-02 08:27:30&lt;/sys_created_on&gt;&lt;sys_id&gt;5cfdd5f4fbc11e5048a7f92abeefdc72&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="SCC Integration" source="x_tipts_scc_integr"&gt;181e4d68fb81da5048a7f92abeefdcb0&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SCC Integration"&gt;181e4d68fb81da5048a7f92abeefdcb0&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-02 08:27:30&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_18fdd5f4fbc11e5048a7f92abeefdc6b"/&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_18fdd5f4fbc11e5048a7f92abeefdc6b^sys_idNOT IN10fdd5f4fbc11e5048a7f92abeefdcf1,98fdd5f4fbc11e5048a7f92abeefdcf4,dcfdd5f4fbc11e5048a7f92abeefdcf9"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;trigger_type&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Trigger Type&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_action_output_18fdd5f4fbc11e5048a7f92abeefdc6b&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-02 08:27:30&lt;/sys_created_on&gt;&lt;sys_id&gt;10fdd5f4fbc11e5048a7f92abeefdcf1&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="SCC Integration" source="x_tipts_scc_integr"&gt;181e4d68fb81da5048a7f92abeefdcb0&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SCC Integration"&gt;181e4d68fb81da5048a7f92abeefdcb0&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-02 08:27:30&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;__action_status__&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Action Status&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_action_output_18fdd5f4fbc11e5048a7f92abeefdc6b&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-02 08:27:30&lt;/sys_created_on&gt;&lt;sys_id&gt;98fdd5f4fbc11e5048a7f92abeefdcf4&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="SCC Integration" source="x_tipts_scc_integr"&gt;181e4d68fb81da5048a7f92abeefdcb0&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SCC Integration"&gt;181e4d68fb81da5048a7f92abeefdcb0&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-02 08:27:30&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;__dont_treat_as_error__&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Don't Treat as Error&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_action_output_18fdd5f4fbc11e5048a7f92abeefdc6b&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-02 08:27:30&lt;/sys_created_on&gt;&lt;sys_id&gt;dcfdd5f4fbc11e5048a7f92abeefdcf9&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="SCC Integration" source="x_tipts_scc_integr"&gt;181e4d68fb81da5048a7f92abeefdcb0&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SCC Integration"&gt;181e4d68fb81da5048a7f92abeefdcb0&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-02 08:27:30&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_18fdd5f4fbc11e5048a7f92abeefdc6b"/&gt;&lt;sys_hub_action_type_definition action="UPDATE"&gt;&lt;sys_id&gt;687bd934fbc11e5048a7f92abeefdc44&lt;/sys_id&gt;&lt;latest_snapshot&gt;18fdd5f4fbc11e5048a7f92abeefdc6b&lt;/latest_snapshot&gt;&lt;compiler_build&gt;glide-vancouver-07-06-2023__patch9-hotfix2b-07-22-2024_08-06-2024_1737.zip&lt;/compiler_build&gt;&lt;/sys_hub_action_type_definition&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-2110532506</payload_hash>
+        <record_name>Get Integration Triggers</record_name>
+        <reverted_from/>
+        <source>901e8da8fb81da5048a7f92abeefdc84</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 08:27:31</sys_created_on>
+        <sys_id>a4fd19f4fbc11e5048a7f92abeefdc97</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1924c576ff60000001</sys_recorded_at>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 08:27:31</sys_updated_on>
+        <type>Action Type</type>
+        <update_guid>2cfd19f4e0c11e50874693e788e63c96</update_guid>
+        <update_guid_history>2cfd19f4e0c11e50874693e788e63c96:-2110532506,58fdd5f466c11e50e573ce2666801263:-1006977097,66cdd1f4f6c11e503c24ab39b4feaf02:1695118775,9c5d99b450c11e50fc60c785dbf1263b:837352581,6c7bd934d6c11e5083dfcd2f30edc348:2050172743</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-06 15:25:30</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_action_type_definition">sys_hub_action_type_definition</sys_db_object>
+        <sys_id>3411b7273a454042a87e769dd06b4d71</sys_id>
+        <sys_metadata>687bd934fbc11e5048a7f92abeefdc44</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Get Integration Triggers</sys_name>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_scope_delete display_value="">63962075f8cc4b24874e8760587c3204</sys_scope_delete>
+        <sys_update_name>sys_hub_action_type_definition_687bd934fbc11e5048a7f92abeefdc44</sys_update_name>
+        <sys_update_version display_value="sys_hub_action_type_definition_687bd934fbc11e5048a7f92abeefdc44">a4fd19f4fbc11e5048a7f92abeefdc97</sys_update_version>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-06 15:25:30</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

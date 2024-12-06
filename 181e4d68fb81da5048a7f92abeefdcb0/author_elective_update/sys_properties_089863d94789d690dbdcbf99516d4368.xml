@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="DELETE">
+        <choices/>
+        <description>Maximum file attachment size allowed in megabytes by the SCC API.</description>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_tipts_scc_integr.api.attachment_size</name>
+        <read_roles>x_tipts_scc_integr.admin</read_roles>
+        <suffix>api.attachment_size</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-04 07:51:27</sys_created_on>
+        <sys_id>089863d94789d690dbdcbf99516d4368</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_tipts_scc_integr.api.attachment_size</sys_name>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name>sys_properties_089863d94789d690dbdcbf99516d4368</sys_update_name>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-04 07:51:27</sys_updated_on>
+        <type>integer</type>
+        <value>5</value>
+        <write_roles>x_tipts_scc_integr.admin</write_roles>
+    </sys_properties>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</application>
+        <file_path/>
+        <instance_id>23dcc1eddb2980982f68c59705961996</instance_id>
+        <instance_name>tipdev</instance_name>
+        <name>sys_properties_089863d94789d690dbdcbf99516d4368</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>Maximum file attachment size allowed in megabytes by the SCC API.</description><ignore_cache>true</ignore_cache><is_private>false</is_private><name>x_tipts_scc_integr.api.attachment_size</name><read_roles>x_tipts_scc_integr.admin</read_roles><suffix>api.attachment_size</suffix><sys_class_name>sys_properties</sys_class_name><sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by><sys_created_on>2024-10-04 07:51:27</sys_created_on><sys_id>089863d94789d690dbdcbf99516d4368</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_tipts_scc_integr.api.attachment_size</sys_name><sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package><sys_policy/><sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope><sys_update_name>sys_properties_089863d94789d690dbdcbf99516d4368</sys_update_name><sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by><sys_updated_on>2024-10-04 07:51:27</sys_updated_on><type>integer</type><value>5</value><write_roles>x_tipts_scc_integr.admin</write_roles></sys_properties></record_update>]]></payload>
+        <payload_hash>-1529111071</payload_hash>
+        <record_name>x_tipts_scc_integr.api.attachment_size</record_name>
+        <reverted_from/>
+        <source>3a020b02fb111210a7ccf09faeefdc60</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2024-10-18 23:12:57</sys_created_on>
+        <sys_id>fb66b780fb215210f24ffcdcbeefdc4b</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>192a1e7d0a80000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>System Property</type>
+        <update_guid>bb66b780d02152109f8fafcd06880d4b</update_guid>
+        <update_guid_history>bb66b780d02152109f8fafcd06880d4b:-1529111071</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-25 08:09:42</sys_created_on>
+        <sys_db_object display_value="" name="sys_properties">sys_properties</sys_db_object>
+        <sys_id>37f24b61bf5f484d8e8f6846bb9b6e89</sys_id>
+        <sys_metadata>089863d94789d690dbdcbf99516d4368</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_tipts_scc_integr.api.attachment_size</sys_name>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_scope_delete display_value="">63962075f8cc4b24874e8760587c3204</sys_scope_delete>
+        <sys_update_name>sys_properties_089863d94789d690dbdcbf99516d4368</sys_update_name>
+        <sys_update_version display_value="sys_properties_089863d94789d690dbdcbf99516d4368">fb66b780fb215210f24ffcdcbeefdc4b</sys_update_version>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-25 08:09:42</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

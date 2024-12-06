@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="DELETE">
+        <abort_action>true</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>false</active>
+        <add_message>false</add_message>
+        <advanced>false</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>sys_audit_relation</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="sys_audit_relation">audit.tablename=x_tipts_scc_integr_integration_message^tablename=task^NQaudit_delete.tablename=x_tipts_scc_integr_integration_message^tablename=x_tipts_scc_integr_integration_trigger^ORtablename=task^EQ<item endquery="false" field="audit.tablename" goto="false" newquery="false" operator="=" or="false" value="x_tipts_scc_integr_integration_message"/>
+            <item endquery="false" field="tablename" goto="false" newquery="false" operator="=" or="false" value="task"/>
+            <item endquery="false" field="audit_delete.tablename" goto="false" newquery="true" operator="=" or="false" value="x_tipts_scc_integr_integration_message"/>
+            <item endquery="false" field="tablename" goto="false" newquery="false" operator="=" or="false" value="x_tipts_scc_integr_integration_trigger"/>
+            <item endquery="false" field="tablename" goto="false" newquery="false" operator="=" or="true" value="task"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Prevent Audit Relationship on Task</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	// Add your code here
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-14 10:26:06</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7aeb67a8479d5210dbdcbf99516d43e8</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Prevent Audit Relationship on Task</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name>sys_script_7aeb67a8479d5210dbdcbf99516d43e8</sys_update_name>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-16 08:50:37</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="DELETE" query="documentkey=7aeb67a8479d5210dbdcbf99516d43e8"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</application>
+        <file_path/>
+        <instance_id>23dcc1eddb2980982f68c59705961996</instance_id>
+        <instance_name>tipdev</instance_name>
+        <name>sys_script_7aeb67a8479d5210dbdcbf99516d43e8</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;true&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;false&lt;/action_update&gt;&lt;active&gt;false&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;false&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;sys_audit_relation&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition table="sys_audit_relation"&gt;audit.tablename=x_tipts_scc_integr_integration_message^tablename=task^NQaudit_delete.tablename=x_tipts_scc_integr_integration_message^tablename=x_tipts_scc_integr_integration_trigger^ORtablename=task^EQ&lt;item endquery="false" field="audit.tablename" goto="false" newquery="false" operator="=" or="false" value="x_tipts_scc_integr_integration_message"/&gt;&lt;item endquery="false" field="tablename" goto="false" newquery="false" operator="=" or="false" value="task"/&gt;&lt;item endquery="false" field="audit_delete.tablename" goto="false" newquery="true" operator="=" or="false" value="x_tipts_scc_integr_integration_message"/&gt;&lt;item endquery="false" field="tablename" goto="false" newquery="false" operator="=" or="false" value="x_tipts_scc_integr_integration_trigger"/&gt;&lt;item endquery="false" field="tablename" goto="false" newquery="false" operator="=" or="true" value="task"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/filter_condition&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Prevent Audit Relationship on Task&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	// Add your code here
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-14 10:26:06&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;7aeb67a8479d5210dbdcbf99516d43e8&lt;/sys_id&gt;&lt;sys_mod_count&gt;12&lt;/sys_mod_count&gt;&lt;sys_name&gt;Prevent Audit Relationship on Task&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="SCC Integration" source="x_tipts_scc_integr"&gt;181e4d68fb81da5048a7f92abeefdcb0&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SCC Integration"&gt;181e4d68fb81da5048a7f92abeefdcb0&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_7aeb67a8479d5210dbdcbf99516d43e8&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Lucas.Guerino@crossfuze.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-16 08:50:37&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;before&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=7aeb67a8479d5210dbdcbf99516d43e8"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1270160062</payload_hash>
+        <record_name>Prevent Audit Relationship on Task</record_name>
+        <reverted_from display_value="">2779e59d47191610dbdcbf99516d4381</reverted_from>
+        <source>901e8da8fb81da5048a7f92abeefdc84</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-18 08:02:29</sys_created_on>
+        <sys_id>bda13bf54715d610dbdcbf99516d4387</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1929ea642af0000001</sys_recorded_at>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-18 08:02:29</sys_updated_on>
+        <type>Business Rule</type>
+        <update_guid>35a13bf5b515d6108536ba85bc3e322b</update_guid>
+        <update_guid_history>35a13bf5b515d6108536ba85bc3e322b:-1270160062,ec6b6511505916107f437f9cfaff3c67:-71709002,e779e59dfd19161039660ba92870fb80:-1270160062,3338a9d97019161094093f785206dca5:1905351385,39b5a119e5191610a2a0cbdc509d5f6a:-1270160062,2d54bf244add521037f90915aafc5791:1905351385,dd14f7244cdd5210aeb42d895a3ab8d4:-93643700,5bd3bbe046dd5210a089bac60076ec3c:-339143851,5961b7206add521082002ce6912715b9:-2120790855,905ea72ce89d521038036c117dc7f81f:-1683278430,a75d632ca89d521099860c08191f2d1b:-2120790855,b23de7e8e29d5210edc4e1bb34acf6ed:-1683278430,f7dc2be85f9d5210886c48c5976a976b:884159214,ab8c27e8a09d5210817010b0d40c0b80:-1388779308,322ca7a8539d5210d5ef8fc6b377d449:-2090713045</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-22 13:13:45</sys_created_on>
+        <sys_db_object display_value="" name="sys_script">sys_script</sys_db_object>
+        <sys_id>a678a845bbd74420a0001ea99d5ce400</sys_id>
+        <sys_metadata>7aeb67a8479d5210dbdcbf99516d43e8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Prevent Audit Relationship on Task</sys_name>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_parent display_value="Sys Audit Relation">e35f41211b2100101139a8217e4bcb8c</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_scope_delete display_value="">63962075f8cc4b24874e8760587c3204</sys_scope_delete>
+        <sys_update_name>sys_script_7aeb67a8479d5210dbdcbf99516d43e8</sys_update_name>
+        <sys_update_version display_value="sys_script_7aeb67a8479d5210dbdcbf99516d43e8">bda13bf54715d610dbdcbf99516d4387</sys_update_version>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-22 13:13:45</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

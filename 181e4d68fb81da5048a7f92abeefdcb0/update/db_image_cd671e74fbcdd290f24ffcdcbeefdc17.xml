@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="db_image">
+    <db_image action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>system</category>
+        <format>png</format>
+        <height>40</height>
+        <image>198712fcfb8dd290f24ffcdcbeefdc3f</image>
+        <name>SCC-Logo.png</name>
+        <size_bytes>496</size_bytes>
+        <sys_class_name>db_image</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 12:39:01</sys_created_on>
+        <sys_id>cd671e74fbcdd290f24ffcdcbeefdc17</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>SCC-Logo.png</sys_name>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name>db_image_cd671e74fbcdd290f24ffcdcbeefdc17</sys_update_name>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 12:39:05</sys_updated_on>
+        <thumbnail/>
+        <width>123</width>
+    </db_image>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#0</average_image_color>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/png</content_type>
+        <file_name>image</file_name>
+        <hash>92248b1e49affb68f8df3d810ed66091c70047ad7ac429190990eb2bcda8b9b3</hash>
+        <image_height>40</image_height>
+        <image_width>123</image_width>
+        <size_bytes>496</size_bytes>
+        <size_compressed>511</size_compressed>
+        <state>available</state>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 12:39:05</sys_created_on>
+        <sys_id>198712fcfb8dd290f24ffcdcbeefdc3f</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-02 12:39:05</sys_updated_on>
+        <table_name>ZZ_YYdb_image</table_name>
+        <table_sys_id>cd671e74fbcdd290f24ffcdcbeefdc17</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="image" sys_id="198712fcfb8dd290f24ffcdcbeefdc3f">198712fcfb8dd290f24ffcdcbeefdc3f</sys_attachment>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 12:39:05</sys_created_on>
+        <sys_id>598712fcfb8dd290f24ffcdcbeefdc3f</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>6wzwc+flkuJiYGDg9fRwCQLS1UCswcEMJF8yl4oAKdEAnxBXBmxAiJFhCZBiKwnyC2aQdazYfD9MIkGHgYGxxdPFMaTi1tEZjn1HFHhYkrfv/v//ia2PkP4MDt7ZoqU8Pad6bV1OfVT/c6PtfbF07nyrspVzN8WuXHpjapTQtxWKnb+vdNW+0p2ctjB2Y++kbz6zgi/N82S+etzM/Q/bd6aig+svfZbcF/r6UF6jVUWUk1fA96KFV98uCUw2X3Iv98qm21MrygV8lOZ39/B7mD5+0n1B4qrMJBf56ZJlKjtLS/f99kz+tq8iKaBvbVxq59LqKxan902prjAsmbll+Z11UULT9VSardZkK/15Zvj40sTmVwmTN7RuuNzrKL3PuHpFw7berZsqDucGtMYWhnDLFRdfnONyM/0f45QlFQ/PzNW60ii59LPOxrnF8XlfLMpMZcKyzvycnbxQveBMkf+7ra7Fc8X9N91f3vGurPCa8pPFJzvOJq9+1Lxf7pR2yJyZ2mbFySXKC+epqT/7uWRq6f7fx6ICNB5e8Zn0tnFbRbNptlnEBxVzs6lGDDsi/ynNOLqv73hqaXXd8gfxZ1yjG1Pyu3lVCs447snze8+yefrV23ZifxkiH0juP2+f8QcUU56ufi7rnBKaAF39jgnwAQAA</data>
+        <length>668</length>
+        <position>1</position>
+        <sys_attachment display_value="image" sys_id="198712fcfb8dd290f24ffcdcbeefdc3f">198712fcfb8dd290f24ffcdcbeefdc3f</sys_attachment>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-02 12:39:05</sys_created_on>
+        <sys_id>d98712fcfb8dd290f24ffcdcbeefdc3f</sys_id>
+    </sys_attachment_doc>
+</record_update>

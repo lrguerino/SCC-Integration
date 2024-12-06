@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="DELETE">
+        <choices/>
+        <description>Integration Message activity formatter fields</description>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>glide.ui.x_tipts_scc_integr_integration_message_activity.fields</name>
+        <read_roles/>
+        <suffix>x_tipts_scc_integr</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-09 12:29:27</sys_created_on>
+        <sys_id>b07852cffb41961048a7f92abeefdcc7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>glide.ui.x_tipts_scc_integr_integration_message_activity.fields</sys_name>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name>sys_properties_b07852cffb41961048a7f92abeefdcc7</sys_update_name>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-09 12:29:27</sys_updated_on>
+        <type>string</type>
+        <value>api_endpoint,direction,document_id,http_request_body,http_response_body,http_status_code,integration_trigger,scc_id,status,table,target_task,transaction_type</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="DELETE" query="documentkey=b07852cffb41961048a7f92abeefdcc7"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</application>
+        <file_path/>
+        <instance_id>23dcc1eddb2980982f68c59705961996</instance_id>
+        <instance_name>tipdev</instance_name>
+        <name>sys_properties_b07852cffb41961048a7f92abeefdcc7</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>Integration Message activity formatter fields</description><ignore_cache>false</ignore_cache><is_private>false</is_private><name>glide.ui.x_tipts_scc_integr_integration_message_activity.fields</name><read_roles/><suffix>x_tipts_scc_integr</suffix><sys_class_name>sys_properties</sys_class_name><sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by><sys_created_on>2024-10-09 12:29:27</sys_created_on><sys_id>b07852cffb41961048a7f92abeefdcc7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>glide.ui.x_tipts_scc_integr_integration_message_activity.fields</sys_name><sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package><sys_policy/><sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope><sys_update_name>sys_properties_b07852cffb41961048a7f92abeefdcc7</sys_update_name><sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by><sys_updated_on>2024-10-09 12:29:27</sys_updated_on><type>string</type><value>api_endpoint,direction,document_id,http_request_body,http_response_body,http_status_code,integration_trigger,scc_id,status,table,target_task,transaction_type</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=b07852cffb41961048a7f92abeefdcc7"/></record_update>]]></payload>
+        <payload_hash>-823427536</payload_hash>
+        <record_name>glide.ui.x_tipts_scc_integr_integration_message_activity.fields</record_name>
+        <reverted_from/>
+        <source>901e8da8fb81da5048a7f92abeefdc84</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-09 12:29:28</sys_created_on>
+        <sys_id>01785acffb41961048a7f92abeefdcbd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>192714176a70000001</sys_recorded_at>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-09 12:29:28</sys_updated_on>
+        <type>System Property</type>
+        <update_guid>4d785acf80419610ef480084e4c16aba</update_guid>
+        <update_guid_history>4d785acf80419610ef480084e4c16aba:-823427536</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-16 09:04:52</sys_created_on>
+        <sys_db_object display_value="" name="sys_properties">sys_properties</sys_db_object>
+        <sys_id>036a5cefdd0f4f8080115bbbbb6b7c44</sys_id>
+        <sys_metadata>b07852cffb41961048a7f92abeefdcc7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>glide.ui.x_tipts_scc_integr_integration_message_activity.fields</sys_name>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_scope_delete display_value="">63962075f8cc4b24874e8760587c3204</sys_scope_delete>
+        <sys_update_name>sys_properties_b07852cffb41961048a7f92abeefdcc7</sys_update_name>
+        <sys_update_version display_value="sys_properties_b07852cffb41961048a7f92abeefdcc7">01785acffb41961048a7f92abeefdcbd</sys_update_version>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-16 09:04:52</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

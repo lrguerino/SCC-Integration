@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_tipts_scc_integr.SCCMessage</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>SCCMessage</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[const SCCMessage = Class.create();
+SCCMessage.prototype = {
+
+    initialize: function (message) {
+        // Initializes the SCCMessage object and sets the message details if provided
+        if (gs.nil(message)) {
+            return;
+        }
+        this.setMessage(message);
+    },
+
+    /*_____________________________________________________________________________________________
+     * Description:
+     *    - Sets the message details, including the template, domain, document, and target task
+     * Parameters: 
+     *    - message: The message object containing the data to be processed
+     * Returns:
+     *    - void
+     _______________________________________________________________________________________________*/
+    setMessage: function (message) {
+        this.message = message;
+        this.trigger = message.integration_trigger.getRefRecord();
+        this.document = message.document_id.getRefRecord();
+        this.task = message.target_task.getRefRecord();
+    },
+
+    /*_____________________________________________________________________________________________
+     * Description:
+     *    - Checks if a given message record has an error.
+     * Returns:
+     *    - boolean: True if the message has an error, false otherwise.
+     _______________________________________________________________________________________________*/
+    hasError: function () {
+        if (gs.nil(this.message)) {
+            gs.error("message is nil in hasError");
+            return false;
+        }
+        return this.message.getValue("status") === SCCConstants.MESSAGE_STATUS.ERROR;
+    },
+
+	/*_____________________________________________________________________________________________
+     * Description:
+     *    - 
+     * Returns:
+     *    - boolean: True if the message can be reprocessed, false otherwise.
+     _______________________________________________________________________________________________*/
+	canReprocess: function () {
+		if (gs.nil(this.message)) {
+            gs.error("message is nil in canReprocess");
+            return false;
+        }
+        // Ensure the message has an error, is outbound, and hasn't been reprocessed before
+        return this.hasError() && 
+           this.message.getValue("direction") === SCCConstants.DIRECTION.OUTBOUND;
+	},
+
+	/*_____________________________________________________________________________________________
+     * Description:
+     *    - Reprocesses a failed message by creating a new message and deleting the failed one.
+     * Returns:
+     *    - GlideRecord: The newly created message record.
+     _______________________________________________________________________________________________*/
+    reprocessFailedMessage: function () {
+		if (gs.nil(this.message)) {
+			gs.error("message is nil in reprocessFailedMessage");
+			return;
+		}
+        const newMessage = this.createNewMessage(
+			this.trigger,
+			this.document.getUniqueValue(),
+			true
+		);
+		// Set the reference to the original message
+        newMessage.setValue("reprocessed_from", this.message.getUniqueValue());
+        newMessage.update();
+        // Mark the original message as reprocessed
+        this.message.setValue("status", SCCConstants.MESSAGE_STATUS.REPROCESSED);
+        this.message.update();
+		this.setMessage(newMessage);
+		return this.message;
+    },
+
+    /*_____________________________________________________________________________________________
+     * Description:
+     *    - Constructs the request body for an outbound message by evaluating a script stored in the template.
+     *    - Consumed by business rule: Set Request Body
+     * Returns:
+     *    - string: The JSON stringified request body, or an empty string if an error occurs.
+     _______________________________________________________________________________________________*/
+    getRequestBody: function () {
+        const output = {};
+        if (gs.nil(this.task)) {
+            gs.error("task nil in getRequestBody");
+            return "";
+        }
+		const evaluator = new GlideScopedEvaluator();
+        const mappingRecord = new GlideRecord(SCCConstants.TABLES.MAPPING);
+		mappingRecord.addQuery("integration_trigger.integration_control.active", true);
+		mappingRecord.addQuery("integration_trigger", this.trigger.getUniqueValue());
+        mappingRecord.addQuery("active", true);
+        mappingRecord.orderBy("order");
+        mappingRecord.query();
+        while (mappingRecord.next()) {
+			const mappingType = mappingRecord.getValue("mapping_type");
+			let result = "";
+            try {
+                if (mappingType === SCCConstants.MAPPING_TYPE.SCRIPT) {
+                    // If script returns undefined/empty we overwrite with null, so that the final payload contains the attribute with null
+                    result = evaluator.evaluateScript(
+                        mappingRecord,
+                        "advanced_mapping", {
+                        "current": this.mappingRecord,
+                        "trigger": this.trigger,
+                        "target": this.document,
+						"task": this.task
+                    }) || "";
+                } else if (mappingType === SCCConstants.MAPPING_TYPE.CUSTOM_VALUE) {
+                    result = mappingRecord.getValue("custom_value").trim();
+                } else {
+					// Mapping type is Field mapping
+					result = this.document.getElement(mappingRecord.getValue("sn_field_name")) + "";
+				}
+            } catch (e) {
+				gs.error(`Error evaluating script or getting field value for mapping ${mappingRecord.getUniqueValue()}: ${e.message}`);
+                continue;
+            }
+            const sccFieldKey = mappingRecord.getValue("scc_field_name").trim();
+            output[sccFieldKey] = result || "";
+        }
+        return JSON.stringify(output, null, 3);
+    },
+
+    /*_____________________________________________________________________________________________
+     * Description:
+     *    - Creates a new message record based on the provided template and target ID.
+     * Parameters: 
+     *    - triggerRecord: The template record used to create the new message.
+     *    - targetID: The ID of the target document for the new message.
+     * Returns:
+     *    - GlideRecord: The newly created message record.
+     _______________________________________________________________________________________________*/
+    createNewMessage: function (triggerRecord, targetID, isReprocess) {
+        if (gs.nil(triggerRecord)) {
+            gs.error("triggerRecord is nil in createNewMessage");
+            return;
+        }
+        if (gs.nil(targetID)) {
+            gs.error("targetID is nil in createNewMessage");
+            return;
+        }
+		if (gs.nil(isReprocess)) {
+			isReprocess = false;
+		}
+        // Request body, target task and other trigger-driven fields will be populated through business rules
+        const messageRecord = new GlideRecord(SCCConstants.TABLES.MESSAGE);
+        messageRecord.newRecord();
+        messageRecord.setValue("integration_trigger", triggerRecord.getUniqueValue());
+        messageRecord.setValue("document_id", targetID);
+		if (isReprocess) {
+			// We want to use the original request body for reprocess
+			messageRecord.setValue("http_request_body", this.message.getValue("http_request_body"));
+		}
+        messageRecord.insert();
+        return messageRecord;
+    },
+
+    /*_____________________________________________________________________________________________
+     * Description:
+     *    - Discovers that task record is linked to a given outbound message
+     * Returns:
+     *    - GlideRecord: Task record discovered from the message
+     _______________________________________________________________________________________________*/
+    getTargetTask: function () {
+        if (gs.nil(this.message)) {
+            gs.error("message is nil in getTargetTask");
+            return;
+        }
+        if (gs.nil(this.trigger)) {
+            gs.error("trigger is nil in getTargetTask");
+            return;
+        }
+        if (gs.nil(this.document)) {
+            gs.error("document is nil in getTargetTask");
+            return;
+        }
+        const table = this.message.getValue("table");
+        const rootTable = new GlideTableHierarchy(table).getRoot();
+        let parentID = "";
+        switch (rootTable) {
+            case SCCConstants.TABLES.TASK:
+				parentID = this.document.getUniqueValue();
+                break;
+            case SCCConstants.TABLES.JOURNAL:
+                parentID = this.document.getValue("element_id");
+                break;
+            case SCCConstants.TABLES.ATTACHMENT:
+                parentID = this.document.getValue("table_sys_id");
+                break;
+            default:
+                parentID = this.document.getUniqueValue();
+        }
+        return new SCCHelper().getTargetRecordByID(parentID);
+    },
+
+    type: "SCCMessage"
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-03 08:50:04</sys_created_on>
+        <sys_id>3c3caa85fb055690f24ffcdcbeefdcfa</sys_id>
+        <sys_mod_count>46</sys_mod_count>
+        <sys_name>SCCMessage</sys_name>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name>sys_script_include_3c3caa85fb055690f24ffcdcbeefdcfa</sys_update_name>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-11-13 09:07:18</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>3c3caa85fb055690f24ffcdcbeefdcfa</id>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-11-13 09:07:14</sys_created_on>
+        <sys_id>44d93d96fbb19210f24ffcdcbeefdc5e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-11-13 09:07:14</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

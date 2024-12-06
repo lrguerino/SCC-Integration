@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_message">
+    <sys_ui_message action="INSERT_OR_UPDATE">
+        <application/>
+        <code/>
+        <commented_message/>
+        <key>failed_message_body</key>
+        <language>en</language>
+        <message>&lt;div style="margin: 0cm 0cm 8.5pt; font-size: 10pt; font-family: Verdana, sans-serif;"&gt;Hi Team,&lt;/div&gt;&#13;
+&lt;div&gt;&amp;nbsp;&lt;/div&gt;&#13;
+&lt;div style="margin: 0cm 0cm 8.5pt; font-size: 10pt; font-family: Verdana, sans-serif;"&gt;In reference to the SCC Integration, a transaction has failed to complete successfully.&lt;/div&gt;&#13;
+&lt;div style="margin: 0cm 0cm 8.5pt; font-size: 10pt; font-family: Verdana, sans-serif;"&gt;This transaction has exhausted all retry attempts and will require support staff intervention, product support or manual re-triggering.&lt;/div&gt;&#13;
+&lt;div&gt;&amp;nbsp;&lt;/div&gt;&#13;
+&lt;div style="margin: 0cm 0cm 8.5pt; font-size: 10pt; font-family: Verdana, sans-serif;"&gt;Please refer below details to identify this specific transaction and do the necessary action to remediate it:&lt;/div&gt;&#13;
+&lt;div&gt;&amp;nbsp;&lt;/div&gt;&#13;
+&lt;ul style="margin-bottom: 0cm; margin-top: 0px; list-style-position: inside;"&gt;&#13;
+&lt;li style="margin: 0cm 0cm 8.5pt 0px; font-size: 10pt; font-family: Verdana, sans-serif;"&gt;Transaction Number : {0}&lt;/li&gt;&#13;
+&lt;li style="margin: 0cm 0cm 8.5pt 0px; font-size: 10pt; font-family: Verdana, sans-serif;"&gt;Source System : TIP&lt;/li&gt;&#13;
+&lt;li style="margin: 0cm 0cm 8.5pt 0px; font-size: 10pt; font-family: Verdana, sans-serif;"&gt;Source Ticket ID : {1}&lt;/li&gt;&#13;
+&lt;li style="margin: 0cm 0cm 8.5pt 0px; font-size: 10pt; font-family: Verdana, sans-serif;"&gt;Destination System : SCC&lt;/li&gt;&#13;
+&lt;li style="margin: 0cm 0cm 8.5pt 0px; font-size: 10pt; font-family: Verdana, sans-serif;"&gt;Destination Ticket ID : {2}&lt;/li&gt;&#13;
+&lt;li style="margin: 0cm 0cm 8.5pt 0px; font-size: 10pt; font-family: Verdana, sans-serif;"&gt;Direction : OUTBOUND&lt;/li&gt;&#13;
+&lt;li style="margin: 0cm 0cm 8.5pt 0px; font-size: 10pt; font-family: Verdana, sans-serif;"&gt;Case Type : {3}&lt;/li&gt;&#13;
+&lt;li style="margin: 0cm 0cm 8.5pt 0px; font-size: 10pt; font-family: Verdana, sans-serif;"&gt;Transaction Type : {4}&lt;/li&gt;&#13;
+&lt;li style="margin: 0cm 0cm 8.5pt 0px; font-size: 10pt; font-family: Verdana, sans-serif;"&gt;Error Description : {5}&lt;/li&gt;&#13;
+&lt;/ul&gt;&#13;
+&lt;div&gt;&amp;nbsp;&lt;/div&gt;&#13;
+&lt;div style="margin: 0cm 0cm 8.5pt 0px; font-size: 10pt; font-family: Verdana, sans-serif;"&gt;Alternatively, you can reprocess this message by responding to this email {6}&lt;/div&gt;&#13;
+&#13;
+&#13;
+&#13;
+&#13;
+&#13;
+&#13;
+</message>
+        <sys_class_name>sys_ui_message</sys_class_name>
+        <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+        <sys_created_on>2024-10-18 08:06:36</sys_created_on>
+        <sys_id>b52273394715d610dbdcbf99516d4315</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>failed_message_body</sys_name>
+        <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+        <sys_update_name>sys_ui_message_b52273394715d610dbdcbf99516d4315</sys_update_name>
+        <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+        <sys_updated_on>2024-10-18 08:27:26</sys_updated_on>
+    </sys_ui_message>
+</record_update>

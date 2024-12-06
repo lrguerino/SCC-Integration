@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="876a6e81fb055690f24ffcdcbeefdc9e" sys_domain="global" table="x_tipts_scc_integr_integration_message" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>0</position>
+            <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+            <sys_created_on>2024-11-13 09:19:00</sys_created_on>
+            <sys_id>1c8c7d96fbf19210f24ffcdcbeefdc5e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_tipts_scc_integr_integration_message" sys_domain="global" view="Default view">876a6e81fb055690f24ffcdcbeefdc9e</sys_ui_section>
+            <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+            <sys_updated_on>2024-11-13 09:19:00</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>document_id</element>
+            <position>1</position>
+            <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+            <sys_created_on>2024-11-13 09:19:00</sys_created_on>
+            <sys_id>d48c7d96fbf19210f24ffcdcbeefdc5f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_tipts_scc_integr_integration_message" sys_domain="global" view="Default view">876a6e81fb055690f24ffcdcbeefdc9e</sys_ui_section>
+            <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+            <sys_updated_on>2024-11-13 09:19:00</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>table</element>
+            <position>2</position>
+            <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+            <sys_created_on>2024-11-13 09:19:00</sys_created_on>
+            <sys_id>5c8c7d96fbf19210f24ffcdcbeefdc5f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_tipts_scc_integr_integration_message" sys_domain="global" view="Default view">876a6e81fb055690f24ffcdcbeefdc9e</sys_ui_section>
+            <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+            <sys_updated_on>2024-11-13 09:19:00</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>target_task</element>
+            <position>3</position>
+            <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+            <sys_created_on>2024-11-13 09:19:00</sys_created_on>
+            <sys_id>d08c7d96fbf19210f24ffcdcbeefdc60</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_tipts_scc_integr_integration_message" sys_domain="global" view="Default view">876a6e81fb055690f24ffcdcbeefdc9e</sys_ui_section>
+            <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+            <sys_updated_on>2024-11-13 09:19:00</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>scc_id</element>
+            <position>4</position>
+            <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+            <sys_created_on>2024-11-13 09:19:00</sys_created_on>
+            <sys_id>588c7d96fbf19210f24ffcdcbeefdc60</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_tipts_scc_integr_integration_message" sys_domain="global" view="Default view">876a6e81fb055690f24ffcdcbeefdc9e</sys_ui_section>
+            <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+            <sys_updated_on>2024-11-13 09:19:00</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>5</position>
+            <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+            <sys_created_on>2024-11-13 09:19:00</sys_created_on>
+            <sys_id>dc8c7d96fbf19210f24ffcdcbeefdc60</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_tipts_scc_integr_integration_message" sys_domain="global" view="Default view">876a6e81fb055690f24ffcdcbeefdc9e</sys_ui_section>
+            <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+            <sys_updated_on>2024-11-13 09:19:00</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sys_created_on</element>
+            <position>6</position>
+            <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+            <sys_created_on>2024-11-13 09:19:00</sys_created_on>
+            <sys_id>548c7d96fbf19210f24ffcdcbeefdc61</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_tipts_scc_integr_integration_message" sys_domain="global" view="Default view">876a6e81fb055690f24ffcdcbeefdc9e</sys_ui_section>
+            <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+            <sys_updated_on>2024-11-13 09:19:00</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>integration_trigger</element>
+            <position>7</position>
+            <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+            <sys_created_on>2024-11-13 09:19:00</sys_created_on>
+            <sys_id>d88c7d96fbf19210f24ffcdcbeefdc61</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_tipts_scc_integr_integration_message" sys_domain="global" view="Default view">876a6e81fb055690f24ffcdcbeefdc9e</sys_ui_section>
+            <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+            <sys_updated_on>2024-11-13 09:19:00</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>direction</element>
+            <position>8</position>
+            <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+            <sys_created_on>2024-11-13 09:19:00</sys_created_on>
+            <sys_id>508c7d96fbf19210f24ffcdcbeefdc62</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_tipts_scc_integr_integration_message" sys_domain="global" view="Default view">876a6e81fb055690f24ffcdcbeefdc9e</sys_ui_section>
+            <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+            <sys_updated_on>2024-11-13 09:19:00</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>transaction_type</element>
+            <position>9</position>
+            <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+            <sys_created_on>2024-11-13 09:19:00</sys_created_on>
+            <sys_id>d48c7d96fbf19210f24ffcdcbeefdc62</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_tipts_scc_integr_integration_message" sys_domain="global" view="Default view">876a6e81fb055690f24ffcdcbeefdc9e</sys_ui_section>
+            <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+            <sys_updated_on>2024-11-13 09:19:00</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>status</element>
+            <position>10</position>
+            <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+            <sys_created_on>2024-11-13 09:19:00</sys_created_on>
+            <sys_id>5c8c7d96fbf19210f24ffcdcbeefdc62</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_tipts_scc_integr_integration_message" sys_domain="global" view="Default view">876a6e81fb055690f24ffcdcbeefdc9e</sys_ui_section>
+            <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+            <sys_updated_on>2024-11-13 09:19:00</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>reprocessed_from</element>
+            <position>11</position>
+            <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+            <sys_created_on>2024-11-13 09:19:00</sys_created_on>
+            <sys_id>d08c7d96fbf19210f24ffcdcbeefdc63</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_tipts_scc_integr_integration_message" sys_domain="global" view="Default view">876a6e81fb055690f24ffcdcbeefdc9e</sys_ui_section>
+            <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+            <sys_updated_on>2024-11-13 09:19:00</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>12</position>
+            <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+            <sys_created_on>2024-11-13 09:19:00</sys_created_on>
+            <sys_id>588c7d96fbf19210f24ffcdcbeefdc63</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_tipts_scc_integr_integration_message" sys_domain="global" view="Default view">876a6e81fb055690f24ffcdcbeefdc9e</sys_ui_section>
+            <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+            <sys_updated_on>2024-11-13 09:19:00</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>api_endpoint</element>
+            <position>13</position>
+            <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+            <sys_created_on>2024-11-13 09:19:00</sys_created_on>
+            <sys_id>dc8c7d96fbf19210f24ffcdcbeefdc63</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_tipts_scc_integr_integration_message" sys_domain="global" view="Default view">876a6e81fb055690f24ffcdcbeefdc9e</sys_ui_section>
+            <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+            <sys_updated_on>2024-11-13 09:19:00</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>http_status_code</element>
+            <position>14</position>
+            <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+            <sys_created_on>2024-11-13 09:19:00</sys_created_on>
+            <sys_id>548c7d96fbf19210f24ffcdcbeefdc64</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_tipts_scc_integr_integration_message" sys_domain="global" view="Default view">876a6e81fb055690f24ffcdcbeefdc9e</sys_ui_section>
+            <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+            <sys_updated_on>2024-11-13 09:19:00</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>http_request_body</element>
+            <position>15</position>
+            <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+            <sys_created_on>2024-11-13 09:19:00</sys_created_on>
+            <sys_id>d88c7d96fbf19210f24ffcdcbeefdc64</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_tipts_scc_integr_integration_message" sys_domain="global" view="Default view">876a6e81fb055690f24ffcdcbeefdc9e</sys_ui_section>
+            <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+            <sys_updated_on>2024-11-13 09:19:00</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>http_response_body</element>
+            <position>16</position>
+            <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+            <sys_created_on>2024-11-13 09:19:00</sys_created_on>
+            <sys_id>508c7d96fbf19210f24ffcdcbeefdc65</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_tipts_scc_integr_integration_message" sys_domain="global" view="Default view">876a6e81fb055690f24ffcdcbeefdc9e</sys_ui_section>
+            <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+            <sys_updated_on>2024-11-13 09:19:00</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_tipts_scc_integr_integration_message</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>Lucas.Guerino@crossfuze.com</sys_created_by>
+            <sys_created_on>2024-10-03 08:40:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>876a6e81fb055690f24ffcdcbeefdc9e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_tipts_scc_integr_integration_message</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="SCC Integration" source="x_tipts_scc_integr">181e4d68fb81da5048a7f92abeefdcb0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="SCC Integration">181e4d68fb81da5048a7f92abeefdcb0</sys_scope>
+            <sys_update_name>sys_ui_section_876a6e81fb055690f24ffcdcbeefdc9e</sys_update_name>
+            <sys_updated_by>Lucas.Guerino@crossfuze.com</sys_updated_by>
+            <sys_updated_on>2024-10-03 08:40:09</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>
